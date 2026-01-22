@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>INSTAURA - Strategic Signal Intelligence & Business Consulting</title>
+    <meta name="description"
+        content="Strategic consulting firm specializing in signal intelligence, market-driven growth strategies, and business transformation for forward-thinking organizations.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-transform duration-500"
+        id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-2 group">
+                    <span
+                        class="text-2xl font-black tracking-tighter text-gray-900 group-hover:text-brand-red transition-colors">
+                        INSTAURA<span class="text-brand-red mb-1">.</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">Home</a>
+                        <a href="/services"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">Services</a>
+                        <a href="/verticals"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">Verticals</a>
+                        <a href="/insights"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">Insights</a>
+                        <a href="/about"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">About</a>
+                        <a href="/contact"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">Contact</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="/contact">
+                        <button
+                            class="bg-brand-red text-white hover:bg-red-700 rounded-full px-6 py-3 font-semibold transition-all shadow-md hover:shadow-lg">
+                            Talk to YAS
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-btn p-2 rounded-md hover:bg-gray-100" aria-label="Toggle Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div
+                class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/"
+                        class="block px-3 py-2 text-brand-black hover:text-brand-red font-medium rounded-md hover:bg-gray-50">Home</a>
+                    <a href="/services"
+                        class="block px-3 py-2 text-brand-black hover:text-brand-red font-medium rounded-md hover:bg-gray-50">Services</a>
+                    <a href="/verticals"
+                        class="block px-3 py-2 text-brand-black hover:text-brand-red font-medium rounded-md hover:bg-gray-50">Verticals</a>
+                    <a href="/insights"
+                        class="block px-3 py-2 text-brand-black hover:text-brand-red font-medium rounded-md hover:bg-gray-50">Insights</a>
+                    <a href="/about"
+                        class="block px-3 py-2 text-brand-black hover:text-brand-red font-medium rounded-md hover:bg-gray-50">About</a>
+                    <a href="/contact"
+                        class="block px-3 py-2 text-brand-black hover:text-brand-red font-medium rounded-md hover:bg-gray-50">Contact</a>
+                    <div class="px-3 pt-4">
+                        <a href="/contact">
+                            <button
+                                class="w-full bg-brand-red text-white hover:bg-red-700 rounded-full font-semibold py-3 transition-colors">
+                                Talk to YAS
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Injection Point -->
+    <main class="pt-20 min-h-screen">
+        
+    <div class="pt-16 bg-white">
+      
+      <div class="bg-gray-50 px-6 py-3 text-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto text-gray-600 flex items-center gap-2">
+          <a href="/" class="hover:underline" data-testid="link-home">
+            Home
+          </a>
+          <span>/</span>
+          <a href="/insights" class="hover:underline" data-testid="link-insights">
+            INsights
+          </a>
+          <span>/</span>
+          <a href="/case-studies" class="hover:underline" data-testid="link-case-studies">
+            Case Studies
+          </a>
+          <span>/</span>
+          <span class="text-gray-900 font-medium">Case Study #13</span>
+        </div>
+      </div>
+
+      
+      <section
+        class="bg-black text-white"
+      >
+        <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+          <a href="/case-studies">
+            <button class="flex items-center gap-2 text-gray-300 hover:text-white transition mb-6" data-testid="button-back">
+              <ArrowLeft class="w-4 h-4" />
+              Back to Case Studies
+            </button>
+          </a>
+          
+          <div>
+            <p class="text-xs uppercase tracking-wider text-gray-400 font-medium" data-testid="text-case-number">
+              Case Study #13
+            </p>
+            <h1 class="mt-4 text-4xl md:text-6xl font-bold font-raleway leading-tight" data-testid="heading-title">
+              From Lab to Legibility — The AI Signal
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-300 max-w-4xl leading-relaxed" data-testid="text-subtitle">
+              Groundbreaking AI research and patents, but zero commercial traction. Investors: "Impressive tech, but too early."
+            </p>
+          </div>
+
+          
+          <div
+            class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Sector</p>
+              <p class="mt-2 font-semibold text-white" data-testid="text-sector">DeepTech & AI</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Service</p>
+              <p class="mt-2 font-semibold text-white" data-testid="text-service">Signal Architecture</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Stage</p>
+              <p class="mt-2 font-semibold text-white" data-testid="text-stage">Pre-Revenue, Pre-Seed</p>
+            </div>
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Region</p>
+              <p class="mt-2 font-semibold text-white" data-testid="text-region">USA (redacted)</p>
+            </div>
+          </div>
+
+          <div
+            class="mt-10 flex flex-wrap gap-4"
+          >
+            <a href="/contact">
+              <button class="bg-brand-red text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition text-lg" data-testid="button-talk-yas">
+                Talk to Yas
+              </button>
+            </a>
+            <a href="/contact">
+              <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg" data-testid="button-signal-call">
+                Book a Signal Call
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <div
+        >
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-conundrum">
+            The Conundrum
+          </h2>
+          <div class="mt-8 space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              A DeepTech AI company had groundbreaking research and patents but zero commercial traction. The founding team held PhDs from top institutions and had published extensively in peer-reviewed journals. The technology was advanced — arguably years ahead of the market. Yet every investor meeting ended the same way: polite interest, then silence.
+            </p>
+            <p>
+              The problem wasn't the science. It was the signal. The company spoke in technical abstractions that impressed academics but confused commercial decision-makers. No one could see the path from "novel algorithm" to "inevitable market adoption."
+            </p>
+            <blockquote class="border-l-4 border-brand-red pl-6 italic text-gray-800 text-xl my-8" data-testid="quote-conundrum">
+              "They kept saying 'impressive, but too early.' We didn't know how to prove we weren't."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="bg-gray-50 py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-6">
+          <div
+  
+          >
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-why-it-mattered">
+              Why It Mattered
+            </h2>
+            <div class="mt-10 grid md:grid-cols-3 gap-6">
+              <div class="bg-white p-8 rounded-2xl border border-gray-200">
+                <h3 class="font-semibold text-lg text-gray-900">Risk of Dying in the Lab</h3>
+                <p class="mt-3 text-gray-700">Without commercial translation, even the best research becomes irrelevant.</p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl border border-gray-200">
+                <h3 class="font-semibold text-lg text-gray-900">Need for Legibility, Not Jargon</h3>
+                <p class="mt-3 text-gray-700">Investors needed proof of commercial inevitability, not just technical superiority.</p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl border border-gray-200">
+                <h3 class="font-semibold text-lg text-gray-900">Talent Refusing to Join</h3>
+                <p class="mt-3 text-gray-700">Top engineers wouldn't leave stable jobs for a company that "felt too academic."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <div
+
+        >
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-approach">
+            Our Approach
+          </h2>
+          <p class="mt-4 text-lg text-gray-700">
+            We translated technical innovation into commercial inevitability through Signal Architecture:
+          </p>
+          <div class="mt-10 grid lg:grid-cols-2 gap-6">
+            <div 
+              class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
+            >
+              <p class="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 1</p>
+              <h3 class="mt-3 text-xl font-bold text-gray-900">Signal Diagnostic</h3>
+              <p class="mt-4 text-gray-700 leading-relaxed">
+                Identified where technical excellence was leaking commercial credibility — the gap between "novel" and "inevitable."
+              </p>
+            </div>
+            <div 
+              class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
+            >
+              <p class="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 2</p>
+              <h3 class="mt-3 text-xl font-bold text-gray-900">Narrative Core</h3>
+              <p class="mt-4 text-gray-700 leading-relaxed">
+                Reframed positioning from "advanced AI research lab" to "infrastructure layer for the next generation of [specific application]."
+              </p>
+            </div>
+            <div 
+              class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
+            >
+              <p class="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 3</p>
+              <h3 class="mt-3 text-xl font-bold text-gray-900">Proof Artifact Design</h3>
+              <p class="mt-4 text-gray-700 leading-relaxed">
+                Built tangible proof points: pilot partnerships, early design wins, technical benchmarks framed as commercial moats.
+              </p>
+            </div>
+            <div 
+              class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
+            >
+              <p class="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 4</p>
+              <h3 class="mt-3 text-xl font-bold text-gray-900">Market Calibration</h3>
+              <p class="mt-4 text-gray-700 leading-relaxed">
+                Aligned external messaging — pitch decks, website, investor outreach — to signal commercial readiness, not just scientific achievement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div
+  
+          >
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-metrics">
+              Metrics Dashboard
+            </h2>
+            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white rounded-2xl p-8 border border-gray-200">
+                <p class="text-sm text-gray-500 uppercase tracking-wide">Investor Inbound</p>
+                <p class="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-investor">0 → 5</p>
+                <p class="mt-2 text-gray-700">Serious conversations in 60 days</p>
+              </div>
+              <div class="bg-white rounded-2xl p-8 border border-gray-200">
+                <p class="text-sm text-gray-500 uppercase tracking-wide">Talent Pull</p>
+                <p class="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-talent">2 Engineers</p>
+                <p class="mt-2 text-gray-700">Senior hires from top-tier companies</p>
+              </div>
+              <div class="bg-white rounded-2xl p-8 border border-gray-200">
+                <p class="text-sm text-gray-500 uppercase tracking-wide">Perception Shift</p>
+                <p class="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-perception">Infrastructure</p>
+                <p class="mt-2 text-gray-700">From "research project" to "infrastructure layer"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <div
+
+        >
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-outcome">
+            The Outcome
+          </h2>
+          <div class="mt-8 space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              Within 90 days, the company bridged the credibility gap between lab and market. The narrative shifted from "impressive research" to "frontier inevitability." Investors stopped treating them as "too early" and started viewing them as "too important to miss."
+            </p>
+            <p>
+              The team didn't change their technology. They changed their signal. And the market responded.
+            </p>
+          </div>
+          <figure class="mt-10 bg-gradient-to-br from-gray-50 to-white p-10 rounded-2xl border border-gray-200 shadow-sm">
+            <blockquote class="text-xl italic text-gray-800 leading-relaxed" data-testid="quote-outcome">
+              "We thought the tech would speak for itself. Instaura showed us that markets don't hear technology — they hear signals. Once we fixed the signal, everything changed."
+            </blockquote>
+            <figcaption class="mt-6 text-sm text-gray-500 font-medium">— Founder (redacted)</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      
+      <section class="bg-gray-50 py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div
+  
+          >
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
+              Related Resources
+            </h2>
+            <div class="mt-10 grid md:grid-cols-3 gap-6">
+              <a href="/white-papers" class="block group">
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div class="flex items-center gap-2 text-brand-red">
+                    <FileText class="w-5 h-5" />
+                    <p class="text-xs uppercase tracking-wider font-semibold">White Paper</p>
+                  </div>
+                  <h3 class="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
+                    #16: Signal vs. Noise
+                  </h3>
+                  <p class="mt-3 text-gray-700 text-sm leading-relaxed">
+                    Understanding the difference between technical achievement and commercial signal.
+                  </p>
+                </div>
+              </a>
+              <a href="/white-papers" class="block group">
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div class="flex items-center gap-2 text-brand-red">
+                    <FileText class="w-5 h-5" />
+                    <p class="text-xs uppercase tracking-wider font-semibold">White Paper</p>
+                  </div>
+                  <h3 class="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
+                    #18: Why More Data Creates More Confusion
+                  </h3>
+                  <p class="mt-3 text-gray-700 text-sm leading-relaxed">
+                    How technical depth can obscure commercial clarity.
+                  </p>
+                </div>
+              </a>
+              <a href="/clarity-series" class="block group">
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div class="flex items-center gap-2 text-brand-red">
+                    <BookOpen class="w-5 h-5" />
+                    <p class="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
+                  </div>
+                  <h3 class="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
+                    #11: Translating DeepTech for Markets
+                  </h3>
+                  <p class="mt-3 text-gray-700 text-sm leading-relaxed">
+                    How to bridge the credibility gap between lab and commercialization.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="bg-black text-white py-20 md:py-28">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 class="text-4xl md:text-5xl font-extrabold font-raleway">Clarity → Movement.</h2>
+          <p class="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed">
+            Your technology isn't too early. Your signal is too weak. Fix the signal, and the market will follow.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4 justify-center">
+            <a href="/contact">
+              <button class="bg-brand-red text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition text-lg" data-testid="button-talk-yas">
+                Talk to Yas
+              </button>
+            </a>
+            <a href="/contact">
+              <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg" data-testid="button-signal-call">
+                Book a Signal Call
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <img src="/assets/Screenshot_2025-08-16_210411-removebg-preview_1755358578121-zS6HG1qN.png"
+                        alt="INSTAURA" class="h-12 mb-6 object-contain filter brightness-0 invert">
+                    <p class="text-gray-300 mb-6 leading-relaxed text-sm">
+                        Strategic consulting firm specializing in signal intelligence and market-driven growth
+                        strategies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-brand-red transition"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-brand-red transition"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="mailto:mpo@mpo.consultinstaura.com"
+                            class="text-gray-400 hover:text-brand-red transition"><i
+                                class="fas fa-envelope text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columns -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="/services" class="hover:text-brand-red transition">Signal Architecture</a></li>
+                        <li><a href="/gtm-funnels" class="hover:text-brand-red transition">GTM & Funnels</a></li>
+                        <li><a href="/fund-raising" class="hover:text-brand-red transition">Fund Raising</a></li>
+                        <li><a href="/strategy-consulting" class="hover:text-brand-red transition">Strategy
+                                Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Insights</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="/insights#signals-that-close" class="hover:text-brand-red transition">Signals That
+                                Close</a></li>
+                        <li><a href="/insights#signal-code" class="hover:text-brand-red transition">The Signal Code</a>
+                        </li>
+                        <li><a href="/case-studies" class="hover:text-brand-red transition">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="/about" class="hover:text-brand-red transition">About INSTAURA</a></li>
+                        <li><a href="/about/leadership" class="hover:text-brand-red transition">Leadership</a></li>
+                        <li><a href="/verticals" class="hover:text-brand-red transition">Verticals</a></li>
+                        <li><a href="/contact" class="hover:text-brand-red transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2025 Instaura Consulting. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="/legal/terms" class="hover:text-brand-red transition">Terms</a>
+                    <a href="/legal/privacy" class="hover:text-brand-red transition">Privacy</a>
+                    <a href="/contact" class="hover:text-brand-red transition">Cookies</a>
+                    <a href="/contact" class="hover:text-brand-red transition">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK (Reserved for Dynamic Features) -->
+    <!-- <script type="module" src="/assets/firebase-config.js"></script> -->
+
+    <!-- Main Logic -->
+    <script src="/assets/scripts.js"></script>
+</body>
+
+</html>
