@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-    <base href="/instaura/">
+                <base href="/instaura/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instaura Admin - Editor</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 
     <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-    <script src="/assets/firebase-config.js"></script>
+    <script src="assets/firebase-config.js"></script>
 </head>
 
 <body class="bg-gray-100 font-sans min-h-screen p-8">
     <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
         <header class="bg-gray-50 px-8 py-6 border-b border-gray-200 flex justify-between items-center">
-    <base href="/instaura/">
+                <base href="/instaura/">
             <h1 class="text-2xl font-bold text-gray-900">Create New Job Posting</h1>
-            <a href="/admin/dashboard.html" class="text-gray-500 hover:text-gray-800 text-sm font-medium">Cancel</a>
+            <a href="admin/dashboard.html" class="text-gray-500 hover:text-gray-800 text-sm font-medium">Cancel</a>
         </header>
 
         <form id="editorForm" class="p-8 space-y-6">
@@ -77,7 +77,7 @@
 
         // Auth Guard
         auth.onAuthStateChanged((user) => {
-            if (!user) window.location.href = '/admin/login.html';
+            if (!user) window.location.href = 'admin/login.html';
         });
 
         document.getElementById('editorForm').addEventListener('submit', async (e) => {
@@ -107,7 +107,7 @@
                 });
 
                 alert('Job posted successfully!');
-                window.location.href = '/admin/dashboard.html';
+                window.location.href = 'admin/dashboard.html';
             } catch (error) {
                 console.error("Error adding document: ", error);
                 alert('Error: ' + error.message);

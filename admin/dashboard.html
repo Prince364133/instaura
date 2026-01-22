@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <base href="/instaura/">
+                <base href="/instaura/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instaura Admin - Dashboard</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 
     <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-    <script src="/assets/firebase-config.js"></script>
+    <script src="assets/firebase-config.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -49,9 +49,9 @@
         <!-- Main Content -->
         <main class="flex-1 overflow-auto">
             <header class="bg-white shadow-sm border-b border-gray-200 px-8 py-4 flex justify-between items-center">
-    <base href="/instaura/">
+                <base href="/instaura/">
                 <h2 class="text-2xl font-bold text-gray-800">Manage Job Postings</h2>
-                <a href="/admin/editor.html?type=job">
+                <a href="admin/editor.html?type=job">
                     <button
                         class="bg-gray-900 text-white px-5 py-2.5 rounded-lg hover:bg-black transition flex items-center space-x-2 shadow-lg">
                         <i class="fas fa-plus"></i>
@@ -101,7 +101,7 @@
         // Auth Guard
         auth.onAuthStateChanged((user) => {
             if (!user) {
-                window.location.href = '/admin/login.html';
+                window.location.href = 'admin/login.html';
             } else {
                 loadJobs();
             }
