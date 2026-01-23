@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/instaura/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Instaura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], logo: ['Oswald', 'sans-serif'], }, colors: { brand: { red: '#D91F26', dark: '#030304', black: '#030304', card: '#111216', stroke: '#2D2D30', gray: '#F8F9FB', } }, boxShadow: { 'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)', 'card': '0 10px 40px -10px rgba(0, 0, 0, 0.08)', } } } }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FB;
+            color: #111;
+        }
+
+        .nav-link {
+            color: #111;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #D91F26;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- HEADER -->
+    <header class="bg-white border-b border-gray-100 py-4 px-6 md:px-12 fixed w-full top-0 z-50">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+            <div class="flex-shrink-0 w-48 flex items-center">
+                <a href="index.html"><img src="assets/images/logo.png" alt="INSTAURA"
+                        class="h-8 w-auto object-contain"></a>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="verticals.html" class="nav-link">Verticals</a>
+                <a href="insights.html" class="nav-link text-brand-red font-bold">Insights</a>
+                <a href="about.html" class="nav-link">About</a>
+                        <a href="careers.html"
+                            class="font-medium text-brand-black hover:text-brand-red transition-colors duration-300 transform hover:scale-105 inline-block">Careers</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="hidden md:flex flex-shrink-0 w-48 justify-end">
+                <a href="contact.html"
+                    class="bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-colors shadow-lg shadow-red-100">Talk
+                    to YAS</a>
+            </div>
+            <button class="md:hidden text-2xl text-slate-900 w-10 h-10 flex items-center justify-center"><i
+                    class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">Case Studies</h1>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">Real world examples of Signal in action.</p>
+            </div>
+
+            <!-- Case Study Grid Placeholder -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Example Card -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400">Image Placeholder
+                    </div>
+                    <div class="p-6">
+                        <div class="text-brand-red text-xs font-bold uppercase tracking-widest mb-2">Technology</div>
+                        <h3 class="font-bold text-slate-900 text-xl mb-3">Scaling AI Infrastructure</h3>
+                        <p class="text-slate-500 text-sm mb-4">How we helped a Series B startup architect their signal
+                            for a $50M raise.</p>
+                        <a href="#" class="text-brand-red font-bold text-sm hover:underline">Read Case Study &rarr;</a>
+                    </div>
+                </div>
+                <!-- Example Card -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400">Image Placeholder
+                    </div>
+                    <div class="p-6">
+                        <div class="text-brand-red text-xs font-bold uppercase tracking-widest mb-2">Healthcare</div>
+                        <h3 class="font-bold text-slate-900 text-xl mb-3">Patient-First Digital Twin</h3>
+                        <p class="text-slate-500 text-sm mb-4">Redefining the patient journey through signal
+                            intelligence and data.</p>
+                        <a href="#" class="text-brand-red font-bold text-sm hover:underline">Read Case Study &rarr;</a>
+                    </div>
+                </div>
+                <!-- Example Card -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400">Image Placeholder
+                    </div>
+                    <div class="p-6">
+                        <div class="text-brand-red text-xs font-bold uppercase tracking-widest mb-2">Finance</div>
+                        <h3 class="font-bold text-slate-900 text-xl mb-3">The Future of Fintech</h3>
+                        <p class="text-slate-500 text-sm mb-4">Navigating regulatory changes with signal-driven
+                            strategy.</p>
+                        <a href="#" class="text-brand-red font-bold text-sm hover:underline">Read Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+        <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <img src="assets/Screenshot_2025-08-16_210411-removebg-preview_1755358578121-zS6HG1qN.png" alt="INSTAURA" class="h-12 mb-6 object-contain filter brightness-0 invert">
+                    <p class="text-gray-300 mb-6 leading-relaxed text-sm">
+                        Strategic consulting firm specializing in signal intelligence and market-driven growth strategies.
+                    </p>
+                </div>
+
+                <!-- Columns -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="services.html" class="hover:text-brand-red transition">Signal Architecture</a></li>
+                        <li><a href="gtm-funnels" class="hover:text-brand-red transition">GTM & Funnels</a></li>
+                        <li><a href="fund-raising" class="hover:text-brand-red transition">Fund Raising</a></li>
+                        <li><a href="strategy-consulting" class="hover:text-brand-red transition">Strategy Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Insights</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="insights.html" class="hover:text-brand-red transition">Signals That Close</a></li>
+                        <li><a href="case-studies.html" class="hover:text-brand-red transition">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-brand-red transition">About INSTAURA</a></li>
+                        <li><a href="verticals.html" class="hover:text-brand-red transition">Verticals</a></li>
+                        <li><a href="careers.html" class="hover:text-brand-red">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-red transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2025 Instaura Consulting. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="legal/terms.html" class="hover:text-brand-red transition">Terms</a>
+                    <a href="legal/privacy.html" class="hover:text-brand-red transition">Privacy</a>
+                    <a href="legal/disclaimer.html" class="hover:text-brand-red transition">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

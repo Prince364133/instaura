@@ -1,9 +1,13 @@
 RewriteEngine On
 
+# Redirect old GitHub Pages URLs to the new domain
+RewriteCond %{HTTP_HOST} ^prince364133\.github\.io$ [NC]
+RewriteRule ^instaura/(.*)$ https://consultinstaura.site/$1 [R=301,L]
+
 # Remove .html extension from URL
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\\.]+)$ $1.html [NC,L]
 
 # Force HTTPS (Optional but recommended)
 RewriteCond %{HTTPS} off
