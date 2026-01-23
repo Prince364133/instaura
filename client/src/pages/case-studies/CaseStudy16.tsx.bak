@@ -1,0 +1,358 @@
+import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { ArrowLeft, FileText, BookOpen } from "lucide-react";
+import { caseStudyAnimations } from "@/lib/animations";
+
+export default function CaseStudy16() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Breadcrumb Navigation */}
+      <header className="border-b border-gray-200 bg-white sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+          <nav className="flex items-center gap-2 text-sm text-gray-600">
+            <Link href="/insights" className="hover:text-brand-red transition-colors" data-testid="link-insights">
+              Insights
+            </Link>
+            <span>/</span>
+            <Link href="/case-studies" className="hover:text-brand-red transition-colors" data-testid="link-case-studies">
+              Case Studies
+            </Link>
+            <span>/</span>
+            <span className="text-gray-900 font-medium">Case Study #16</span>
+          </nav>
+          <div className="flex items-center gap-3">
+            <a
+              href="#contact"
+              className="text-sm px-4 py-2 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors"
+              data-testid="button-talk-to-yas"
+            >
+              Talk to Yas
+            </a>
+            <a
+              href="#contact"
+              className="text-sm px-4 py-2 bg-brand-red text-white rounded-full hover:opacity-90 transition-opacity"
+              data-testid="button-book-signal-call"
+            >
+              Book a Signal Call
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <motion.section
+        {...caseStudyAnimations.hero.section}
+        className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white"
+      >
+        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+          <motion.div
+            {...caseStudyAnimations.hero.title}
+          >
+            <p className="text-xs uppercase tracking-wider text-gray-400 font-medium" data-testid="text-case-number">
+              Case Study #16
+            </p>
+            <h1 className="mt-4 text-4xl md:text-6xl font-bold font-raleway leading-tight" data-testid="heading-title">
+              Frontier Positioning & Partner Thesis
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-4xl leading-relaxed" data-testid="text-subtitle">
+              Strong Series A raised, but growth stalled. The market couldn't understand: platform, tool, or infrastructure? Partners struggled to see alignment value.
+            </p>
+          </motion.div>
+
+          {/* Meta Badges */}
+          <motion.div
+            {...caseStudyAnimations.hero.badges}
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p className="text-xs text-gray-400 uppercase tracking-wide">Sector</p>
+              <p className="mt-2 font-semibold text-white" data-testid="text-sector">DeepTech & AI</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p className="text-xs text-gray-400 uppercase tracking-wide">Service</p>
+              <p className="mt-2 font-semibold text-white" data-testid="text-service">Strategy Consulting</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p className="text-xs text-gray-400 uppercase tracking-wide">Stage</p>
+              <p className="mt-2 font-semibold text-white" data-testid="text-stage">Series A → Series B Transition</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+              <p className="text-xs text-gray-400 uppercase tracking-wide">Region</p>
+              <p className="mt-2 font-semibold text-white" data-testid="text-region">USA & Europe (redacted)</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            {...caseStudyAnimations.hero.cta}
+            className="mt-10 flex flex-wrap gap-4"
+          >
+            <a
+              href="#contact"
+              className="px-8 py-4 bg-brand-red text-white rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg"
+              data-testid="button-cta-primary"
+            >
+              Talk to Yas
+            </a>
+            <a
+              href="#contact"
+              className="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+              data-testid="button-cta-secondary"
+            >
+              Book a Signal Call
+            </a>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* The Conundrum */}
+      <section className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <motion.div
+          {...caseStudyAnimations.section}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-conundrum">
+            The Conundrum
+          </h2>
+          <div className="mt-8 space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              The DeepTech AI startup had raised a strong Series A, but growth stalled. Their product pipeline was impressive, but the market couldn't understand where they fit: platform, tool, or infrastructure? Investors flagged lack of clarity in positioning, and potential partners struggled to see why they should align with the company versus established incumbents.
+            </p>
+            <blockquote className="border-l-4 border-brand-red pl-6 italic text-gray-800 text-xl my-8" data-testid="quote-conundrum">
+              "We were everywhere — AI for pharma, AI for mobility, AI for defense. Nobody knew what we truly were."
+            </blockquote>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Why It Mattered */}
+      <section className="bg-gray-50 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto px-6">
+          <motion.div
+            {...caseStudyAnimations.section}
+  
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-why-it-mattered">
+              Why It Mattered
+            </h2>
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
+              <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-lg text-gray-900">Dilution Across Verticals</h3>
+                <p className="mt-3 text-gray-700">Without strategic clarity, the company risked being diluted across multiple verticals.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-lg text-gray-900">Partner Conversations Stalled</h3>
+                <p className="mt-3 text-gray-700">Partner conversations stalled, leaving them without critical distribution leverage.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-semibold text-lg text-gray-900">Investors Wary of Scattered Story</h3>
+                <p className="mt-3 text-gray-700">Investors were wary of a scattered story, delaying Series B commitments.</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Approach */}
+      <section className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <motion.div
+          {...caseStudyAnimations.section}
+
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-approach">
+            Our Approach
+          </h2>
+          <p className="mt-4 text-lg text-gray-700">
+            We ran a Signal-Led Strategy Engagement to architect frontier positioning:
+          </p>
+          <div className="mt-10 grid lg:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl p-8 border-2 border-brand-red shadow-lg">
+              <p className="text-xs uppercase tracking-wider text-brand-red font-semibold">Step 1</p>
+              <h3 className="mt-3 text-xl font-bold text-gray-900">Signal Diagnostic</h3>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Identified what signal of inevitability the market could anchor to.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 2</p>
+              <h3 className="mt-3 text-xl font-bold text-gray-900">Narrative Reset</h3>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Positioned company as "frontier infrastructure for intelligent decision-making" instead of chasing multiple verticals.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 3</p>
+              <h3 className="mt-3 text-xl font-bold text-gray-900">Partner Thesis</h3>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Designed a partner-first strategy highlighting inevitability benefits for each ecosystem player (pharma → cost savings, defense → accuracy, mobility → reliability).
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold">Step 4</p>
+              <h3 className="mt-3 text-xl font-bold text-gray-900">Quarterly Strategy Sprints</h3>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Implemented a cadence where every 90 days, one new inevitability signal was created for investors and partners.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Metrics Dashboard */}
+      <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            {...caseStudyAnimations.section}
+  
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-metrics">
+              Metrics Dashboard
+            </h2>
+            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">Partner Adoption</p>
+                <p className="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-partner">3</p>
+                <p className="mt-2 text-gray-700">Enterprise-level collaborations in 2 quarters</p>
+              </div>
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">Investor Narrative</p>
+                <p className="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-investor">2 Leads</p>
+                <p className="mt-2 text-gray-700">Reframed positioning unlocked 2 lead investors for Series B</p>
+              </div>
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">Team Alignment</p>
+                <p className="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-team">Focused</p>
+                <p className="mt-2 text-gray-700">Focus shifted from "build for everyone" → "build core infrastructure"</p>
+              </div>
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">Execution Velocity</p>
+                <p className="mt-3 text-3xl font-extrabold text-gray-900" data-testid="metric-velocity">-50%</p>
+                <p className="mt-2 text-gray-700">Reduced wasted cycles across scattered pilots</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* The Outcome */}
+      <section className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <motion.div
+          {...caseStudyAnimations.section}
+
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-outcome">
+            The Outcome
+          </h2>
+          <div className="mt-8 space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              The company was reframed as a frontier AI infrastructure player, inevitable for multiple industries without chasing all at once. This clarity unlocked investor confidence and partner leverage, laying the groundwork for a strong Series B raise.
+            </p>
+          </div>
+          <figure className="mt-10 bg-gradient-to-br from-gray-50 to-white p-10 rounded-2xl border border-gray-200 shadow-sm">
+            <blockquote className="text-xl italic text-gray-800 leading-relaxed" data-testid="quote-outcome">
+              "We thought more verticals meant more opportunity. Instaura showed us that one frontier position could move everything. That saved us."
+            </blockquote>
+            <figcaption className="mt-6 text-sm text-gray-500 font-medium">— Founder (redacted)</figcaption>
+          </figure>
+        </motion.div>
+      </section>
+
+      {/* Related Resources */}
+      <section className="bg-gray-50 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <motion.div
+            {...caseStudyAnimations.section}
+  
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
+              Related Resources
+            </h2>
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
+              <Link href="/white-papers" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-center gap-2 text-brand-red">
+                    <FileText className="w-5 h-5" />
+                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
+                  </div>
+                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
+                    #11: Signal Velocity and Market Movement
+                  </h3>
+                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
+                    Understanding how clarity creates market gravity.
+                  </p>
+                </div>
+              </Link>
+              <Link href="/white-papers" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-center gap-2 text-brand-red">
+                    <FileText className="w-5 h-5" />
+                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
+                  </div>
+                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
+                    #16: Signal vs. Story — Why Belief Beats Performance
+                  </h3>
+                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
+                    How positioning creates inevitability in frontier markets.
+                  </p>
+                </div>
+              </Link>
+              <Link href="/clarity-series" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex items-center gap-2 text-brand-red">
+                    <BookOpen className="w-5 h-5" />
+                    <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
+                  </div>
+                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
+                    #17: When Expansion Becomes Noise
+                  </h3>
+                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
+                    Why strategic focus trumps vertical proliferation.
+                  </p>
+                </div>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <motion.div
+            {...caseStudyAnimations.section}
+  
+          >
+            <h2 className="text-4xl md:text-5xl font-bold font-raleway">Clarity → Movement.</h2>
+            <p className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed">
+              Your frontier isn't in doing more. It's in the one positioning that makes you inevitable. Architect the strategy before you scale.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+              <a
+                href="#contact"
+                className="px-8 py-4 bg-brand-red text-white rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg"
+                data-testid="button-final-cta-primary"
+              >
+                Talk to Yas
+              </a>
+              <a
+                href="#contact"
+                className="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+                data-testid="button-final-cta-secondary"
+              >
+                Book a Signal Call
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Back to Case Studies */}
+      <section className="border-t border-gray-200 bg-white py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <Link href="/case-studies" className="inline-flex items-center gap-2 text-brand-red hover:underline font-medium" data-testid="link-back">
+            <ArrowLeft className="w-4 h-4" />
+            Back to All Case Studies
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}

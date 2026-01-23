@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clarity Series | Instaura — Sharp. Surgical. Founder-ready.</title>
+  <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Load Inter font to match the design reference --><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Custom styles from the original file, perfectly matching the insight page */
+    body { 
+      font-family: 'Inter', sans-serif; /* Apply Inter font */
+    }
+    .instaura-red { color: #CF1E2A; }
+    .instaura-red-bg { background-color: #CF1E2A; }
+    .chip { 
+      border: 1px solid rgba(0, 0, 0, .08); 
+      padding: .35rem .75rem; 
+      border-radius: 9999px; 
+      font-size: .8rem;
+      transition: box-shadow 0.2s;
+    }
+    .chip:hover {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .card { 
+      border: 1px solid rgba(0, 0, 0, .08); 
+      border-radius: 1rem; 
+      background: #fff; 
+    }
+    .rail::-webkit-scrollbar { height: 8px; }
+    .rail::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 9999px; }
+    summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- HEADER --><!-- This header perfectly matches the sticky, blurred style --><header class="sticky top-0 z-40 bg-white/90 backdrop-filter backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <!-- ... existing header code ... --><a href="/" class="font-extrabold tracking-tight text-xl">INSTAURA<span class="instaura-red">.</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/services" class="hover:text-black text-gray-600">Services</a>
+        <a href="/verticals" class="hover:text-black text-gray-600">Verticals</a>
+        <a href="/insights" class="text-black font-semibold">INsights</a>
+        <a href="/about" class="hover:text-black text-gray-600">About</a>
+        <a href="/contact" class="hover:text-black text-gray-600">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="/signal-call" class="hidden sm:inline-block chip bg-white">Book a Signal Call</a>
+        <a href="/yas" class="instaura-red-bg text-white rounded-full px-4 py-2 text-sm font-medium hover:opacity-90 transition-opacity">Talk to Yas</a>
+      </div>
+      <button class="md:hidden chip bg-white">Menu</button>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB --><div class="bg-gray-50 px-6 py-3 text-sm border-b border-gray-200">
+    <!-- ... existing breadcrumb code ... --><div class="max-w-7xl mx-auto text-gray-600">
+      <a href="/" class="hover:underline">Home</a> /
+      <a href="/insights" class="hover:underline">INsights</a> /
+      <span class="text-gray-900 font-medium">Clarity Series</span>
+    </div>
+  </div>
+
+  <!-- HERO --><section class="px-6 pt-12 pb-10 bg-gray-50">
+    <!-- ... existing hero code ... --><div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-12"> <!-- Changed to span 12 as the right column is removed --><h1 class="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight">
+          Sharp. Surgical. <span class="instaura-red">Founder-ready</span>.
+        </h1>
+        <p class="mt-5 text-lg md:text-xl text-gray-700">
+          Clarity Series distills breakthroughs from real Signal Calls and mandates into concise essays that unlock bottlenecks fast.
+          Read in minutes. Apply the same day.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/yas" class="instaura-red-bg text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Talk to Yas</a>
+          <!-- Refined this button to use the 'chip' style for consistency with the image --><a href="#featured" class="chip bg-white px-6 py-3 rounded-full font-medium">Browse Posts</a>
+        </div>
+      </div>
+      <!-- Removed the "How to Use" card section
+      <div class="lg:col-span-4">
+        <div class="card p-6 shadow-sm">
+          <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">How to use</div>
+          <ul class="mt-2 text-sm text-gray-700 list-disc ml-5 space-y-1">
+            <li>Each post takes <b>5–7 minutes</b>.</li>
+            <li>Real rooms, redacted details.</li>
+            <li>Built to expose blind spots quickly.</li>
+            <li>Signal-first, no fluff.</li>
+          </ul>
+          <p class="mt-4 text-sm text-gray-600">Everything is HTML-only. No downloads. No forms. Just signal.</p>
+        </div>
+      </div>
+      --></div>
+  </section>
+
+  <!-- WHY CLARITY MATTERS --><!-- ... existing section ... --><section class="px-6 py-12 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center">Why Clarity Matters</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Belief before motion</h3>
+          <p class="mt-2 text-gray-700">Founders don’t fail for lack of effort — they fail when markets don’t believe. Clarity builds belief.</p>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">One shift, big delta</h3>
+          <p class="mt-2 text-gray-700">Each post demonstrates a single signal shift that changed the trajectory — fundraising, GTM, funnels, or strategy.</p>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Tactical & repeatable</h3>
+          <p class="mt-2 text-gray-700">Not theory. Field-tested patterns you can use the same day with your team, board, or investors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wrapper for Sticky Search + Posts --><div class="relative">
+
+    <!-- Title for the section --><div class="bg-white px-6 pt-12">
+      <div class="max-w-7xl mx-auto">
+         <h2 class="text-2xl font-bold">Browse by Theme</h2>
+      </div>
+    </div>
+
+    <!-- BROWSE BY THEME (NOW STICKY SEARCH BAR) --><!-- This will now stick to top-16, but only while scrolling within the parent 'div' --><section class="sticky top-16 z-30 bg-white/90 backdrop-filter backdrop-blur-md border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <!-- Left Side: Title and Search --><div class="flex-1">
+            <label for="search-input" class="text-xs uppercase text-gray-500 font-medium tracking-wider">Search</label>
+            <div class="relative mt-1">
+              <input type="text" id="search-input" placeholder="Search by title, theme, or content..."
+                     class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-red-400">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <svg class="w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Side: Count and Clear Button --><div class="flex items-center justify-between sm:justify-end gap-4">
+            <div class="text-sm text-gray-600 whitespace-nowrap">
+              <span id="post-count">20</span> results
+            </div>
+            <button id="clear-filter" class="chip bg-white whitespace-nowrap hover:bg-gray-100">Clear Filter</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED POSTS --><section id="featured" class="px-6 py-12">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-6" id="posts-grid">
+          <!-- Post 19 (New, added before) --><a href="/insights/clarity/gtm-playbook-collapsed-sales-cycle" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="GTM, B2B Sales, Signal Velocity">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">GTM • B2B Sales • Signal Velocity</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The GTM Playbook That Collapsed a Sales Cycle</h3>
+            <p class="mt-2 text-sm text-gray-700">Why signal-first design turned a 6-month sales grind into a 30-day close.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 20 (New, added before) --><a href="/insights/clarity/signal-that-closed-without-product" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Pre-Product, Signal as the Only Basis">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Pre-Product • Signal as the Only Basis</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Signal That Closed Without a Product</h3>
+            <p class="mt-2 text-sm text-gray-700">Why belief moves first, and why sometimes the product comes later.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 1 (From Doc #1) --><a href="/insights/clarity/silence-closed-4m-deal" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Negotiation, Signal Dynamics">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Negotiation • Signal Dynamics</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Silence That Closed a $4M Deal</h3>
+            <p class="mt-2 text-sm text-gray-700">How one moment of deliberate silence reframed belief, reversed terms, and secured capital — on our conditions.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 2 (From Doc #2) --><a href="/insights/clarity/investor-calls-that-convert" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Signal Choreography, Founder Dynamics">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Signal Choreography • Founder Dynamics</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">Investor Calls That Convert</h3>
+            <p class="mt-2 text-sm text-gray-700">Why most founders leak signal on investor calls — and the 3 shifts that change silence into belief.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 3 (From Doc #3) --><a href="/insights/clarity/stop-iterating-start-signaling" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Product Strategy, Founder Psychology, Signal vs. Noise">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Product Strategy • Founder Psychology • Signal vs. Noise</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">When to Stop Iterating and Start Signaling</h3>
+            <p class="mt-2 text-sm text-gray-700">Founders stuck in the pivot loop don’t need another version — they need belief.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 4 (From Doc #4) --><a href="/insights/clarity/price-that-built-belief" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Pricing, GTM, Signal as Proof">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Pricing • GTM • Signal as Proof</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Price That Built Belief</h3>
+            <p class="mt-2 text-sm text-gray-700">Why raising price reduced friction, clarified positioning, and moved the market.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 5 (From Doc #5) --><a href="/insights/clarity/first-slide-that-wins-investor-meetings" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Pitch Design, Signal Architecture">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Pitch Design • Signal Architecture</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The First Slide That Wins Investor Meetings</h3>
+            <p class="mt-2 text-sm text-gray-700">Why most decks fail before they start — and the one opening signal that shifts investor belief instantly.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 6 (From Doc #6) --><a href="/insights/clarity/reversing-churn-with-narrative" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="SaaS, Retention, Narrative as Signal">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">SaaS • Retention • Narrative as Signal</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">Reversing Churn with Narrative</h3>
+            <p class="mt-2 text-sm text-gray-700">Why metrics don’t always save you — but recalibrating your signal story can.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 7 (From Doc #7) --><a href="/insights/clarity/why-your-traction-is-invisible" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Traction, Signal vs. Numbers">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Traction • Signal vs. Numbers</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">Why Your Traction Is Invisible</h3>
+            <p class="mt-2 text-sm text-gray-700">Because numbers don’t move investors — signals do.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 8 (From Doc #8) --><a href="/insights/clarity/signals-that-unlock-first-customers" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="GTM, Early Customer Acquisition, Signal in Sales">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">GTM • Early Customer Acquisition • Signal in Sales</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">Signals That Unlock First Customers</h3>
+            <p class="mt-2 text-sm text-gray-700">Why your first 10 customers don’t come from features, but from the signals you send.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 9 (From Doc #9) --><a href="/insights/clarity/the-founders-filter" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Founder Psychology, Decision-Making, Signal vs. Noise">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Founder Psychology • Decision-Making • Signal vs. Noise</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Founder’s Filter</h3>
+            <p class="mt-2 text-sm text-gray-700">Why founders hear signal as noise — and noise as signal — and how to flip the filter.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 10 (New) --><a href="/insights/clarity/single-email-opened-market" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="GTM, Outreach, Signal Writing">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">GTM • Outreach • Signal Writing</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Single Email That Opened a Market</h3>
+            <p class="mt-2 text-sm text-gray-700">Why one signal-rich outreach outperformed months of cold campaigns.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 11 (New) --><a href="/insights/clarity/one-hire-changed-everything" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Talent, Fund Raising, Signal in Leadership">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Talent • Fund Raising • Signal in Leadership</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The One Hire That Changed Everything</h3>
+            <p class="mt-2 text-sm text-gray-700">Why the right signal hire does more than fill a role — it rewires belief across investors, customers, and teams.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 12 (New) --><a href="/insights/clarity/when-vcs-say-too-early" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Investor Dynamics, Signal Decoding">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Investor Dynamics • Signal Decoding</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">When VCs Say “Too Early”</h3>
+            <p class="mt-2 text-sm text-gray-700">They don’t mean the stage. They mean the signal.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 13 (New) --><a href="/insights/clarity/investor-who-walked-away" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Negotiation, Founder Psychology">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Negotiation • Founder Psychology</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Investor Who Walked Away — and Why That Was the Win</h3>
+            <p class="mt-2 text-sm text-gray-700">Sometimes the best raise is the one you don’t close.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 14 (New) --><a href="/insights/clarity/from-noise-to-belief-in-14-days" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, Narrative, Signal Velocity">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • Narrative • Signal Velocity</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">From Noise to Belief in 14 Days</h3>
+            <p class="mt-2 text-sm text-gray-700">Why signal — not time — determines how fast you move the market.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 15 (New) --><a href="/insights/clarity/gtm-sprint-that-reframed-market" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="GTM, Market Entry, Signal in Execution">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">GTM • Market Entry • Signal in Execution</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The GTM Sprint That Reframed an Entire Market</h3>
+            <p class="mt-2 text-sm text-gray-700">When 90 days of signal-first GTM did what 18 months of noise couldn’t.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 16 (New) --><a href="/insights/clarity/when-storytelling-becomes-noise" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, GTM, Branding vs. Signal">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • GTM • Branding vs. Signal</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">When Storytelling Becomes Noise</h3>
+            <p class="mt-2 text-sm text-gray-700">Stories are memorable. Signals are believable. The difference decides outcomes.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 17 (New) --><a href="/insights/clarity/funnel-not-broken-signal-is" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Funnels, GTM, Signal in Growth">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Funnels • GTM • Signal in Growth</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">Your Funnel Is Not Broken, Your Signal Is</h3>
+            <p class="mt-2 text-sm text-gray-700">Funnels don’t fail because of software. They fail because of what you’re signaling.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+          <!-- Post 18 (New) --><a href="/insights/clarity/proof-artifact-that-closed-deal" class="post card p-6 shadow-sm hover:shadow-lg transition-shadow group"
+             data-theme="Fund Raising, GTM, Signal Proof">
+            <div class="text-xs uppercase text-gray-500 font-medium tracking-wider">Fund Raising • GTeam • Signal Proof</div>
+            <h3 class="mt-2 font-semibold group-hover:underline text-lg">The Proof Artifact That Closed the Deal</h3>
+            <p class="mt-2 text-sm text-gray-700">Belief doesn’t move because of decks or pitches. It moves because of proof.</p>
+            <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+          </a>
+        </div>
+        
+        <!-- No Results Message --><div id="no-results" class="text-center text-gray-600 py-12 hidden">
+          <h3 class="text-xl font-semibold">No posts found</h3>
+          <p class="mt-2 text-gray-500">Try adjusting your search term.</p>
+        </div>
+
+      </div>
+    </section>
+  </div> <!-- End of Wrapper --><!-- TESTIMONIALS STRIP --><!-- ... existing section ... --><section class="px-6 py-12">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold">What Founders Say (Redacted)</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <blockquote class="card p-6 shadow-sm">
+          <p class="text-gray-800">“I saw myself in one of the posts. It was eerie. And it changed how I pitch.”</p>
+          <div class="text-xs text-gray-500 mt-3 font-medium tracking-wider">FOUNDER • DEEPTECH</div>
+        </blockquote>
+        <blockquote class="card p-6 shadow-sm">
+          <p class="text-gray-800">“Not theory. Not fluff. It felt like I was in the room.”</p>
+          <div class="text-xs text-gray-500 mt-3 font-medium tracking-wider">CEO • SAAS</div>
+        </blockquote>
+        <blockquote class="card p-6 shadow-sm">
+          <p class="text-gray-800">“Best 5-minute reads I’ve found as a founder.”</p>
+          <div class="text-xs text-gray-500 mt-3 font-medium tracking-wider">CO-FOUNDER • CONSUMER</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEDIGREE / STATS --><!-- ... existing section ... --><section class="px-6 py-12">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold">Signals Delivered</h2>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">18</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1 font-medium tracking-wider">Years</div>
+        </div>
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">2500+</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1 font-medium tracking-wider">Clients</div>
+        </div>
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">250+</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1 font-medium tracking-wider">Movements</div>
+        </div>
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">$2B+</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1 font-medium tracking-wider">Moved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA --><!-- ... existing section ... --><section class="px-6 py-14 bg-black text-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-semibold">Minutes to read. Years of mistakes avoided.</h3>
+      <p class="text-gray-300 mt-3">
+        Clarity Series is your shortcut to founder breakthroughs. Don’t wait for the next crisis to learn.
+        Learn now — and move with clarity.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
+        <a href="/yas" class="instaura-red-bg text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Talk to Yas</a>
+        <a href="/signal-call" class="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors">Book a Signal Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER --><!-- ... existing section ... --><footer class="px-6 py-10 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm text-gray-600">&copy; <span id="y"></span> Instaura Consulting</div>
+      <div class="flex gap-5 text-sm">
+        <a href="/legal/privacy" class="text-gray-600 hover:text-black">Privacy</a>
+        <a href="/legal/terms" class="text-gray-600 hover:text-black">Terms</a>
+        <a href="/legal/disclaimers" class="text-gray-600 hover:text-black">Disclaimers</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UPDATED SCRIPT FOR SEARCH FILTER --><script>
+    // Set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // NEW Search filtering logic
+    const searchInput = document.getElementById('search-input');
+    const clearButton = document.getElementById('clear-filter');
+    const postsGrid = document.getElementById('posts-grid');
+    const posts = Array.from(postsGrid.querySelectorAll('.post'));
+    const countSpan = document.getElementById('post-count');
+    const noResultsDiv = document.getElementById('no-results');
+
+    function applyFilter() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      posts.forEach(post => {
+        const title = (post.querySelector('h3')?.textContent || '').toLowerCase();
+        const description = (post.querySelector('p')?.textContent || '').toLowerCase();
+        const themes = (post.getAttribute('data-theme') || '').toLowerCase();
+        
+        const isMatch = title.includes(searchTerm) || 
+                        description.includes(searchTerm) || 
+                        themes.includes(searchTerm);
+        
+        post.style.display = isMatch ? '' : 'none';
+        if (isMatch) {
+          visibleCount++;
+        }
+      });
+
+      countSpan.textContent = visibleCount;
+      
+      // Show or hide the "no results" message
+      if (visibleCount === 0) {
+        noResultsDiv.style.display = 'block';
+      } else {
+        noResultsDiv.style.display = 'none';
+      }
+    }
+
+    // Event Listeners
+    searchInput.addEventListener('input', applyFilter);
+    
+    clearButton.addEventListener('click', () => {
+      searchInput.value = '';
+      applyFilter();
+    });
+
+    // Initial filter apply on page load
+    applyFilter();
+  </script>
+</body>
+</html>
+

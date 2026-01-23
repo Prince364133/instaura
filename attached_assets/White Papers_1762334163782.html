@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>White Papers | Instaura — Signal, Researched. Signal, Applied.</title>
+  
+  <!-- Load Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Load Inter font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Custom styles from original file */
+    .instaura-red{color:#CF1E2A}
+    .instaura-red-bg{background-color:#CF1E2A}
+    .chip{border:1px solid rgba(0,0,0,.08); padding:.35rem .75rem; border-radius:9999px; font-size:.8rem}
+    .card{border:1px solid rgba(0,0,0,.08); border-radius:1rem; background:#fff}
+    .rail::-webkit-scrollbar{height:8px}
+    .rail::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:9999px}
+    summary::-webkit-details-marker{display:none}
+
+    /* Style for select dropdown arrows */
+    select {
+      appearance: none;
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="%236b7280" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 8 4 4 4-4"/></svg>');
+      background-position: right 0.75rem center;
+      background-repeat: no-repeat;
+      background-size: 1.25em 1.25em;
+      padding-right: 2.5rem;
+    }
+  </style>
+  
+  <!-- Configure Tailwind to use Inter as the default font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-filter backdrop-blur border-b border-gray-100">
+    <!-- ... existing header code ... -->
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="font-extrabold tracking-tight text-xl">INSTAURA<span class="instaura-red">.</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/services" class="hover:text-black text-gray-600">Services</a>
+        <a href="/verticals" class="hover:text-black text-gray-600">Verticals</a>
+        <a href="/insights" class="text-black font-semibold">INsights</a>
+        <a href="/about" class="hover:text-black text-gray-600">About</a>
+        <a href="/contact" class="hover:text-black text-gray-600">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-2">
+        <a href="/signal-call" class="hidden sm:inline-block chip">Book a Signal Call</a>
+        <a href="/yas" class="instaura-red-bg text-white rounded-full px-4 py-2 text-sm">Talk to Yas</a>
+      </div>
+      <button class="md:hidden chip">Menu</button>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-gray-50 px-6 py-3 text-sm">
+    <!-- ... existing breadcrumb code ... -->
+    <div class="max-w-7xl mx-auto text-gray-600">
+      <a href="/" class="hover:underline">Home</a> /
+      <a href="/insights" class="hover:underline">INsights</a> /
+      <span class="text-gray-900 font-medium">White Papers</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="px-6 pt-12 pb-10 bg-gray-50">
+    <!-- ... existing hero code ... -->
+    <div class="max-w-7xl mx-auto">
+      <div class="lg:col-span-12">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.05]">
+          Signal, <span class="instaura-red">Researched</span>. Signal, Applied.
+        </h1>
+        <p class="mt-5 text-lg md:text-xl text-gray-700 max-w-4xl">
+          Research-backed frameworks built on 18 years of Signal Intelligence, 2,500+ clients, 250+ movements, and $2B+ moved.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/yas" class="instaura-red-bg text-white px-6 py-3 rounded-full">Talk to Yas</a>
+          <a href="#featured" class="border border-gray-900 px-6 py-3 rounded-full">Browse White Papers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WHITE PAPERS MATTER -->
+  <section class="px-6 py-12">
+    <!-- ... existing why matters code ... -->
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold">Why White Papers Matter</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Frameworks over opinions</h3>
+          <p class="mt-2 text-gray-700">Founders need more than stories — they need field-tested frameworks that travel across markets.</p>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Clarity before commitment</h3>
+          <p class="mt-2 text-gray-700">Executives require belief-backed clarity before committing capital and direction.</p>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Conviction that holds</h3>
+          <p class="mt-2 text-gray-700">Investors need methods that were proven in the wild — not theorized in isolation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE BY THEME (REMOVED) -->
+  
+  <!-- FEATURED WHITE PAPERS (NOW AFTER THEMES) -->
+  <section id="featured" class="px-6 py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      
+      <h2 class="text-2xl font-bold mb-6">Browse by Theme</h2>
+
+      <!-- MODIFICATION: Added filter bar -->
+      <div class="sticky top-16 z-30 bg-gray-50 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Search Input -->
+          <div>
+            <label for="wp-search-input" class="text-xs uppercase text-gray-500">Search</label>
+            <input id="wp-search-input" type="search" placeholder="Search by sector, service, or outcome..."
+                   class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black">
+          </div>
+          <!-- Sector Select -->
+          <div>
+            <label for="wp-sector-select" class="text-xs uppercase text-gray-500">Sector</label>
+            <select id="wp-sector-select" class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-black">
+              <option>All Sectors</option>
+              <option>SaaS</option>
+              <option>Enterprise</option>
+              <option>DeepTech</option>
+            </select>
+          </div>
+          <!-- Service Select -->
+          <div>
+            <label for="wp-service-select" class="text-xs uppercase text-gray-500">Service</label>
+            <select id="wp-service-select" class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-black">
+              <option>All Services</option>
+              <option>Strategy</option>
+              <option>GTM</option>
+              <option>Fundraising</option>
+              <option>Pricing</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-600">
+            <span id="wp-count">20</span> results
+          </div>
+          <button id="wp-clear-filters" class="text-sm text-gray-600 hover:text-black border border-gray-300 rounded-full px-4 py-1">
+            Clear Filters
+          </button>
+        </div>
+      </div>
+      <!-- END MODIFICATION -->
+
+      <div id="wp-grid" class="mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Card 1 (From Doc) -->
+        <a href="/insights/white-papers/pricing-as-signal" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="SaaS" data-service="Pricing">
+          <div class="text-xs uppercase text-gray-500">Pricing • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Pricing as Signal</h3>
+          <p class="mt-2 text-sm text-gray-700">Your price is the first story you tell. It encodes strength or fragility long before your deck or demo does.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 2 (From Doc) -->
+        <a href="/insights/white-papers/signal-first-pitch-decks" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Fundraising">
+          <div class="text-xs uppercase text-gray-500">Fund Raising • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Signal-First Pitch Decks</h3>
+          <p class="mt-2 text-sm text-gray-700">Investors don’t invest in slides. They invest in the signal your slides transmit.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 3 (From Doc) -->
+        <a href="/insights/white-papers/narrative-as-a-retention-signal" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="SaaS" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Retention • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Narrative as a Retention Signal</h3>
+          <p class="mt-2 text-sm text-gray-700">Customers don’t stay because of contracts. They stay because of the signal they believe in.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 4 (From Doc) -->
+        <a href="/insights/white-papers/signal-mechanics-in-investor-narratives" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Fundraising">
+          <div class="text-xs uppercase text-gray-500">Fund Raising • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Signal Mechanics in Investor Narratives</h3>
+          <p class="mt-2 text-sm text-gray-700">It’s not the words you say, but the signals they encode that decide investor belief.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 5 (From Doc) -->
+        <a href="/insights/white-papers/gtm-as-signal-not-execution" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="GTM">
+          <div class="text-xs uppercase text-gray-500">GTM • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">GTM as Signal, Not Execution</h3>
+          <p class="mt-2 text-sm text-gray-700">GTM isn’t about noise-making activities. It’s about transmitting belief to the market.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 6 (From Doc) -->
+        <a href="/insights/white-papers/signal-vs-noise-in-founder-decision-making" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Strategy • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Signal vs. Noise in Founder Decision-Making</h3>
+          <p class="mt-2 text-sm text-gray-700">Founders don’t fail because of lack of effort. They fail because they mistake noise for signal.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 7 (From Doc) -->
+        <a href="/insights/white-papers/outreach-as-signal-not-spam" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="SaaS" data-service="GTM">
+          <div class="text-xs uppercase text-gray-500">GTM • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Outreach as Signal, Not Spam</h3>
+          <p class="mt-2 text-sm text-gray-700">Every touchpoint you send is a signal. Done wrong, it’s spam. Done right, it’s inevitability.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 8 (From Doc) -->
+        <a href="/insights/white-papers/talent-as-signal-in-early-stage-growth" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="DeepTech" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Talent • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Talent as Signal in Early-Stage Growth</h3>
+          <p class="mt-2 text-sm text-gray-700">Early hires are not just operators. They are living signals to investors, customers, and markets.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 9 (From Doc) -->
+        <a href="/insights/white-papers/decoding-investor-language-as-signal" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="DeepTech" data-service="Fundraising">
+          <div class="text-xs uppercase text-gray-500">Fund Raising • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Decoding Investor Language as Signal</h3>
+          <p class="mt-2 text-sm text-gray-700">Investors rarely say what they mean. Their words are signals — if you know how to decode them.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 10 (From New Doc) -->
+        <a href="/insights/white-papers/the-cost-of-wrong-capital" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Fundraising">
+          <div class="text-xs uppercase text-gray-500">Fund Raising • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">The Cost of Wrong Capital</h3>
+          <p class="mt-2 text-sm text-gray-700">Not all money is equal. The wrong capital erodes signal, slows growth, and can even kill inevitability.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 11 (From New Doc) -->
+        <a href="/insights/white-papers/signal-velocity-and-market-movement" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Signal • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Signal Velocity and Market Movement</h3>
+          <p class="mt-2 text-sm text-gray-700">Markets don’t move because of signal alone. They move because of how fast signal spreads, compounds, and recalibrates belief.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 12 (From New Doc) -->
+        <a href="/insights/white-papers/signal-first-gtm-design" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="GTM">
+          <div class="text-xs uppercase text-gray-500">GTM • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Signal-First GTM Design</h3>
+          <p class="mt-2 text-sm text-gray-700">GTM isn’t about launching campaigns. It’s about designing the signal that makes your market move.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 13 (From New Doc) -->
+        <a href="/insights/white-papers/funnel-design-as-signal-architecture" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="SaaS" data-service="GTM">
+          <div class="text-xs uppercase text-gray-500">Funnels • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Funnel Design as Signal Architecture</h3>
+          <p class="mt-2 text-sm text-gray-700">Funnels aren’t websites with forms. They are the choreography of belief, designed to transmit signal at every step.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 14 (From New Doc) -->
+        <a href="/insights/white-papers/proof-as-signal-in-fund-raising" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Fundraising">
+          <div class="text-xs uppercase text-gray-500">Fund Raising • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Proof as Signal in Fund Raising</h3>
+          <p class="mt-2 text-sm text-gray-700">Investors don’t buy vision. They buy proof signals that encode inevitability.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 15 (From New Doc) -->
+        <a href="/insights/white-papers/the-gtm-sprint-that-reframed-a-market" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="GTM">
+          <div class="text-xs uppercase text-gray-500">GTM • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">The GTM Sprint That Reframed a Market</h3>
+          <p class="mt-2 text-sm text-gray-700">Markets don’t reframe with activity. They reframe when one decisive GTM sprint transmits inevitability.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 16 (From New Doc) -->
+        <a href="/insights/white-papers/signal-vs-story" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Signal • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Signal vs. Story — Why Belief Beats Performance</h3>
+          <p class="mt-2 text-sm text-gray-700">Performance alone doesn’t raise capital. Stories don’t close markets. Signal does.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 17 (From New Doc) -->
+        <a href="/insights/white-papers/when-storytelling-becomes-noise" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Storytelling • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">When Storytelling Becomes Noise</h3>
+          <p class="mt-2 text-sm text-gray-700">A good story entertains. A strong signal moves markets. Know the difference.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 18 (From New Doc) -->
+        <a href="/insights/white-papers/why-more-data-creates-more-confusion" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Founder Decisions • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Why More Data Creates More Confusion</h3>
+          <p class="mt-2 text-sm text-gray-700">Founders don’t fail because they lack data. They fail because they drown in it.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 19 (From New Doc) -->
+        <a href="/insights/white-papers/why-vc-deal-flow-depends-on-signal" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Strategy">
+          <div class="text-xs uppercase text-gray-500">Venture Capital • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Why VC Deal Flow Depends on Signal</h3>
+          <p class="mt-2 text-sm text-gray-700">VCs don’t hunt deals. Deals flow to the VCs with the strongest signals.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+        <!-- Card 20 (From New Doc) -->
+        <a href="/insights/white-papers/capital-as-signal-not-commodity" class="wp-card card p-6 shadow-sm hover:shadow-md transition group"
+           data-sector="Enterprise" data-service="Fundraising">
+          <div class="text-xs uppercase text-gray-500">Fund Raising • White Paper</div>
+          <h3 class="mt-2 font-semibold group-hover:underline">Capital as Signal, Not Commodity</h3>
+          <p class="mt-2 text-sm text-gray-700">Markets don’t treat capital as fuel. They decode it as signal.</p>
+          <span class="mt-3 inline-block text-sm instaura-red font-semibold">Read →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- METHODOLOGY TRANSPARENCY -->
+  <section class="px-6 py-12 bg-gray-50">
+    <!-- ... existing methodology code ... -->
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold">Methodology Transparency</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Field-tested work</h3>
+          <p class="mt-2 text-gray-700">Derived from real mandates (redacted), across sectors and geographies.</p>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Signal frameworks</h3>
+          <p class="mt-2 text-gray-700">Proprietary models developed through 18 years of pattern recognition.</p>
+        </div>
+        <div class="card p-6 shadow-sm">
+          <h3 class="font-semibold instaura-red">Market calibration</h3>
+          <p class="mt-2 text-gray-700">Triangulated against investors, buyers, and founder behavior before publishing.</p>
+        </div>
+      </div>
+      <p class="mt-6 text-sm text-gray-700">No academic noise. Only frameworks that drive belief.</p>
+    </div>
+  </section>
+
+  <!-- PEDIGREE -->
+  <section class="px-6 py-12">
+    <!-- ... existing pedigree code ... -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold">Signals Delivered</h2>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">18</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1">Years</div>
+        </div>
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">2500+</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1">Clients</div>
+        </div>
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">250+</div>
+          <div class="text-[1lpx] uppercase text-gray-500 mt-1">Movements</div>
+        </div>
+        <div class="text-center card p-6">
+          <div class="text-3xl font-extrabold instaura-red">$2B+</div>
+          <div class="text-[11px] uppercase text-gray-500 mt-1">Moved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="px-6 py-14 bg-black text-white text-center">
+    <!-- ... existing cta code ... -->
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-semibold">Clarity that multiplies.</h3>
+      <p class="text-gray-300 mt-3">
+        White Papers are not for reading alone — they are for acting. Signal cannot remain theoretical. It must become movement.
+      </S>
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="/yas" class="instaura-red-bg text-white px-6 py-3 rounded-full">Talk to Yas</a>
+        <a href="/signal-call" class="bg-white text-black px-6 py-3 rounded-full">Book a Signal Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- ... existing footer code ... -->
+  <footer class="px-6 py-10 bg-black text-gray-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm">&copy; <span id="y"></span> Instaura Consulting</div>
+      <div class="flex gap-5 text-sm">
+        <a href="/legal/privacy" class="hover:text-white">Privacy</a>
+        <a href="/legal/terms" class="hover:text-white">Terms</a>
+        <a href="/legal/disclaimers" class="hover:text-white">Disclaimers</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // FIX: Renamed 'y' to 'yearSpan' to avoid declaration conflict and added null check
+    const yearSpan = document.getElementById('y'); 
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // MODIFICATION: Added full filter logic
+    const cards = Array.from(document.querySelectorAll('.wp-card'));
+    const count = document.getElementById('wp-count');
+    const searchInput = document.getElementById('wp-search-input');
+    const sectorSelect = document.getElementById('wp-sector-select');
+    const serviceSelect = document.getElementById('wp-service-select');
+    const clearButton = document.getElementById('wp-clear-filters');
+
+    function filterCards() {
+      const query = searchInput.value.trim().toLowerCase();
+      const sector = sectorSelect.value;
+      const service = serviceSelect.value;
+      
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        const cardSector = card.getAttribute('data-sector') || '';
+        const cardService = card.getAttribute('data-service') || '';
+
+        const matchQuery = !query || text.includes(query);
+        const matchSector = sector === 'All Sectors' || cardSector === sector;
+        const matchService = service === 'All Services' || cardService === service;
+
+        const show = matchQuery && matchSector && matchService;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      
+      if (count) {
+        count.textContent = visible;
+      }
+    }
+
+    function clearFilters() {
+      searchInput.value = '';
+      sectorSelect.value = 'All Sectors';
+      serviceSelect.value = 'All Services';
+      filterCards();
+    }
+
+    // Add event listeners
+    if (searchInput) searchInput.addEventListener('input', filterCards);
+    if (sectorSelect) sectorSelect.addEventListener('change', filterCards);
+    if (serviceSelect) serviceSelect.addEventListener('change', filterCards);
+    if (clearButton) clearButton.addEventListener('click', clearFilters);
+
+    // Initial count
+    filterCards();
+  </script>
+</body>
+</html>
+
+
+
+
+
+

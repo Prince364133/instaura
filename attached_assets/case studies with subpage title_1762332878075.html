@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Fixed viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title from the original HTML file -->
+    <title>Case Studies | Instaura - Signals in Action. Movements Delivered.</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font used in the design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom styles based on both files -->
+    <style>
+        /* Apply Inter font as the default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Instaura brand colors from the HTML (Fixed formatting) */
+        .instaura-red {
+            color: #CF1E2A;
+        }
+
+        .instaura-red-bg {
+            background-color: #CF1E2A;
+        }
+
+        /* Re-styling the chip from the HTML to be more flexible (Fixed formatting) */
+        .chip {
+            display: inline-block;
+            border: 1px solid #e5e7eb;
+            /* Use Tailwind's gray-200 */
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            /* 14px */
+            font-weight: 500;
+            background-color: #ffffff;
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            background-color: #f9fafb;
+            /* gray-50 */
+            border-color: #d1d5db;
+            /* gray-300 */
+        }
+
+        /* Base card style from the 'insight page.jpg' design (Fixed formatting) */
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
+            border-radius: 1rem;
+            /* 16px, more rounded */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px 2px rgba(0, 0, 0, 0.03);
+            transition: all 0.2s;
+        }
+
+        .card-hover:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px 4px rgba(0, 0, 0, 0.07);
+            transform: translateY(-2px);
+        }
+
+        /* Hide scrollbar for the chip container (Fixed formatting) */
+        .chip-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .chip-container {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- HEADER -->
+    <!-- This header is from the HTML, which matches the design in the image -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-filter backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="font-extrabold tracking-tight text-xl">INSTAURA<span class="instaura-red">.</span></a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="/services" class="hover:text-black text-gray-600">Services</a>
+                <a href="/verticals" class="hover:text-black text-gray-600">Verticals</a>
+                <a href="/insights" class="hover:text-black text-gray-600">INsights</a>
+                <a href="/about" class="hover:text-black text-gray-600">About</a>
+                <a href="/contact" class="hover:text-black text-gray-600">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="/signal-call" class="hidden sm:inline-block chip">Book a Signal Call</a>
+                <!-- Using the button style from the image -->
+                <a href="/yas" class="instaura-red-bg text-white rounded-full px-5 py-2 text-sm font-semibold shadow-sm hover:opacity-90 transition">Talk
+                    to Yas</a>
+                <button class="md:hidden chip">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <!-- From the HTML, styled to be subtle -->
+    <div class="bg-gray-50 px-6 py-3 text-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto text-gray-600">
+            <a href="/" class="hover:underline">Home</a> /
+            <a href="/insights" class="hover:underline">INsights</a> /
+            <span class="text-gray-900 font-medium">Case Studies</span>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <!-- Using the content from the HTML in the centered layout from the image -->
+    <section class="px-6 pt-20 pb-16 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                Signals in Action. <span class="instaura-red">Movements Delivered</span>.
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+                Redacted for confidentiality. Clear for learning. Filter by sector, service, or outcome to see
+                how signal reshaped trajectories.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="/yas" class="instaura-red-bg text-white px-7 py-3 rounded-full font-semibold
+           shadow-lg hover:opacity-90 transition">Talk to Yas</a>
+                <a href="#library" class="border border-gray-900 text-gray-900 bg-white px-7 py-3
+           rounded-full font-semibold shadow-sm hover:bg-gray-50 transition">Browse Library</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION ('Pedigree') -->
+    <!-- Using the 4-col layout from the image with the stat content from the HTML -->
+    <section class="pb-16 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-center text-3xl font-bold mb-4">Our Pedigree</h2>
+            <p class="text-center text-lg text-gray-700 mb-10">First &amp; only <span class="font-semibold">Signal-Driven Consulting Firm</span>.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <!-- Stat Card 1 -->
+                <div class="card text-center p-6">
+                    <div class="text-4xl font-extrabold instaura-red">18</div>
+                    <div class="text-sm uppercase text-gray-500 mt-2 font-medium">Years</div>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="card text-center p-6">
+                    <div class="text-4xl font-extrabold instaura-red">2500+</div>
+                    <div class="text-sm uppercase text-gray-500 mt-2 font-medium">Clients</div>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="card text-center p-6">
+                    <div class="text-4xl font-extrabold instaura-red">250+</div>
+                    <div class="text-sm uppercase text-gray-500 mt-2 font-medium">Movements</div>
+                </div>
+                <!-- Stat Card 4 -->
+                <div class="card text-center p-6">
+                    <div class="text-4xl font-extrabold instaura-red">$2B+</div>
+                    <div class="text-sm uppercase text-gray-500 mt-2 font-medium">Moved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH + FILTERS -->
+    <!-- From the HTML, styled as a sticky card. This is critical for the page. -->
+    <section class="sticky top-16 z-30 bg-white/95 backdrop-filter backdrop-blur-md border-b
+   border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-5">
+            <div class="grid md:grid-cols-4 gap-4">
+                <!-- Search Input -->
+                <div class="md:col-span-2">
+                    <label for="cs-search" class="text-xs uppercase text-gray-500
+  font-medium">Search</label>
+                    <input id="cs-search" type="search" placeholder="Search by sector, service, or
+   outcome..." class="w-full mt-1 border border-gray-300 rounded-xl px-4 py-3 text-base
+   focus:outline-none focus:ring-2 focus:ring-black focus:border-black" />
+                </div>
+                <!-- Sector Filter -->
+                <div>
+                    <label for="filter-sector" class="text-xs uppercase text-gray-500
+   font-medium">Sector</label>
+                    <select id="filter-sector" class="w-full mt-1 border border-gray-300 rounded-xl px-3 py-3
+  text-base bg-white focus:outline-none focus:ring-2 focus:ring-black focus:border-black">
+                        <option value="">All Sectors</option>
+                        <!-- Updated options based on new case studies -->
+                        <option>Technology</option>
+                        <option>Consumer Products</option>
+                        <option>Healthcare & Pharma</option>
+                        <!-- Other options from original file -->
+                        <option>DeepTech & Al</option>
+                        <option>BFSI</option>
+                        <option>Real Estate</option>
+                        <option>Defense</option>
+                        <option>Manufacturing</option>
+                        <option>Education</option>
+                        <option>Energy & Infrastructure</option>
+                        <option>Logistics & Mobility</option>
+                        <option>Public Sector & Non-Profits</option>
+                    </select>
+                </div>
+                <!-- Service Filter -->
+                <div>
+                    <label for="filter-service" class="text-xs uppercase text-gray-500
+   font-medium">Service</label>
+                    <select id="filter-service" class="w-full mt-1 border border-gray-300 rounded-xl px-3 py-3
+  text-base bg-white focus:outline-none focus:ring-2 focus:ring-black focus:border-black">
+                        <option value="">All Services</option>
+                        <!-- Updated options based on new case studies -->
+                        <option>Signal Architecture</option>
+                        <option>Fund Raising</option>
+                        <option>GTM & Funnels</option>
+                        <option>Strategy Consulting</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+                <div class="text-sm text-gray-600"><span id="results-count" class="font-semibold">48</span> results</div>
+                <button id="clear-filters" class="chip">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIBRARY (FILTERABLE GRID) -->
+    <!-- This section has been completely updated with the 9 new case studies -->
+    <section id="library" class="px-6 py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center">Browse the Library</h2>
+            <div id="cs-grid" class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 48: From DOCX 48 -->
+                <a href="case-study-48.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Strategic Clarity for BFSI Scale</h3>
+                    <p class="mt-2 text-sm text-gray-700">A fintech company's investors flagged strategic drift as they chased lending, insurance, and payments all at once.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+                
+                <!-- Card 38: From DOCX 38 -->
+                <a href="case-study-38.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Clinical Proof Converted Into $15M Growth Capital</h3>
+                    <p class="mt-2 text-sm text-gray-700">A healthtech company with validated data was categorized as an "early research play" by investors, slowing their Series A.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 39: From DOCX 39 -->
+                <a href="case-study-39.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Funnel Redesign for Hospital Adoption</h3>
+                    <p class="mt-2 text-sm text-gray-700">A medtech company's GTM looked like a consumer sales engine, and hospitals dismissed them as "too small, too risky."</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 40: From DOCX 40 -->
+                <a href="case-study-40.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Strategy Reset for Healthcare Scale</h3>
+                    <p class="mt-2 text-sm text-gray-700">A company struggled to scale post-Series A, trying to do everything at once. Investors complained of "scatter."</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 41: From DOCX 41 -->
+                <a href="case-study-41.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Turning DeepTech Complexity Into Market Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">A DeepTech startup's narrative collapsed outside the lab. Investors couldn’t follow the jargon; buyers saw no clear business case.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 42: From DOCX 42 -->
+                <a href="case-study-42.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">$7.2M Raise for UAV DeepTech</h3>
+                    <p class="mt-2 text-sm text-gray-700">A UAV company with capable prototypes stalled in fundraising. Investors flagged "long GTM timelines" and "too futuristic" risk.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 43: From DOCX 43 -->
+                <a href="case-study-43.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">GTM Re-architecture for AI Infrastructure Adoption</h3>
+                    <p class="mt-2 text-sm text-gray-700">An AI startup's GTM funnel wasn't moving. Pilots stretched endlessly as sales teams led with technical depth, not outcomes.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 44: From DOCX 44 -->
+                <a href="case-study-44.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Strategic Reset for AI Infrastructure Scale</h3>
+                    <p class="mt-2 text-sm text-gray-700">An AI infrastructure startup's growth plateaued. They chased multiple use cases without dominance in any one vertical.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 45: From DOCX 45 -->
+                <a href="case-study-45.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Signal Reset for BFSI Trust</h3>
+                    <p class="mt-2 text-sm text-gray-700">A fintech's adoption lagged. Banks saw them as "just another wallet," and investors considered them redundant in a crowded space.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 46: From DOCX 46 -->
+                <a href="case-study-46.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">$12M Raise Anchored on Compliance Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">A fintech startup was dismissed by investors as "one of many wallets." Their compliance approvals weren't projecting inevitability.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 47: From DOCX 47 -->
+                <a href="case-study-47.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Funnel Architecture That Won Institutional Partners</h3>
+                    <p class="mt-2 text-sm text-gray-700">A fintech struggled to scale integrations. Their GTM looked like a startup sales engine; BFSI buyers moved on trust and compliance.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 29: From DOCX 29 -->
+                <a href="case-study-29.html" class="cs-card card card-hover p-6 group" data-sector="Technology" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Technology • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">From Features to Framework — Tech as Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">A B2B platform with a rich feature set was seen as “just another SaaS tool” by customers and investors.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 30: From DOCX 30 -->
+                <a href="case-study-30.html" class="cs-card card card-hover p-6 group" data-sector="Technology" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Technology • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">$6M Raise on Ecosystem Inevitability</h3>
+                    <p class="mt-2 text-sm text-gray-700">A B2B SaaS platform with strong pilots struggled in investor talks, categorized as “one of many SaaS plays.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 31: From DOCX 31 -->
+                <a href="case-study-31.html" class="cs-card card card-hover p-6 group" data-sector="Technology" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Technology • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Funnel Recalibration to Collapse SaaS Cycles</h3>
+                    <p class="mt-2 text-sm text-gray-700">A SaaS platform’s sales cycles dragged on for 12-18 months as enterprise buyers saw them as “another SaaS tool.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 32: From DOCX 32 -->
+                <a href="case-study-32.html" class="cs-card card card-hover p-6 group" data-sector="Technology" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Technology • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Strategic Focus for a Scattered SaaS Startup</h3>
+                    <p class="mt-2 text-sm text-gray-700">A SaaS startup expanded aggressively, but growth was uneven. Investors pressed for clarity on "where the company was headed."</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 33: From DOCX 33 -->
+                <a href="case-study-33.html" class="cs-card card card-hover p-6 group" data-sector="Consumer Products" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Consumer Products • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Signal Reset for a D2C Brand</h3>
+                    <p class="mt-2 text-sm text-gray-700">A D2C brand's sales growth flattened. Despite strong reviews, investors saw them as “another lifestyle product.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 34: From DOCX 34 -->
+                <a href="case-study-34.html" class="cs-card card card-hover p-6 group" data-sector="Consumer Products" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Consumer Products • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Brand Signal Unlocks $8M Growth Raise</h3>
+                    <p class="mt-2 text-sm text-gray-700">A consumer startup had strong traction, but investors dismissed them as “another D2C play” with no defensible edge.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 35: From DOCX 35 -->
+                <a href="case-study-35.html" class="cs-card card card-hover p-6 group" data-sector="Consumer Products" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Consumer Products • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Funnel Re-architecture to Scale Consumer Sales</h3>
+                    <p class="mt-2 text-sm text-gray-700">A consumer startup's acquisition relied heavily on discounts and paid ads, driving volumes but eroding margins.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 36: From DOCX 36 -->
+                <a href="case-study-36.html" class="cs-card card card-hover p-6 group" data-sector="Consumer Products" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg> <!-- Fixed: Was </Vsvg> -->
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Consumer Products • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Strategic Reset to Escape the Commodity Trap</h3>
+                    <p class="mt-2 text-sm text-gray-700">Investors flagged a D2C brand's lack of clarity: “Are you a brand or a discount engine?” Teams were scattered.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 37: From DOCX 37 -->
+                <a href="case-study-37.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Signal Reset for Healthcare Credibility</h3>
+                    <p class="mt-2 text-sm text-gray-700">A healthtech startup had strong clinical results, but failed to move investors and hospitals, seen as "another startup with tech claims."</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 6: From DOCX 6 (Duplicate from last turn, included as requested) -->
+                <a href="case-study-6.html" class="cs-card card card-hover p-6 group" data-sector="Consumer Products" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Consumer Products • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Brand Velocity → Capital Velocity</h3>
+                    <p class="mt-2 text-sm text-gray-700">A D2C brand had online buzz, but investors were skeptical that “viral consumer love” could translate into scalable growth.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 19: From DOCX 19 -->
+                <a href="case-study-19.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Enterprise GTM Through Trust-First Funnels</h3>
+                    <p class="mt-2 text-sm text-gray-700">A fintech with SME traction was seen as “Unproven, too small, not compliant enough” by enterprise banks.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 20: From DOCX 20 -->
+                <a href="case-study-20.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Clarity in Chaos — A Fintech’s Strategic Reset</h3>
+                    <p class="mt-2 text-sm text-gray-700">A high-growth fintech stalled, experimenting with multiple products. Investors grew uneasy, and regulators tightened scrutiny.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 21: From DOCX 21 -->
+                <a href="case-study-21.html" class="cs-card card card-hover p-6 group" data-sector="Real Estate" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Real Estate • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">From Commodity to Credibility — The Real Estate Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">A mid-sized developer struggled to stand out. Buyers saw them as “one of many,” and investors compared them to bigger incumbents.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 22: From DOCX 22 -->
+                <a href="case-study-22.html" class="cs-card card card-hover p-6 group" data-sector="Real Estate" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Real Estate • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Community Proof → Capital Proof</h3>
+                    <p class="mt-2 text-sm text-gray-700">A developer with successful projects failed to attract investors, who didn't see "inevitability" in their "timely delivery" story.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 23: From DOCX 23 -->
+                <a href="case-study-23.html" class="cs-card card card-hover p-6 group" data-sector="Real Estate" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Real Estate • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Velocity Funnels for Real Estate Sales</h3>
+                    <p class="mt-2 text-sm text-gray-700">A developer's sales cycles were painfully slow. Marketing brought traffic but not conversions, and brokers controlled the narrative.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 24: From DOCX 24 -->
+                <a href="case-study-24.html" class="cs-card card card-hover p-6 group" data-sector="Real Estate" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Real Estate • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Strategic Reset for a Stalled Developer</h3>
+                    <p class="mt-2 text-sm text-gray-700">A regional developer stalled. Cash flows were uneven, brand recognition was weak, and investor confidence was slipping.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 25: From DOCX 25 -->
+                <a href="case-study-25.html" class="cs-card card card-hover p-6 group" data-sector="Defense" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Defense • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Signal Design for Defense Credibility</h3>
+                    <p class="mt-2 text-sm text-gray-700">A defense tech startup's prototypes worked, but procurement and investors perceived them as “early-stage, untested.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 26: From DOCX 26 -->
+                <a href="case-study-26.html" class="cs-card card card-hover p-6 group" data-sector="Defense" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Defense • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">From Prototype to $23M Raise</h3>
+                    <p class="mt-2 text-sm text-gray-700">A defense manufacturer had proven tech, but VCs considered the sector “too slow” and “too political” for investment.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 27: From DOCX 27 -->
+                <a href="case-study-27.html" class="cs-card card card-hover p-6 group" data-sector="Defense" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Defense • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">GTM Architecture for Defense Contracts</h3>
+                    <p class="mt-2 text-sm text-gray-700">A UAV startup won pilot trials but struggled to scale into multi-year contracts, seen as “good technology, not yet mission-ready.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 10: From DOCX 10 -->
+                <a href="case-study-10.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Regulatory Milestones as Raise Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">A digital therapeutics company faced investor skepticism: “Too early—come back after approvals.” Stuck without capital to fund milestones.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 11: From DOCX 11 -->
+                <a href="case-study-11.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">HCP Adoption Sprint with Evidence Anchors</h3>
+                    <p class="mt-2 text-sm text-gray-700">A validated SaaS platform stalled. Doctors were hesitant to change workflows, and sales cycles stretched, risking investor milestones.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 12: From DOCX 12 -->
+                <a href="case-study-12.html" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare & Pharma • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Market Access Strategy as Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">A diagnostics company struggled with market access across multiple geographies, lacking a coherent growth story for investors.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 13: From DOCX 13 -->
+                <a href="case-study-13.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">From Lab to Legibility — The AI Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">Groundbreaking AI research and patents, but zero commercial traction. Investors: “Impressive tech, but too early.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 14: From DOCX 14 -->
+                <a href="case-study-14.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Pre-Product, Proof-Led $4M Seed Raise</h3>
+                    <p class="mt-2 text-sm text-gray-700">Deep technical talent and patents but no live product. Investors pushed back: “Come back after you build.”</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 15: From DOCX 15 -->
+                <a href="case-study-15.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • GTM & Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Pilot-First GTM That Collapsed Enterprise Cycles</h3>
+                    <p class="mt-2 text-sm text-gray-700">Breakthrough AI hardware, but enterprise sales cycles exceeded 12-15 months. Runway was vanishing.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 16: From DOCX 16 -->
+                <a href="case-study-16.html" class="cs-card card card-hover p-6 group" data-sector="DeepTech & AI" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech & AI • Strategy Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Frontier Positioning & Partner Thesis</h3>
+                    <p class="mt-2 text-sm text-gray-700">Series A growth stalled. The market couldn’t understand where their AI fit: platform, tool, or infrastructure?</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 17: From DOCX 17 -->
+                <a href="case-study-17.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Signal Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Trust Signal in a Regulated Market</h3>
+                    <p class="mt-2 text-sm text-gray-700">A fintech platform with strong adoption was still perceived as “too risky” by larger banks and regulators.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 18: From DOCX 18 -->
+                <a href="case-study-18.html" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Fund Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Compliance as Credibility — The Raise</h3>
+                    <p class="mt-2 text-sm text-gray-700">A digital lending platform had robust adoption, but investors hesitated, doubting their ability to remain compliant.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+
+                <!-- Card 1: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="DeepTech & Al" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <!-- Simple document icon, like in the image -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">DeepTech &amp; Al • Fund
+                            Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Pre-Revenue to \$4M
+                        Seed</h3>
+                    <p class="mt-2 text-sm text-gray-700">Reframed investor belief; staged proof before the
+                        deck.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 2: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Consumer Products" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Consumer • GTM &amp;
+                            Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">D2C Lift via Conversion
+                        Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">Simplified promise and funnel; doubled
+                        add-to-cart.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 3: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="BFSI" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">BFSI • Strategy
+                            Consulting</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Distribution via Partnership
+                        Motion</h3>
+                    <p class="mt-2 text-sm text-gray-700">Non-obvious route unlocked regional bank
+                        network.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 4: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Healthcare & Pharma" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Healthcare • Signal
+                            Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Clinical Credibility, Market
+                        Belief</h3>
+                    <p class="mt-2 text-sm text-gray-700">Aligned science, risk, and value for faster
+                        doors-open.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 5: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Technology" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Technology • GTM &amp;
+                            Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Enterprise Entry with
+                        3-Move GTM</h3>
+                    <p class="mt-2 text-sm text-gray-700">Sequenced pilots → lighthouse scaled
+                        motion.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 6: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Real Estate" data-service="Strategy Consulting">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Real Estate • Strategy</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">New Asset Class
+                        Positioning</h3>
+                    <p class="mt-2 text-sm text-gray-700">Recast value to exit price compression cycle.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 7: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Manufacturing" data-service="Signal Architecture">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Manufacturing • Signal
+                            Architecture</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">From Commodity to
+                        Category</h3>
+                    <p class="mt-2 text-sm text-gray-700">Shifted buying from price to belief in reliability.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 8: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Education" data-service="GTM & Funnels">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Education • GTM &amp;
+                            Funnels</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Admissions Engine
+                        Rebuilt</h3>
+                    <p class="mt-2 text-sm text-gray-700">Switched to outcome-first messaging; CPL down
+                        38%.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+                <!-- Card 9: From Original PDF -->
+                <a href="#" class="cs-card card card-hover p-6 group" data-sector="Energy & Infrastructure" data-service="Fund Raising">
+                    <div class="flex items-center gap-2">
+                        <span class="instaura-red-bg p-1.5 rounded-lg inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V8.342a2 2 0 00-.586-1.414L11.658 2H4zm0 2h7.414L16 8.586V18H4V4z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <div class="text-xs uppercase text-gray-500 font-medium">Energy &amp; Infra • Fund
+                            Raising</div>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold group-hover:underline">Project Finance
+                        Signal</h3>
+                    <p class="mt-2 text-sm text-gray-700">De-risked narrative unlocked anchor
+                        commitments.</p>
+                    <span class="mt-4 inline-block text-sm instaura-red font-semibold">Read →</span>
+                </a>
+
+            </div>
+
+            <!-- No results message from HTML -->
+            <p id="no-results" class="hidden mt-10 text-center text-gray-600">No results match your
+                filters. Try clearing them.</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS STRIP -->
+    <!-- From the HTML, styled with the new card design -->
+    <section class="px-6 py-20 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center">What Founders Say (Redacted)</h2>
+            <div class="mt-12 grid md:grid-cols-3 gap-6">
+                <blockquote class="card p-8">
+                    <p class="text-lg text-gray-800">"We thought we had a growth problem. Turns out, we
+                        had a signal problem."</p>
+                    <div class="text-sm text-gray-500 font-medium mt-4">Founder SaaS</div>
+                </blockquote>
+                <blockquote class="card p-8">
+                    <p class="text-lg text-gray-800">"Investors didn't believe us. Now they fight for a
+                        seat."</p>
+                    <div class="text-sm text-gray-500 font-medium mt-4">Co-founder DeepTech</div>
+                </blockquote>
+                <blockquote class="card p-8">
+                    <p class="text-lg text-gray-800">"Clarity beat noise. Our motion changed within
+                        weeks."</p>
+                    <div class="text-sm text-gray-500 font-medium mt-4">CEO Consumer</div>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE BY SECTOR / SERVICE -->
+    <!-- From the HTML, styled to match the image's 2-col section -->
+    <section class="px-6 py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- By Sector -->
+                <div class="card p-8">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Explore</div>
+                    <h3 class="mt-2 text-2xl font-semibold">By Sector</h3>
+                    <div class="mt-5 flex flex-wrap gap-2 chip-container overflow-x-auto pb-2">
+                        <a class="chip" href="/verticals/technology">Technology</a>
+                        <a class="chip" href="/verticals/consumer-products">Consumer</a>
+                        <a class="chip" href="/verticals/healthcare-pharma">Healthcare</a>
+                        <a class="chip" href="/verticals/deeptech-ai">Deep Tech &amp; Al</a>
+                        <a class="chip" href="/verticals/bfsi">BFSI</a>
+                        <a class="chip" href="/verticals/real-estate">Real Estate</a>
+                        <a class="chip" href="/verticals/defense">Defense</a>
+                        <a class="chip" href="/verticals/manufacturing">Manufacturing</a>
+                    </div>
+                </div>
+                <!-- By Service -->
+                <div class="card p-8">
+                    <div class="text-xs uppercase text-gray-500 font-medium">Explore</div>
+                    <h3 class="mt-2 text-2xl font-semibold">By Service</h3>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <a class="chip" href="/services/signal-architecture">Signal Architecture</a>
+                        <a class="chip" href="/services/fund-raising">Fund Raising</a>
+                        <a class="chip" href="/services/gtm-funnels">GTM &amp; Funnels</a>
+                        <a class="chip" href="/services/strategy-consulting">Strategy Consulting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCLUSION CTA -->
+    <!-- Content from HTML, layout from image's final CTA -->
+    <section class="px-6 py-20 text-center bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-extrabold tracking-tight">Proof is signal. Signal is movement.</h2>
+            <p class="text-gray-700 text-lg mt-5">
+                These case studies aren't stories... they're evidence. If you're ready to see how signal
+                applies to your context,
+                start the conversation.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="/yas" class="instaura-red-bg text-white px-7 py-3 rounded-full font-semibold
+           shadow-lg hover:opacity-90 transition">Talk to Yas</a>
+                <a href="/signal-call" class="border border-gray-900 text-gray-900 bg-white px-7 py-3
+           rounded-full font-semibold shadow-sm hover:bg-gray-50 transition">Book a Signal Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Using the superior multi-column footer from the 'insight page.jpg' -->
+    <footer class="px-6 py-16 bg-gray-900 text-gray-400">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+                <!-- Column 1: Logo & Socials -->
+                <div class="col-span-2 lg:col-span-2">
+                    <a href="/" class="font-extrabold tracking-tight text-2xl text-white">INSTAURA<span class="instaura-red">.</span></a>
+                    <p class="mt-4 text-sm max-w-xs">Signals in Action. Movements Delivered.</p>
+                    <!-- Socials from image can be added here -->
+                </div>
+                <!-- Column 2: Services (from HTML) -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold
+  text-white uppercase tracking-wider">Services</h3>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        <li><a href="/services/signal-architecture" class="hover:text-white transition">Signal
+                                Architecture</a></li>
+                        <li><a href="/services/fund-raising" class="hover:text-white transition">Fund
+                                Raising</a></li>
+                        <li><a href="/services/gtm-funnels" class="hover:text-white transition">GTM &
+                                Funnels</a></li>
+                        <li><a href="/services/strategy-consulting" class="hover:text-white transition">Strategy
+                                Consulting</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Insights (from image) -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold
+  text-white uppercase tracking-wider">INsights</h3>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        <li><a href="/insights/case-studies" class="hover:text-white transition">
+                                Case Studies</a></li>
+                        <li><a href="/insights/white-papers" class="hover:text-white transition">White
+                                Papers</a></li>
+                        <li><a href="/insights/clarity-series" class="hover:text-white transition">Clarity
+                                Series</a></li>
+                        <li><a href="/insights/signal-code" class="hover:text-white transition">
+                                The Signal Code</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4: Company (from image/HTML) -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-semibold text-white uppercase tracking-wider">Company</h3>
+                    <ul class="mt-4 space-y-3 text-sm">
+                        <li><a href="/about" class="hover:text-white transition">About</a></li>
+                        <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="/careers" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bottom bar from HTML/Image -->
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row items-center
+  justify-between gap-4">
+                <div class="text-sm">&copy; <span id="y"></span> Instaura Consulting. All rights
+                    reserved.</div>
+                <div class="flex gap-5 text-sm">
+                    <a href="/legal/privacy" class="hover:text-white">Privacy</a>
+                    <a href="/legal/terms" class="hover:text-white">Terms</a>
+                    <a href="/legal/disclaimers" class="hover:text-white">Disclaimers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FILTER SCRIPT -->
+    <!-- This script has been repaired from the PDF version to be functional. -->
+    <script>
+        const search = document.getElementById('cs-search');
+        const sector = document.getElementById('filter-sector');
+        const service = document.getElementById('filter-service');
+        const clearBtn = document.getElementById('clear-filters');
+        const cards = Array.from(document.querySelectorAll('.cs-card'));
+        const count = document.getElementById('results-count');
+        const empty = document.getElementById('no-results');
+
+        function applyFilters() {
+            // Moved this logic inside the function
+            const q = search.value.trim().toLowerCase();
+            const s = sector.value; // Fixed variable name
+            const sv = service.value;
+            let visible = 0; // Fixed variable name
+
+            cards.forEach(card => {
+                const txt = card.innerText.toLowerCase();
+                const cardSector = card.getAttribute('data-sector');
+                const cardService = card.getAttribute('data-service');
+
+                const matchesSearch = !q || txt.includes(q);
+                const matchesSector = !s || cardSector === s;
+                const matchesService = !sv || cardService === sv;
+
+                const show = matchesSearch && matchesSector && matchesService;
+
+                // Fixed ternary operator and display style
+                card.style.display = show ? 'block' : 'none';
+
+                if (show) visible++;
+            });
+
+            count.textContent = visible;
+            // Fixed comparison and class toggle logic
+            if (visible > 0) {
+                empty.classList.add('hidden');
+            } else {
+                empty.classList.remove('hidden');
+            }
+        }
+
+        // Event listeners
+        [search, sector, service].forEach(el => el.addEventListener('input', applyFilters));
+        [sector, service].forEach(el => el.addEventListener('change', applyFilters));
+
+        // Fixed click handler
+        clearBtn.addEventListener('click', () => {
+            search.value = "";
+            sector.value = "";
+            service.value = "";
+            applyFilters();
+        });
+
+        // initial count
+        applyFilters();
+
+        // year in footer
+        document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
+
+

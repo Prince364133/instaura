@@ -1,0 +1,39 @@
+We have a project deployed on Replit autoscale with a custom domain consultinstaura.site.
+The domain DNS records are set and verified, but the site is returning a 500-like error.
+On some devices it works (especially new ones), on others it fails.
+
+Please help me check the following, step by step:
+
+1. Container health and crash logs
+Check the build and runtime logs for errors on startup or when serving requests.
+Confirm there are no missing dependencies, syntax errors, or environment variables.
+
+2. Port binding
+Verify the app is listening on process.env.PORT (or $PORT in Python/Flask) and host 0.0.0.0.
+If the code uses a hard-coded port like 3000 or binds to localhost, fix it.
+
+3. Environment variables and secrets
+Ensure all required secrets (API keys, database URLs, etc.) are set in the Replit Secrets panel.
+Missing or incorrect values often cause a crash at first request.
+
+4. Domain configuration
+Confirm the custom domain consultinstaura.site is mapped correctly in Replit.
+Check that the verified DNS records (CNAME, AAAA, A) match what Replit expects.
+Make sure there is no old record cached that points to a previous deployment.
+
+5. SSL and redirect issues
+Ensure the app itself is not trying to handle HTTPS or redirect between HTTP and HTTPS in a way that conflicts with Replit SSL termination.
+Look for infinite redirect loops or certificate mismatches.
+
+6. DNS cache
+Test the project via its default Replit URL https://instaura-site-adityashelar120.replit.app
+If the default URL works but the custom domain does not, flush DNS cache locally and try different networks.
+If it still fails, the issue is likely DNS propagation or misconfiguration.
+
+Commands and checks to run in the Shell:
+echo $PORT to confirm the PORT value.
+netstat -tulpn or equivalent to confirm the process is listening on that port.
+curl -v https://instaura-site-adityashelar120.replit.app to verify the service responds directly.
+curl -v https://consultinstaura.site to compare response and headers for mismatch.
+
+Goal: isolate whether the error is in the app (crashing), in the port binding, or in the domain or SSL layer, and fix accordingly.

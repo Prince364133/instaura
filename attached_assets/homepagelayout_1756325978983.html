@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instaura — Signal is the Only Basis</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    .instaura-red{color:#CF1E2A}.instaura-red-bg{background-color:#CF1E2A}
+    .chip{border:1px solid rgba(0,0,0,.08); padding:.25rem .5rem; border-radius:9999px; font-size:.75rem}
+    summary::-webkit-details-marker{display:none}
+  </style>
+  <script>
+    function submitCaseStudySearch(e){
+      e.preventDefault();
+      const sector = document.getElementById('sector').value;
+      const service = document.getElementById('service').value;
+      const qs = new URLSearchParams({sector, service}).toString();
+      window.location.href = '/insights/case-studies?'+qs;
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- HEADER / NAV -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-filter backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="font-extrabold tracking-tight text-xl">INSTAURA<span class="instaura-red">.</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/services" class="hover:text-black text-gray-600">Services</a>
+        <a href="/verticals" class="hover:text-black text-gray-600">Verticals</a>
+        <a href="/insights" class="hover:text-black text-gray-600">INsights</a>
+        <a href="/about" class="hover:text-black text-gray-600">About</a>
+        <a href="/contact" class="hover:text-black text-gray-600">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-2">
+        <a href="/signal-call" class="hidden sm:inline-block chip">Book a Signal Call</a>
+        <a href="/yas" class="instaura-red-bg text-white rounded-full px-4 py-2 text-sm">Talk to Yas</a>
+      </div>
+      <button class="md:hidden chip">Menu</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="px-6 pt-16 pb-14 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.05]">
+          Signal is the <span class="instaura-red">Only Basis</span>.
+        </h1>
+        <p class="mt-5 text-lg md:text-xl text-gray-700">
+          Every real outcome — capital, clarity, growth, scale — begins with one thing:
+          <span class="font-semibold">Signal. Not noise.</span> We build. You move.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/yas" class="instaura-red-bg text-white px-6 py-3 rounded-full">Talk to Yas</a>
+          <a href="/signal-call" class="border border-gray-900 px-6 py-3 rounded-full">Book a Signal Call</a>
+        </div>
+        <p class="mt-3 text-xs text-gray-500">Light mode • Instaura Red #CF1E2A</p>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+          <h3 class="text-sm font-semibold mb-4">Your First Move</h3>
+          <p class="text-gray-700 text-sm">Ask Yas anything — services, case studies, GTM models, capital readiness, or to book a Signal Call.</p>
+          <a href="/yas" class="mt-4 inline-flex items-center instaura-red-bg text-white px-4 py-2 rounded-full text-sm">Talk to Yas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEDIGREE + CLAIM -->
+  <section class="px-6 py-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="text-center rounded-2xl border p-6 shadow-sm bg-white">
+          <div class="text-3xl font-extrabold instaura-red">18</div>
+          <div class="text-xs uppercase text-gray-500 mt-1">Years</div>
+        </div>
+        <div class="text-center rounded-2xl border p-6 shadow-sm bg-white">
+          <div class="text-3xl font-extrabold instaura-red">2500+</div>
+          <div class="text-xs uppercase text-gray-500 mt-1">Clients</div>
+        </div>
+        <div class="text-center rounded-2xl border p-6 shadow-sm bg-white">
+          <div class="text-3xl font-extrabold instaura-red">250+</div>
+          <div class="text-xs uppercase text-gray-500 mt-1">Movements</div>
+        </div>
+        <div class="text-center rounded-2xl border p-6 shadow-sm bg-white">
+          <div class="text-3xl font-extrabold instaura-red">$2B+</div>
+          <div class="text-xs uppercase text-gray-500 mt-1">Moved</div>
+        </div>
+      </div>
+      <p class="mt-6 text-center text-gray-800">
+        <span class="font-semibold">Instaura is the first and only Signal-Driven Consulting Firm.</span>
+        We don’t sell slides or noise. We architect signal — the decisive basis of every outcome.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="px-6 py-12 bg-gray-50" id="services">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">What We Do</h2>
+        <a class="text-sm instaura-red font-semibold hover:underline" href="/services">View Services</a>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="/services/signal-architecture" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Signal Architecture</h3>
+          <p class="mt-2 text-sm text-gray-700">Architect belief before you move.</p>
+        </a>
+        <a href="/services/fund-raising" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Fund Raising</h3>
+          <p class="mt-2 text-sm text-gray-700">Capital follows conviction, not slides.</p>
+        </a>
+        <a href="/services/gtm-funnels" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">GTM &amp; Funnels</h3>
+          <p class="mt-2 text-sm text-gray-700">Growth when the signal is clear.</p>
+        </a>
+        <a href="/services/strategy-consulting" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Strategy Consulting</h3>
+          <p class="mt-2 text-sm text-gray-700">Clarity that becomes movement.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERTICALS -->
+  <section class="px-6 py-12" id="verticals">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Verticals</h2>
+        <a class="text-sm instaura-red font-semibold hover:underline" href="/verticals">Explore Verticals</a>
+      </div>
+      <p class="text-gray-700 mb-4">A sector-agnostic signal engine with deep market feel.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 12 compact cards -->
+        <a href="/verticals/technology" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Technology</h3>
+          <p class="text-sm text-gray-600">SaaS, Cloud, Data, and more</p>
+        </a>
+        <a href="/verticals/consumer-products" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Consumer Products</h3>
+          <p class="text-sm text-gray-600">D2C, Omnichannel, Marketplaces, and more</p>
+        </a>
+        <a href="/verticals/healthcare-pharma" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Healthcare &amp; Pharma</h3>
+          <p class="text-sm text-gray-600">HealthTech, Diagnostics, Providers, and more</p>
+        </a>
+        <a href="/verticals/deeptech-ai" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">DeepTech &amp; AI</h3>
+          <p class="text-sm text-gray-600">ML, Edge, Robotics, and more</p>
+        </a>
+        <a href="/verticals/bfsi" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">BFSI</h3>
+          <p class="text-sm text-gray-600">Fintech, Payments, Lending, and more</p>
+        </a>
+        <a href="/verticals/real-estate" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Real Estate</h3>
+          <p class="text-sm text-gray-600">PropTech, CRE, Housing, and more</p>
+        </a>
+        <a href="/verticals/defense" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Defense</h3>
+          <p class="text-sm text-gray-600">Dual-use, Aerospace, Security, and more</p>
+        </a>
+        <a href="/verticals/manufacturing" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Manufacturing</h3>
+          <p class="text-sm text-gray-600">Industrial, Electronics, Auto, and more</p>
+        </a>
+        <a href="/verticals/energy-climate" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Energy &amp; Climate</h3>
+          <p class="text-sm text-gray-600">Renewables, Storage, Mobility, and more</p>
+        </a>
+        <a href="/verticals/logistics-mobility" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Logistics &amp; Mobility</h3>
+          <p class="text-sm text-gray-600">Supply Chain, Freight, EV, and more</p>
+        </a>
+        <a href="/verticals/education-edtech" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Education &amp; EdTech</h3>
+          <p class="text-sm text-gray-600">K–12, Skills, Platforms, and more</p>
+        </a>
+        <a href="/verticals/consumer-internet-media" class="block rounded-2xl border p-5 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Consumer Internet &amp; Media</h3>
+          <p class="text-sm text-gray-600">Apps, Platforms, Content, and more</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INsights -->
+  <section class="px-6 py-12 bg-gray-50" id="insights">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">INsights</h2>
+        <a class="text-sm instaura-red font-semibold hover:underline" href="/insights">Enter INsights</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="/insights/clarity-series" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Clarity Series</h3>
+          <p class="mt-2 text-sm text-gray-700">Field notes from real Signal Calls.</p>
+        </a>
+        <a href="/insights/white-papers" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">White Papers</h3>
+          <p class="mt-2 text-sm text-gray-700">Deep dives on capital, GTM, and strategy.</p>
+        </a>
+        <a href="/insights/case-studies" class="block rounded-2xl border p-6 bg-white shadow hover:shadow-md transition">
+          <h3 class="font-semibold">Case Studies</h3>
+          <p class="mt-2 text-sm text-gray-700">Redacted, signal-rich movements across sectors.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES SEARCH -->
+  <section class="px-6 py-12" id="case-search">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Find Your Closest Movement</h2>
+      <p class="text-gray-700 mb-4">Filter by <span class="font-semibold">Sector</span> and <span class="font-semibold">Service</span> to surface relevant outcomes fast.</p>
+      <form class="grid md:grid-cols-4 gap-4 items-end" onsubmit="submitCaseStudySearch(event)">
+        <div class="md:col-span-2">
+          <label class="text-sm text-gray-600">Sector</label>
+          <select id="sector" class="mt-1 w-full border rounded-xl p-3 bg-white">
+            <option value="">All Sectors</option>
+            <option>Technology</option><option>Consumer Products</option><option>Healthcare & Pharma</option>
+            <option>DeepTech & AI</option><option>BFSI</option><option>Real Estate</option>
+            <option>Defense</option><option>Manufacturing</option><option>Energy & Climate</option>
+            <option>Logistics & Mobility</option><option>Education & EdTech</option><option>Consumer Internet & Media</option>
+          </select>
+        </div>
+        <div class="md:col-span-1">
+          <label class="text-sm text-gray-600">Service</label>
+          <select id="service" class="mt-1 w-full border rounded-xl p-3 bg-white">
+            <option value="">All Services</option>
+            <option>Signal Architecture</option>
+            <option>Fund Raising</option>
+            <option>GTM & Funnels</option>
+            <option>Strategy Consulting</option>
+          </select>
+        </div>
+        <div class="md:col-span-1">
+          <button type="submit" class="w-full instaura-red-bg text-white rounded-xl px-5 py-3">Search Case Studies</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- MEDIA STRIP -->
+  <section class="px-6 py-10 bg-gray-50" id="media">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Media &amp; Appearances</h2>
+        <a class="text-sm instaura-red font-semibold hover:underline" href="/about/media">Visit Media</a>
+      </div>
+      <div class="overflow-x-auto">
+        <div class="flex items-center gap-6 min-w-max">
+          <!-- Logo placeholders -->
+          <div class="h-10 w-36 rounded-lg bg-white border shadow-sm grid place-items-center text-xs text-gray-500">LOGO</div>
+          <div class="h-10 w-36 rounded-lg bg-white border shadow-sm grid place-items-center text-xs text-gray-500">LOGO</div>
+          <div class="h-10 w-36 rounded-lg bg-white border shadow-sm grid place-items-center text-xs text-gray-500">LOGO</div>
+          <div class="h-10 w-36 rounded-lg bg-white border shadow-sm grid place-items-center text-xs text-gray-500">LOGO</div>
+          <div class="h-10 w-36 rounded-lg bg-white border shadow-sm grid place-items-center text-xs text-gray-500">LOGO</div>
+          <div class="h-10 w-36 rounded-lg bg-white border shadow-sm grid place-items-center text-xs text-gray-500">LOGO</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SIGNAL -->
+  <section class="px-6 py-12" id="why-signal">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Why Signal</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="rounded-2xl border p-6 shadow-sm">
+          <h3 class="font-semibold">Belief sets price</h3>
+          <p class="mt-2 text-gray-700">Signal lifts multiples and cleans terms.</p>
+        </div>
+        <div class="rounded-2xl border p-6 shadow-sm">
+          <h3 class="font-semibold">Clarity compresses time</h3>
+          <p class="mt-2 text-gray-700">Sequencing and calibration cut cycles.</p>
+        </div>
+        <div class="rounded-2xl border p-6 shadow-sm">
+          <h3 class="font-semibold">Signal raises WTP</h3>
+          <p class="mt-2 text-gray-700">Customers pay more when belief is clear.</p>
+        </div>
+        <div class="rounded-2xl border p-6 shadow-sm">
+          <h3 class="font-semibold">Being chosen</h3>
+          <p class="mt-2 text-gray-700">Signal turns selling into being chosen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YAS BLOCK -->
+  <section class="px-6 py-12 bg-black text-white" id="yas">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h2 class="text-2xl font-bold mb-2">YAS — Your First Move</h2>
+        <p class="text-gray-300">Not a chatbot. A signal-trained interface to how Instaura thinks, works, and moves. Ask Yas about services, outcomes, GTM models, capital readiness — or to book a Signal Call.</p>
+        <div class="mt-5 flex gap-3">
+          <a href="/yas" class="instaura-red-bg text-white px-6 py-3 rounded-full">Talk to Yas</a>
+          <a href="/insights" class="bg-white text-black px-6 py-3 rounded-full">Enter INsights</a>
+        </div>
+      </div>
+      <div class="bg-white text-gray-900 rounded-2xl p-6 shadow">
+        <div class="text-xs uppercase text-gray-500">Preview</div>
+        <p class="mt-2 text-sm">“Hi Yas, are we signal-ready for a US enterprise GTM?”</p>
+        <div class="mt-3 text-sm bg-gray-50 border rounded-xl p-3">“Let’s run a 5-minute diagnostic. If the buyer signal is weak, we’ll fix that first.”</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER VOICES -->
+  <section class="px-6 py-12" id="voices">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Founder Voices</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="bg-white rounded-2xl border p-6 shadow">
+          <p class="italic">“We stopped shouting. Started signaling. Everything changed.”</p>
+          <div class="mt-3 text-xs text-gray-500">Founder — Health</div>
+        </blockquote>
+        <blockquote class="bg-white rounded-2xl border p-6 shadow">
+          <p class="italic">“Pilots finally converted. The story became inevitable.”</p>
+          <div class="mt-3 text-xs text-gray-500">CEO — SaaS</div>
+        </blockquote>
+        <blockquote class="bg-white rounded-2xl border p-6 shadow">
+          <p class="italic">“Terms improved because belief improved.”</p>
+          <div class="mt-3 text-xs text-gray-500">Founder — DeepTech</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="px-6 py-14 bg-gray-50 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold">Every real outcome begins with Signal.</h3>
+      <p class="text-gray-700 mt-2">Build it once. Let every move compound.</p>
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="/signal-call" class="instaura-red-bg text-white px-6 py-3 rounded-full">Book a Signal Call</a>
+        <a href="/yas" class="border border-gray-900 px-6 py-3 rounded-full">Talk to Yas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="px-6 py-10 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm text-gray-600">&copy; <span id="y"></span> Instaura Consulting</div>
+      <div class="flex gap-5 text-sm">
+        <a href="/legal/privacy" class="text-gray-600 hover:text-black">Privacy</a>
+        <a href="/legal/terms" class="text-gray-600 hover:text-black">Terms</a>
+        <a href="/legal/disclaimers" class="text-gray-600 hover:text-black">Disclaimers</a>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
