@@ -98,6 +98,7 @@ import NotFound from "@/pages/not-found";
 
 function RouterContent() {
   const [location] = useLocation();
+  console.log("App: Current Location:", location);
 
   useEffect(() => {
     // Handle scroll to anchor after route change

@@ -5,8 +5,9 @@ import NotFound from "./not-found";
 import { Button } from "@/components/ui/button";
 
 export default function WhitePaperDetail() {
-    const [, params] = useRoute("/white-papers/:slug");
+    const [match, params] = useRoute("/white-papers/:slug");
     const slug = params?.slug;
+    console.log("WhitePaperDetail: Rendered. Slug:", slug, "Match:", match);
 
     const paper = whitePapers.find((p) => p.slug === slug);
 

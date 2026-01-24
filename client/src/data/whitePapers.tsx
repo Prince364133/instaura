@@ -124,7 +124,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We didn’t just raise our price. We raised our signal. And suddenly investors stopped asking if we were credible.”</p>
+                    <p>&gt; “We didn’t just raise our price. We raised our signal. And suddenly investors stopped asking if we were credible.”</p>
                 </div>
             </div>
         </section>
@@ -270,7 +270,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We didn’t need a prettier deck. We needed a signal deck. Once we reframed it, investors stopped reading and started chasing.”</p>
+                    <p>&gt; “We didn’t need a prettier deck. We needed a signal deck. Once we reframed it, investors stopped reading and started chasing.”</p>
                 </div>
             </div>
         </section>
@@ -413,7 +413,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “Our churn wasn’t because of features. It was because customers stopped believing. Once we reframed the narrative, they didn’t just stay — they expanded.”</p>
+                    <p>&gt; “Our churn wasn’t because of features. It was because customers stopped believing. Once we reframed the narrative, they didn’t just stay — they expanded.”</p>
                 </div>
             </div>
         </section>
@@ -558,7 +558,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “Our story didn’t change. The way we signaled it did. Suddenly investors weren’t asking for more — they were asking for terms.”</p>
+                    <p>&gt; “Our story didn’t change. The way we signaled it did. Suddenly investors weren’t asking for more — they were asking for terms.”</p>
                 </div>
             </div>
         </section>
@@ -700,7 +700,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We thought GTM was about doing more. Turns out, it was about saying less — but signaling it right. The market moved without us pushing.”</p>
+                    <p>&gt; “We thought GTM was about doing more. Turns out, it was about saying less — but signaling it right. The market moved without us pushing.”</p>
                 </div>
             </div>
         </section>
@@ -842,7 +842,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “I thought I was indecisive. I wasn’t — I was drowning in noise. Once I filtered for signal, decisions got simple.”</p>
+                    <p>&gt; “I thought I was indecisive. I wasn’t — I was drowning in noise. Once I filtered for signal, decisions got simple.”</p>
                 </div>
             </div>
         </section>
@@ -947,7 +947,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Case Snapshots</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>Enterprise SaaS: Mass cold emails, <1% reply rate. Reframed outreach with case proof + single ask → reply rate hit 17%.</p>
+                    <p>Enterprise SaaS: Mass cold emails, &lt;1% reply rate. Reframed outreach with case proof + single ask → reply rate hit 17%.</p>
 <p>DeepTech Raise: Investors ignored 3-page updates. Shifted to single proof signal → 2 lead investors in 45 days.</p>
 <p>Consumer Brand: Flooded social media with “buy now.” Reframed outreach to exclusivity → waitlist grew 5x.</p>
                 </div>
@@ -981,7 +981,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “I thought we had to send 1,000 emails. Turns out, we only needed 50 — with the right signal.”</p>
+                    <p>&gt; “I thought we had to send 1,000 emails. Turns out, we only needed 50 — with the right signal.”</p>
                 </div>
             </div>
         </section>
@@ -1127,7 +1127,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “Our ARR was low. But once we showed who had joined us, investors stopped doubting. Talent was the loudest signal.”</p>
+                    <p>&gt; “Our ARR was low. But once we showed who had joined us, investors stopped doubting. Talent was the loudest signal.”</p>
                 </div>
             </div>
         </section>
@@ -1267,7 +1267,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “When they said too early, I thought it was over. When I decoded it, I realized they wanted proof. We gave it to them — and they led.”</p>
+                    <p>&gt; “When they said too early, I thought it was over. When I decoded it, I realized they wanted proof. We gave it to them — and they led.”</p>
                 </div>
             </div>
         </section>
@@ -1410,7 +1410,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We almost took the first check. If we had, our roadmap would’ve been destroyed. Waiting gave us better capital — and better signal.”</p>
+                    <p>&gt; “We almost took the first check. If we had, our roadmap would’ve been destroyed. Waiting gave us better capital — and better signal.”</p>
                 </div>
             </div>
         </section>
@@ -1551,7 +1551,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We had the proof for months. But no one believed until we framed it as signal and spread it fast. Once velocity hit, the round closed in weeks.”</p>
+                    <p>&gt; “We had the proof for months. But no one believed until we framed it as signal and spread it fast. Once velocity hit, the round closed in weeks.”</p>
                 </div>
             </div>
         </section>
@@ -1690,7 +1690,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We thought GTM was about campaigns. Instaura showed us it was about proof. Once we reframed, the market moved faster than we imagined.”</p>
+                    <p>&gt; “We thought GTM was about campaigns. Instaura showed us it was about proof. Once we reframed, the market moved faster than we imagined.”</p>
                 </div>
             </div>
         </section>
@@ -1835,7 +1835,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “Our funnel used to be a form. Instaura turned it into a signal engine. We didn’t just get leads — we got believers.”</p>
+                    <p>&gt; “Our funnel used to be a form. Instaura turned it into a signal engine. We didn’t just get leads — we got believers.”</p>
                 </div>
             </div>
         </section>
@@ -1927,7 +1927,7 @@ export const whitePapers: WhitePaper[] = [
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Signal Framework: Proof as Belief Transfer</h2>
                 <div className="prose text-gray-700 space-y-4">
                     <p>1. Artifact Selection</p>
-<p>Choose proof that transmits inevitability (retention > downloads).</p>
+<p>Choose proof that transmits inevitability (retention &gt; downloads).</p>
 <p>2. Signal Framing</p>
 <p><span className="font-semibold">Encode proof in narrative:</span> “This is already happening.”</p>
 <p>3. Scarcity Layer</p>
@@ -1974,7 +1974,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “Our proof wasn’t missing. It was hidden. Once we reframed it as signal, investors stopped doubting — they started competing.”</p>
+                    <p>&gt; “Our proof wasn’t missing. It was hidden. Once we reframed it as signal, investors stopped doubting — they started competing.”</p>
                 </div>
             </div>
         </section>
@@ -2115,7 +2115,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We were stuck for a year. One 90-day sprint reframed us. Suddenly, we weren’t an experiment — we were inevitable.”</p>
+                    <p>&gt; “We were stuck for a year. One 90-day sprint reframed us. Suddenly, we weren’t an experiment — we were inevitable.”</p>
                 </div>
             </div>
         </section>
@@ -2253,7 +2253,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We had the story. We had the numbers. Nothing moved. Once we rebuilt our signal, the market saw inevitability — and doors opened fast.”</p>
+                    <p>&gt; “We had the story. We had the numbers. Nothing moved. Once we rebuilt our signal, the market saw inevitability — and doors opened fast.”</p>
                 </div>
             </div>
         </section>
@@ -2393,7 +2393,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We thought storytelling was our edge. Turns out it was our noise. When we stripped it down to signal, everything moved.”</p>
+                    <p>&gt; “We thought storytelling was our edge. Turns out it was our noise. When we stripped it down to signal, everything moved.”</p>
                 </div>
             </div>
         </section>
@@ -2525,8 +2525,8 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Metrics Dashboard</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>Founders with >20 KPIs reported 40% slower decision cycles.</p>
-<p>Signal-first companies reduced metrics to <5 and saw 2.7x faster execution.</p>
+                    <p>Founders with &gt;20 KPIs reported 40% slower decision cycles.</p>
+<p>Signal-first companies reduced metrics to &lt;5 and saw 2.7x faster execution.</p>
 <p>Noise-led dashboards correlated with 2x higher founder burnout.</p>
                 </div>
             </div>
@@ -2536,7 +2536,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We thought tracking everything made us smarter. It only made us slower. Once we cut to 3 signals, decisions and outcomes accelerated.”</p>
+                    <p>&gt; “We thought tracking everything made us smarter. It only made us slower. Once we cut to 3 signals, decisions and outcomes accelerated.”</p>
                 </div>
             </div>
         </section>
@@ -2676,7 +2676,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We pitched the funds whose signals were clear. The rest? They didn’t even cross our radar.”</p>
+                    <p>&gt; “We pitched the funds whose signals were clear. The rest? They didn’t even cross our radar.”</p>
                 </div>
             </div>
         </section>
@@ -2817,7 +2817,7 @@ export const whitePapers: WhitePaper[] = [
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Founder’s Lens (Redacted)</h2>
                 <div className="prose text-gray-700 space-y-4">
-                    <p>> “We thought raising fast was victory. Instead, it was leakage. The next round collapsed. Only when we treated capital as signal did markets move.”</p>
+                    <p>&gt; “We thought raising fast was victory. Instead, it was leakage. The next round collapsed. Only when we treated capital as signal did markets move.”</p>
                 </div>
             </div>
         </section>
