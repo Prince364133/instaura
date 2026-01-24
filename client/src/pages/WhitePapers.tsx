@@ -2,198 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { FileText } from "lucide-react";
 
-interface WhitePaper {
-  id: number;
-  sector: string;
-  service: string;
-  title: string;
-  description: string;
-  slug: string;
-  category: string;
-}
-
-const whitePapers: WhitePaper[] = [
-  {
-    id: 1,
-    sector: "SaaS",
-    service: "Pricing",
-    title: "Pricing as Signal",
-    description: "Your price is the first story you tell. It encodes strength or fragility long before your deck or demo does.",
-    slug: "pricing-as-signal",
-    category: "Pricing"
-  },
-  {
-    id: 2,
-    sector: "Enterprise",
-    service: "Fundraising",
-    title: "Signal-First Pitch Decks",
-    description: "Investors don't invest in slides. They invest in the signal your slides transmit.",
-    slug: "signal-first-pitch-decks",
-    category: "Fund Raising"
-  },
-  {
-    id: 3,
-    sector: "SaaS",
-    service: "Strategy",
-    title: "Narrative as a Retention Signal",
-    description: "Customers don't stay because of contracts. They stay because of the signal they believe in.",
-    slug: "narrative-as-a-retention-signal",
-    category: "Retention"
-  },
-  {
-    id: 4,
-    sector: "Enterprise",
-    service: "Fundraising",
-    title: "Signal Mechanics in Investor Narratives",
-    description: "It's not the words you say, but the signals they encode that decide investor belief.",
-    slug: "signal-mechanics-in-investor-narratives",
-    category: "Fund Raising"
-  },
-  {
-    id: 5,
-    sector: "Enterprise",
-    service: "GTM",
-    title: "GTM as Signal, Not Execution",
-    description: "GTM isn't about noise-making activities. It's about transmitting belief to the market.",
-    slug: "gtm-as-signal-not-execution",
-    category: "GTM"
-  },
-  {
-    id: 6,
-    sector: "Enterprise",
-    service: "Strategy",
-    title: "Signal vs. Noise in Founder Decision-Making",
-    description: "Founders don't fail because of lack of effort. They fail because they mistake noise for signal.",
-    slug: "signal-vs-noise-in-founder-decision-making",
-    category: "Strategy"
-  },
-  {
-    id: 7,
-    sector: "SaaS",
-    service: "GTM",
-    title: "Outreach as Signal, Not Spam",
-    description: "Every touchpoint you send is a signal. Done wrong, it's spam. Done right, it's inevitability.",
-    slug: "outreach-as-signal-not-spam",
-    category: "GTM"
-  },
-  {
-    id: 8,
-    sector: "DeepTech",
-    service: "Strategy",
-    title: "Talent as Signal in Early-Stage Growth",
-    description: "Early hires are not just operators. They are living signals to investors, customers, and markets.",
-    slug: "talent-as-signal-in-early-stage-growth",
-    category: "Talent"
-  },
-  {
-    id: 9,
-    sector: "DeepTech",
-    service: "Fundraising",
-    title: "Decoding Investor Language as Signal",
-    description: "Investors rarely say what they mean. Their words are signals — if you know how to decode them.",
-    slug: "decoding-investor-language-as-signal",
-    category: "Fund Raising"
-  },
-  {
-    id: 10,
-    sector: "Enterprise",
-    service: "Fundraising",
-    title: "The Cost of Wrong Capital",
-    description: "Not all money is equal. The wrong capital erodes signal, slows growth, and can even kill inevitability.",
-    slug: "the-cost-of-wrong-capital",
-    category: "Fund Raising"
-  },
-  {
-    id: 11,
-    sector: "Enterprise",
-    service: "Strategy",
-    title: "Signal Velocity and Market Movement",
-    description: "Markets don't move because of signal alone. They move because of how fast signal spreads, compounds, and recalibrates belief.",
-    slug: "signal-velocity-and-market-movement",
-    category: "Signal"
-  },
-  {
-    id: 12,
-    sector: "Enterprise",
-    service: "GTM",
-    title: "Signal-First GTM Design",
-    description: "GTM isn't about launching campaigns. It's about designing the signal that makes your market move.",
-    slug: "signal-first-gtm-design",
-    category: "GTM"
-  },
-  {
-    id: 13,
-    sector: "SaaS",
-    service: "GTM",
-    title: "Funnel Design as Signal Architecture",
-    description: "Funnels aren't websites with forms. They are the choreography of belief, designed to transmit signal at every step.",
-    slug: "funnel-design-as-signal-architecture",
-    category: "Funnels"
-  },
-  {
-    id: 14,
-    sector: "Enterprise",
-    service: "Fundraising",
-    title: "Proof as Signal in Fund Raising",
-    description: "Investors don't buy vision. They buy proof signals that encode inevitability.",
-    slug: "proof-as-signal-in-fund-raising",
-    category: "Fund Raising"
-  },
-  {
-    id: 15,
-    sector: "Enterprise",
-    service: "GTM",
-    title: "The GTM Sprint That Reframed a Market",
-    description: "Markets don't reframe with activity. They reframe when one decisive GTM sprint transmits inevitability.",
-    slug: "the-gtm-sprint-that-reframed-a-market",
-    category: "GTM"
-  },
-  {
-    id: 16,
-    sector: "Enterprise",
-    service: "Strategy",
-    title: "Signal vs. Story — Why Belief Beats Performance",
-    description: "Performance alone doesn't raise capital. Stories don't close markets. Signal does.",
-    slug: "signal-vs-story",
-    category: "Signal"
-  },
-  {
-    id: 17,
-    sector: "Enterprise",
-    service: "Strategy",
-    title: "When Storytelling Becomes Noise",
-    description: "A good story entertains. A strong signal moves markets. Know the difference.",
-    slug: "when-storytelling-becomes-noise",
-    category: "Storytelling"
-  },
-  {
-    id: 18,
-    sector: "Enterprise",
-    service: "Strategy",
-    title: "Why More Data Creates More Confusion",
-    description: "Founders don't fail because they lack data. They fail because they drown in it.",
-    slug: "why-more-data-creates-more-confusion",
-    category: "Founder Decisions"
-  },
-  {
-    id: 19,
-    sector: "Enterprise",
-    service: "Strategy",
-    title: "Why VC Deal Flow Depends on Signal",
-    description: "VCs don't hunt deals. Deals flow to the VCs with the strongest signals.",
-    slug: "why-vc-deal-flow-depends-on-signal",
-    category: "Venture Capital"
-  },
-  {
-    id: 20,
-    sector: "Enterprise",
-    service: "Fundraising",
-    title: "Capital as Signal, Not Commodity",
-    description: "Markets don't treat capital as fuel. They decode it as signal.",
-    slug: "capital-as-signal-not-commodity",
-    category: "Fund Raising"
-  }
-];
+import { whitePapers, WhitePaper } from "@/data/whitePapers";
 
 export default function WhitePapers() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -371,27 +180,28 @@ export default function WhitePapers() {
           {filteredPapers.length > 0 ? (
             <div className="mt-8 grid md:grid-cols-3 gap-6">
               {filteredPapers.map((paper) => (
-                <div
-                  key={paper.id}
-                  className="group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-                  data-testid={`card-white-paper-${paper.id}`}
-                >
-                  <div className="flex items-center gap-2">
-                    <span className="bg-brand-red p-1.5 rounded-lg inline-block">
-                      <FileText className="w-5 h-5 text-white" />
-                    </span>
-                    <div className="text-xs uppercase text-gray-500 font-medium">
-                      {paper.category} • White Paper
+                <Link key={paper.id} href={`/white-papers/${paper.slug}`}>
+                  <div
+                    className="group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                    data-testid={`card-white-paper-${paper.id}`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="bg-brand-red p-1.5 rounded-lg inline-block">
+                        <FileText className="w-5 h-5 text-white" />
+                      </span>
+                      <div className="text-xs uppercase text-gray-500 font-medium">
+                        {paper.category} • White Paper
+                      </div>
                     </div>
+                    <h3 className="mt-4 text-lg font-semibold group-hover:underline" data-testid={`text-title-${paper.id}`}>
+                      {paper.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-700">{paper.description}</p>
+                    <span className="mt-4 inline-block text-sm text-brand-red font-semibold">
+                      Read →
+                    </span>
                   </div>
-                  <h3 className="mt-4 text-lg font-semibold group-hover:underline" data-testid={`text-title-${paper.id}`}>
-                    {paper.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-700">{paper.description}</p>
-                  <span className="mt-4 inline-block text-sm text-brand-red font-semibold">
-                    Read →
-                  </span>
-                </div>
+                </Link>
               ))}
             </div>
           ) : (

@@ -73,6 +73,7 @@ import CaseStudy46 from "@/pages/case-studies/CaseStudy46";
 import CaseStudy47 from "@/pages/case-studies/CaseStudy47";
 import CaseStudy48 from "@/pages/case-studies/CaseStudy48";
 import WhitePapers from "@/pages/WhitePapers";
+import WhitePaperDetail from "@/pages/WhitePaperDetail";
 import ClaritySeries from "@/pages/ClaritySeries";
 import About from "@/pages/About";
 import OurStory from "@/pages/OurStory";
@@ -198,6 +199,7 @@ function RouterContent() {
           <Route path="/case-studies/47" component={CaseStudy47} />
           <Route path="/case-studies/48" component={CaseStudy48} />
           <Route path="/white-papers" component={WhitePapers} />
+          <Route path="/white-papers/:slug" component={WhitePaperDetail} />
           <Route path="/clarity-series" component={ClaritySeries} />
           <Route path="/about" component={About} />
           <Route path="/about/story" component={OurStory} />
