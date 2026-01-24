@@ -5,7 +5,8 @@ import {
   Phone,
   Mail,
   Send,
-  Bot
+  Bot,
+  Loader2
 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -59,12 +60,37 @@ export default function Contact() {
       await saveFormSubmission("contact_forms", data);
       return apiRequest("POST", "/api/contact", data);
     },
-    onSuccess: () => {
+    onSuccess: (_, variables) => {
       toast({
         title: "Message sent successfully!",
         description: "We'll get back to you within 24 hours.",
+        duration: 5000,
       });
       form.reset();
+
+      // Compose and open email with all the details after successful save
+      const emailSubject = `New Contact Form Submission from ${variables.firstName} ${variables.lastName}`;
+      const emailBody = `
+Contact Form Submission Details:
+
+Name: ${variables.firstName} ${variables.lastName}
+Email: ${variables.email}
+Company: ${variables.company || 'Not provided'}
+Service Interest: ${variables.serviceInterest || 'Not specified'}
+
+Message:
+${variables.message}
+
+---
+This email was generated from the INSTAURA contact form.
+Submitted on: ${new Date().toLocaleString()}
+      `.trim();
+
+      // Create mailto link with all the information
+      const mailtoLink = `mailto:team@sales.consultinstaura.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+      // Open the user's default email client
+      window.open(mailtoLink, '_blank');
     },
     onError: (error) => {
       toast({
@@ -76,32 +102,8 @@ export default function Contact() {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    // First store the contact in the database
+    // Store the contact in the database and trigger onSuccess
     contactMutation.mutate(data);
-
-    // Then compose and open email with all the details
-    const emailSubject = `New Contact Form Submission from ${data.firstName} ${data.lastName}`;
-    const emailBody = `
-Contact Form Submission Details:
-
-Name: ${data.firstName} ${data.lastName}
-Email: ${data.email}
-Company: ${data.company || 'Not provided'}
-Service Interest: ${data.serviceInterest || 'Not specified'}
-
-Message:
-${data.message}
-
----
-This email was generated from the INSTAURA contact form.
-Submitted on: ${new Date().toLocaleString()}
-    `.trim();
-
-    // Create mailto link with all the information
-    const mailtoLink = `mailto:team@sales.consultinstaura.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-
-    // Open the user's default email client
-    window.open(mailtoLink, '_blank');
   };
 
   const emailOptions = [
@@ -379,7 +381,10 @@ Submitted on: ${new Date().toLocaleString()}
                           data-testid="button-submit-contact"
                         >
                           {contactMutation.isPending ? (
-                            "Processing & Opening Email..."
+                            <>
+                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                              Sending...
+                            </>
                           ) : (
                             <>
                               <Send className="mr-2" size={16} />
