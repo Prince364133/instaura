@@ -10,8 +10,8 @@ export default function Insights() {
       setTimeout(() => {
         const element = document.getElementById(hash.substring(1));
         if (element) {
-          element.scrollIntoView({ 
-            behavior: 'smooth', 
+          element.scrollIntoView({
+            behavior: 'smooth',
             block: 'start',
             inline: 'nearest'
           });
@@ -28,13 +28,11 @@ export default function Insights() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 to-red-50/30"></div>
         <div className="absolute top-20 right-20 w-72 h-72 bg-brand-red/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-        
+
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-6 py-3 bg-brand-red/10 border border-brand-red/20 rounded-full">
-                <span className="text-brand-red text-sm font-semibold uppercase tracking-wider">Coming Soon</span>
-              </div>
+
               <h1 className="text-5xl md:text-7xl font-black leading-[0.9] tracking-tight">
                 Insights by Instaura
               </h1>
@@ -43,7 +41,7 @@ export default function Insights() {
                 <span className="font-bold text-gray-900">Signal-driven knowledge hub</span> — where case studies, white papers, and clarity drops show how capital moves, GTMs succeed, and strategies scale.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">
                 <Button className="bg-brand-red text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-red-700 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -56,7 +54,7 @@ export default function Insights() {
                 </Button>
               </Link>
             </div>
-            
+
             <div className="mt-12 group bg-white/80 backdrop-blur-sm rounded-3xl border-2 border-white/60 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-brand-red/30 transition-all duration-500 p-8 max-w-4xl mx-auto">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
@@ -82,7 +80,7 @@ export default function Insights() {
               Noise is everywhere. Movements happen only on signal. Insights distills 18 years of practice into legible, repeatable frameworks founders and leaders can use immediately.
             </p>
           </div>
-          
+
           {/* Pedigree strip */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="group text-center rounded-3xl border-2 border-white/60 p-8 bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl hover:scale-110 hover:border-brand-red/30 transition-all duration-500">
