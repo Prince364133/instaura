@@ -1,8 +1,10 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/animations/ScrollReveal";
+import { useChatbot } from "@/context/ChatbotContext";
 
 export default function StrategyConsulting() {
+  const { openChatbot } = useChatbot();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -43,21 +45,21 @@ export default function StrategyConsulting() {
   ];
 
   const caseStudies = [
-    { title: "Consumer Tech — Signal Call", description: "One call, GTM recode, quarter saved.", href: "/insights/case-studies/consumer-tech-signal-call" },
-    { title: "SaaS — Strategy Sprint", description: "Quarterly reset unlocked enterprise adoption.", href: "/insights/case-studies/saas-quarterly-sprint" },
-    { title: "Defense — Fractional Strategy", description: "$23M close after raise reposition.", href: "/insights/case-studies/defense-fractional-strategy" }
+    { title: "Brand Velocity → Capital Velocity", description: "Investors saw viral buzz, not scalable growth. We reframed the raise with brand velocity.", href: "/case-studies/6" },
+    { title: "Quarterly Sprint — Roadmap to Movement", description: "Series A fresh, but growth stalled. We installed a Signal-Driven Sprint model.", href: "/case-studies/4" },
+    { title: "From Prototype to $23M Raise", description: "Defense manufacturer proven technology but stalled adoption. We reframed the signal.", href: "/case-studies/26" }
   ];
 
   const whitePapers = [
-    { title: "Strategy Isn't Slides. It's Signal.", description: "How belief drives decisions, not decks.", href: "/insights/white-papers/strategy-is-signal" },
-    { title: "The Cost of Strategy Drift", description: "Delay, dilution, and missed inevitability.", href: "/insights/white-papers/cost-of-strategy-drift" },
-    { title: "Boardroom Clarity", description: "Aligning leaders to transmit signal.", href: "/insights/white-papers/boardroom-clarity" }
+    { title: "Pricing as Signal", description: "Your price is the first story you tell.", href: "/white-papers/pricing-as-signal" },
+    { title: "Signal-First Pitch Decks", description: "Investors don't invest in slides. They invest in the signal.", href: "/white-papers/signal-first-pitch-decks" },
+    { title: "Narrative as a Retention Signal", description: "Customers don't stay because of contracts. They stay for the signal.", href: "/white-papers/narrative-as-a-retention-signal" }
   ];
 
   const claritySeries = [
-    { title: "The $500k GTM We Didn't Spend", description: "Clarity over campaigns.", href: "/insights/clarity-series/500k-gtm-saved" },
-    { title: "Quarterly Recalibration", description: "Why sprints beat offsites.", href: "/insights/clarity-series/quarterly-recalibration" },
-    { title: "Boardroom Inevitability", description: "Turning logic into conviction.", href: "/insights/clarity-series/boardroom-inevitability" }
+    { title: "The Silence That Closed a $4M Deal", description: "The most powerful signal is the one you don't say.", href: "/clarity-series/silence-closed-4m-deal" },
+    { title: "When to Stop Iterating and Start Signaling", description: "Founders stuck in loop need belief, not features.", href: "/clarity-series/when-to-stop-iterating" },
+    { title: "Investor Calls That Convert", description: "Why investors ignore your slides and listen to your signal.", href: "/clarity-series/investor-calls-that-convert" }
   ];
 
   const faqs = [
@@ -115,8 +117,9 @@ export default function StrategyConsulting() {
                 <Button className="bg-brand-red text-white px-6 py-3 rounded-full hover:bg-red-700">Book a Signal Call</Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" className="border border-gray-900 px-6 py-3 rounded-full">Talk to YAS</Button>
+                <Button className="bg-brand-red text-white px-6 py-3 rounded-full hover:bg-red-700">Book a Signal Call</Button>
               </Link>
+              <Button variant="outline" className="border border-gray-900 px-6 py-3 rounded-full" onClick={openChatbot}>Talk to YAS</Button>
             </div>
             <p className="mt-3 text-xs text-gray-500">Backed by 18 years • 2500+ clients • 250+ movements • $2B+ moved</p>
           </div>
@@ -128,13 +131,13 @@ export default function StrategyConsulting() {
               <li>Founder-led strategy that turns into movement</li>
             </ul>
             <div className="mt-4 flex gap-2 flex-wrap">
-              <Button 
+              <Button
                 onClick={() => scrollToSection('models')}
                 className="bg-brand-red text-white px-4 py-2 rounded-full text-sm hover:bg-red-700"
               >
                 See Service Models
               </Button>
-              <Button 
+              <Button
                 onClick={() => scrollToSection('approach')}
                 variant="outline"
                 className="border px-4 py-2 rounded-full text-sm"
@@ -281,8 +284,9 @@ export default function StrategyConsulting() {
                     <Button className="bg-brand-red text-white px-5 py-2 rounded-full text-sm hover:bg-red-700">Book a Signal Call</Button>
                   </Link>
                   <Link href="/contact">
-                    <Button variant="outline" className="border px-5 py-2 rounded-full text-sm">Talk to Yas</Button>
+                    <Button className="bg-brand-red text-white px-5 py-2 rounded-full text-sm hover:bg-red-700">Book a Signal Call</Button>
                   </Link>
+                  <Button variant="outline" className="border px-5 py-2 rounded-full text-sm" onClick={openChatbot}>Talk to Yas</Button>
                 </div>
                 <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden mt-6">
                   <div className="h-full bg-gradient-to-r from-brand-red to-red-600 w-0 group-hover:w-full transition-all duration-700"></div>
@@ -305,9 +309,10 @@ export default function StrategyConsulting() {
                   <Link href="/contact?subject=Strategy%20Sprint%20(Quarterly)">
                     <Button className="bg-brand-red text-white px-5 py-2 rounded-full text-sm hover:bg-red-700">Start a Sprint</Button>
                   </Link>
-                  <Link href="/contact">
-                    <Button variant="outline" className="border px-5 py-2 rounded-full text-sm">Talk to Yas</Button>
+                  <Link href="/contact?subject=Strategy%20Sprint%20(Quarterly)">
+                    <Button className="bg-brand-red text-white px-5 py-2 rounded-full text-sm hover:bg-red-700">Start a Sprint</Button>
                   </Link>
+                  <Button variant="outline" className="border px-5 py-2 rounded-full text-sm" onClick={openChatbot}>Talk to Yas</Button>
                 </div>
                 <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden mt-6">
                   <div className="h-full bg-gradient-to-r from-brand-red to-red-600 w-0 group-hover:w-full transition-all duration-700"></div>
@@ -330,9 +335,10 @@ export default function StrategyConsulting() {
                   <Link href="/contact?subject=Fractional%20Strategy%20Mandate">
                     <Button className="bg-brand-red text-white px-5 py-2 rounded-full text-sm hover:bg-red-700">Explore a Mandate</Button>
                   </Link>
-                  <Link href="/contact">
-                    <Button variant="outline" className="border px-5 py-2 rounded-full text-sm">Talk to Yas</Button>
+                  <Link href="/contact?subject=Fractional%20Strategy%20Mandate">
+                    <Button className="bg-brand-red text-white px-5 py-2 rounded-full text-sm hover:bg-red-700">Explore a Mandate</Button>
                   </Link>
+                  <Button variant="outline" className="border px-5 py-2 rounded-full text-sm" onClick={openChatbot}>Talk to Yas</Button>
                 </div>
                 <div className="w-full h-1 bg-gray-200 rounded-full overflow-hidden mt-6">
                   <div className="h-full bg-gradient-to-r from-brand-red to-red-600 w-0 group-hover:w-full transition-all duration-700"></div>
@@ -457,8 +463,9 @@ export default function StrategyConsulting() {
               <Button className="bg-brand-red text-white px-6 py-3 rounded-full hover:bg-red-700">Book a Signal Call</Button>
             </Link>
             <Link href="/contact">
-              <Button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100">Talk to Yas</Button>
+              <Button className="bg-brand-red text-white px-6 py-3 rounded-full hover:bg-red-700">Book a Signal Call</Button>
             </Link>
+            <Button className="bg-white text-black px-6 py-3 rounded-full hover:bg-gray-100" onClick={openChatbot}>Talk to Yas</Button>
           </div>
         </div>
       </section>
@@ -475,7 +482,7 @@ export default function StrategyConsulting() {
                   <div className="mt-2 text-gray-700">
                     {faq.answer.includes('\n') ? (
                       <ul className="list-disc ml-5 space-y-1">
-                        {faq.answer.split('\n').map((line, lineIndex) => 
+                        {faq.answer.split('\n').map((line, lineIndex) =>
                           line.trim() && <li key={lineIndex} dangerouslySetInnerHTML={{ __html: line }} />
                         )}
                       </ul>
