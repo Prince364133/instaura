@@ -379,22 +379,23 @@ export default function ClaritySeries() {
             {filteredPosts.length > 0 ? (
               <div className="grid md:grid-cols-3 gap-6">
                 {filteredPosts.map((post) => (
-                  <div
-                    key={post.id}
-                    className="group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-                    data-testid={`card-clarity-post-${post.id}`}
-                  >
-                    <div className="text-xs uppercase text-gray-500 font-medium">
-                      {post.theme}
+                  <Link key={post.id} href={`/clarity-series/${post.slug}`}>
+                    <div
+                      className="group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col"
+                      data-testid={`card-clarity-post-${post.id}`}
+                    >
+                      <div className="text-xs uppercase text-gray-500 font-medium">
+                        {post.theme}
+                      </div>
+                      <h3 className="mt-2 text-lg font-semibold group-hover:underline" data-testid={`text-title-${post.id}`}>
+                        {post.title}
+                      </h3>
+                      <p className="mt-2 text-sm text-gray-700 flex-grow">{post.description}</p>
+                      <span className="mt-3 inline-block text-sm text-brand-red font-semibold">
+                        Read →
+                      </span>
                     </div>
-                    <h3 className="mt-2 text-lg font-semibold group-hover:underline" data-testid={`text-title-${post.id}`}>
-                      {post.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-gray-700">{post.description}</p>
-                    <span className="mt-3 inline-block text-sm text-brand-red font-semibold">
-                      Read →
-                    </span>
-                  </div>
+                  </Link>
                 ))}
               </div>
             ) : (
