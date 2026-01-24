@@ -26,7 +26,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, Pre-Product, Signal as the Only Basis",
     title: "The Signal That Closed Without a Product",
     description: "Why belief moves first, and why sometimes the product comes later.",
-    slug: "signal-that-closed-without-product",
+    slug: "signal-closed-without-product",
     sector: "DeepTech",
     service: "Fundraising"
   },
@@ -53,7 +53,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Product Strategy, Founder Psychology, Signal vs. Noise",
     title: "When to Stop Iterating and Start Signaling",
     description: "Founders stuck in the pivot loop don't need another version — they need belief.",
-    slug: "stop-iterating-start-signaling",
+    slug: "when-to-stop-iterating",
     sector: "SaaS",
     service: "Strategy"
   },
@@ -71,7 +71,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, Pitch Design, Signal Architecture",
     title: "The First Slide That Wins Investor Meetings",
     description: "Why most decks fail before they start — and the one opening signal that shifts investor belief instantly.",
-    slug: "first-slide-that-wins-investor-meetings",
+    slug: "first-slide-wins-investor-meetings",
     sector: "Enterprise",
     service: "Fundraising"
   },
@@ -80,7 +80,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "SaaS, Retention, Narrative as Signal",
     title: "Reversing Churn with Narrative",
     description: "Why metrics don't always save you — but recalibrating your signal story can.",
-    slug: "reversing-churn-with-narrative",
+    slug: "reversing-churn-narrative",
     sector: "SaaS",
     service: "Strategy"
   },
@@ -89,7 +89,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, Traction, Signal vs. Numbers",
     title: "Why Your Traction Is Invisible",
     description: "Because numbers don't move investors — signals do.",
-    slug: "why-your-traction-is-invisible",
+    slug: "why-traction-invisible",
     sector: "Enterprise",
     service: "Fundraising"
   },
@@ -98,7 +98,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "GTM, Early Customer Acquisition, Signal in Sales",
     title: "Signals That Unlock First Customers",
     description: "Why your first 10 customers don't come from features, but from the signals you send.",
-    slug: "signals-that-unlock-first-customers",
+    slug: "signals-unlock-first-customers",
     sector: "SaaS",
     service: "GTM"
   },
@@ -107,7 +107,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Founder Psychology, Decision-Making, Signal vs. Noise",
     title: "The Founder's Filter",
     description: "Why founders hear signal as noise — and noise as signal — and how to flip the filter.",
-    slug: "the-founders-filter",
+    slug: "founders-filter",
     sector: "Enterprise",
     service: "Strategy"
   },
@@ -116,7 +116,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "GTM, Outreach, Signal Writing",
     title: "The Single Email That Opened a Market",
     description: "Why one signal-rich outreach outperformed months of cold campaigns.",
-    slug: "single-email-opened-market",
+    slug: "email-opened-market",
     sector: "SaaS",
     service: "GTM"
   },
@@ -125,7 +125,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Talent, Fund Raising, Signal in Leadership",
     title: "The One Hire That Changed Everything",
     description: "Why the right signal hire does more than fill a role — it rewires belief across investors, customers, and teams.",
-    slug: "one-hire-changed-everything",
+    slug: "hire-changed-everything",
     sector: "DeepTech",
     service: "Fundraising"
   },
@@ -143,7 +143,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, Negotiation, Founder Psychology",
     title: "The Investor Who Walked Away — and Why That Was the Win",
     description: "Sometimes the best raise is the one you don't close.",
-    slug: "investor-who-walked-away",
+    slug: "investor-walked-away",
     sector: "Enterprise",
     service: "Fundraising"
   },
@@ -152,7 +152,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, Narrative, Signal Velocity",
     title: "From Noise to Belief in 14 Days",
     description: "Why signal — not time — determines how fast you move the market.",
-    slug: "from-noise-to-belief-in-14-days",
+    slug: "noise-to-belief-14-days",
     sector: "Enterprise",
     service: "Fundraising"
   },
@@ -161,7 +161,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "GTM, Market Entry, Signal in Execution",
     title: "The GTM Sprint That Reframed an Entire Market",
     description: "When 90 days of signal-first GTM did what 18 months of noise couldn't.",
-    slug: "gtm-sprint-that-reframed-market",
+    slug: "gtm-sprint-market-reframe",
     sector: "Enterprise",
     service: "GTM"
   },
@@ -170,7 +170,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, GTM, Branding vs. Signal",
     title: "When Storytelling Becomes Noise",
     description: "Stories are memorable. Signals are believable. The difference decides outcomes.",
-    slug: "when-storytelling-becomes-noise",
+    slug: "storytelling-becomes-noise",
     sector: "Enterprise",
     service: "Strategy"
   },
@@ -188,7 +188,7 @@ const clarityPosts: ClarityPost[] = [
     theme: "Fund Raising, GTM, Signal Proof",
     title: "The Proof Artifact That Closed the Deal",
     description: "Belief doesn't move because of decks or pitches. It moves because of proof.",
-    slug: "proof-artifact-that-closed-deal",
+    slug: "proof-artifact-closed-deal",
     sector: "Enterprise",
     service: "Fundraising"
   }
