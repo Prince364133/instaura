@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ReactNode } from "react";
+import { RelatedResource } from "../components/ResourceCards";
 
 export interface ClaritySeriesPaper {
     id: number;
@@ -7,6 +8,7 @@ export interface ClaritySeriesPaper {
     slug: string;
     category: string;
     content: ReactNode;
+    relatedResources?: RelatedResource[];
 }
 
 export const claritySeriesData: ClaritySeriesPaper[] = [
@@ -92,52 +94,26 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20%244M%20Seed%20(Redacted)" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
-                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
-                                        Ask AI
-                                    </span>
-                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
-                                        DeepTech $4M Seed (Redacted)
-                                    </h3>
-                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
-                                        Ask YAS Intelligence <span>→</span>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link href="/contact?ask_ai=Tell%20me%20about%20Negotiation%20as%20Signal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
-                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
-                                        Negotiation as Signal
-                                    </h3>
-                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
-                                        Read Resource <span>→</span>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link href="/clarity-series/investor-calls-that-convert" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
-                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
-                                        Investor Calls That Convert
-                                    </h3>
-                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
-                                        Read Resource <span>→</span>
-                                    </div>
-                                </div>
-                            </Link></div>
-                    </div>
-                </section>
-
 
             </>
-        )
+        ),
+        relatedResources: [
+            {
+                type: "Ask AI",
+                title: "DeepTech $4M Seed (Redacted)",
+                href: "/#/contact?ask_ai=Tell%20me%20about%20DeepTech%20%244M%20Seed%20(Redacted)"
+            },
+            {
+                type: "White Paper",
+                title: "Negotiation as Signal",
+                href: "/#/contact?ask_ai=Tell%20me%20about%20Negotiation%20as%20Signal"
+            },
+            {
+                type: "Clarity Post",
+                title: "Investor Calls That Convert",
+                href: "/#/clarity-series/investor-calls-that-convert"
+            }
+        ]
     },
     {
         id: 2,

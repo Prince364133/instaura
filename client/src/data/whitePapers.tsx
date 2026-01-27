@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ReactNode } from "react";
+import { RelatedResource } from "../components/ResourceCards";
 
 export interface WhitePaper {
     id: number;
@@ -10,6 +11,7 @@ export interface WhitePaper {
     slug: string;
     category: string;
     content: ReactNode;
+    relatedResources?: RelatedResource[];
 }
 
 export const whitePapers: WhitePaper[] = [
@@ -139,49 +141,28 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/clarity-series/funnel-not-broken-signal-is" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100  hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Series #17</span>
-                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
-                                        Your Funnel Is Not Broken, Your Signal Is
-                                    </h3>
-                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
-                                        Read Resource <span>→</span>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link href="/white-papers/gtm-as-signal-not-execution" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100  hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper #5</span>
-                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
-                                        GTM as Signal, Not Execution
-                                    </h3>
-                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
-                                        Read Resource <span>→</span>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20GTM%20Signal%20That%20Reframed%20Market%20Entry" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100  hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
-                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
-                                        SaaS GTM Signal That Reframed Market Entry
-                                    </h3>
-                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
-                                        Read Resource <span>→</span>
-                                    </div>
-                                </div>
-                            </Link></div>
-                    </div>
-                </section>
 
-                
             </>
-        )
+        ),
+        relatedResources: [
+            {
+                type: "Clarity Post",
+                label: "Clarity Series #17",
+                title: "Your Funnel Is Not Broken, Your Signal Is",
+                href: "/#/clarity-series/funnel-not-broken-signal-is"
+            },
+            {
+                type: "White Paper",
+                label: "White Paper #5",
+                title: "GTM as Signal, Not Execution",
+                href: "/#/white-papers/gtm-as-signal-not-execution"
+            },
+            {
+                type: "Case Study",
+                title: "SaaS GTM Signal That Reframed Market Entry",
+                href: "/#/contact?ask_ai=Tell%20me%20about%20SaaS%20GTM%20Signal%20That%20Reframed%20Market%20Entry"
+            }
+        ]
     },
     {
         id: 2,
@@ -304,20 +285,28 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #5:</span> <Link href="/clarity-series/first-slide-wins-investor-meetings" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The First Slide That Wins Investor Meetings</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> DeepTech Raise That Closed With 7 Slides</p>
-                            <p><span className="font-semibold">White Paper #14:</span> <Link href="/white-papers/proof-as-signal-in-fund-raising" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Proof as Signal in Fund Raising</Link></p>
-                        </div>
-                    </div>
-                </section>
 
-                
             </>
-        )
+        ),
+        relatedResources: [
+            {
+                type: "Clarity Post",
+                label: "Clarity Series #5",
+                title: "The First Slide That Wins Investor Meetings",
+                href: "/#/clarity-series/first-slide-wins-investor-meetings"
+            },
+            {
+                type: "Case Study",
+                title: "DeepTech Raise That Closed With 7 Slides",
+                href: "/#/contact?ask_ai=Tell%20me%20about%20DeepTech%20Raise%20That%20Closed%20With%207%20Slides"
+            },
+            {
+                type: "White Paper",
+                label: "White Paper #14",
+                title: "Proof as Signal in Fund Raising",
+                href: "/#/white-papers/proof-as-signal-in-fund-raising"
+            }
+        ]
     },
     {
         id: 3,
@@ -437,20 +426,28 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #9:</span> Retention Is Belief, Not Contract</p>
-                            <p><span className="font-semibold">White Paper #6:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Noise in Founder Decision-Making</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> <Link href="/clarity-series/reversing-churn-narrative" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">SaaS Narrative That Cut Churn by 70%</Link></p>
-                        </div>
-                    </div>
-                </section>
 
-                
             </>
-        )
+        ),
+        relatedResources: [
+            {
+                type: "Clarity Post",
+                label: "Clarity Series #9",
+                title: "Retention Is Belief, Not Contract",
+                href: "/#/clarity-series/retention-is-belief-not-contract"
+            },
+            {
+                type: "White Paper",
+                label: "White Paper #6",
+                title: "Signal vs. Noise in Founder Decision-Making",
+                href: "/#/white-papers/signal-vs-noise-in-founder-decision-making"
+            },
+            {
+                type: "Case Study",
+                title: "SaaS Narrative That Cut Churn by 70%",
+                href: "/#/clarity-series/reversing-churn-narrative"
+            }
+        ]
     },
     {
         id: 4,
@@ -583,7 +580,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -715,7 +712,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -847,7 +844,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -976,7 +973,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1112,7 +1109,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1242,7 +1239,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1375,7 +1372,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1506,7 +1503,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1635,7 +1632,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1770,7 +1767,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -1899,7 +1896,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -2030,7 +2027,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -2158,7 +2155,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -2288,7 +2285,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -2421,7 +2418,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -2551,7 +2548,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },
@@ -2682,7 +2679,7 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
-                
+
             </>
         )
     },

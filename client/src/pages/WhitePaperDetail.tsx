@@ -1,6 +1,6 @@
-import { useRoute } from "wouter";
+import { useRoute, Link } from "wouter";
 import { whitePapers } from "@/data/whitePapers";
-import { Link } from "wouter";
+import { ResourceCards } from "../components/ResourceCards";
 import NotFound from "./not-found";
 import { Button } from "@/components/ui/button";
 
@@ -113,6 +113,11 @@ export default function WhitePaperDetail() {
 
             {/* CONTENT BODY */}
             {paper.content}
+
+            {/* RELATED RESOURCES */}
+            {paper.relatedResources && (
+                <ResourceCards resources={paper.relatedResources} />
+            )}
 
             {/* FOOTER CTA */}
             <section className="px-6 py-14 bg-black text-white text-center mt-12">
