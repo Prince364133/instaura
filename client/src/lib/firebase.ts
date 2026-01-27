@@ -1,19 +1,23 @@
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { getFunctions } from "firebase/functions";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDFYhjBIDFZMUbUf4U4aXsMH-Sm5yLKXGs",
-    authDomain: "instaura-cb182.firebaseapp.com",
-    projectId: "instaura-cb182",
-    storageBucket: "instaura-cb182.firebasestorage.app",
-    messagingSenderId: "350604671415",
-    appId: "1:350604671415:web:d74cddf74c4ea1ff0f5032",
-    measurementId: "G-QQ08EE07ME"
+    apiKey: "AIzaSyAY_TN3to4yAqk7IJNqVSKFS-fSuynXwOw",
+    authDomain: "teste-erhij8.firebaseapp.com",
+    projectId: "teste-erhij8",
+    storageBucket: "teste-erhij8.firebasestorage.app",
+    messagingSenderId: "744778225564",
+    appId: "1:744778225564:web:55adaccd9baa5564dfda59",
+    measurementId: "G-BLVDC6CV2B"
 };
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const functions = getFunctions(app);
+export const analytics = getAnalytics(app);
 
 export const saveFormSubmission = async (collectionName: string, data: any) => {
     try {

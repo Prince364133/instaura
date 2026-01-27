@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useChatbot } from '@/context/ChatbotContext';
+import { httpsCallable } from "firebase/functions";
+import { functions } from "@/lib/firebase";
 import { Input } from '@/components/ui/input';
 import { useLocation } from "wouter";
 
@@ -64,6 +66,9 @@ export default function ChatbotModal() {
         }
     }, [messages, isOpen]);
 
+
+
+
     const handleSendMessage = async (e?: React.FormEvent, overrideDetail?: string) => {
         e?.preventDefault();
         const textToSend = overrideDetail || inputValue;
@@ -81,20 +86,13 @@ export default function ChatbotModal() {
         setIsTyping(true);
 
         try {
-            const response = await fetch('/api/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: textToSend })
-            });
+            // Updated to call Firebase Cloud Function "chat"
+            const chatFunction = httpsCallable(functions, 'chat');
+            const result = await chatFunction({ message: textToSend });
 
-            let responseText = "I'm sorry, I couldn't process that.";
-
-            try {
-                const data = await response.json();
-                responseText = data.message || JSON.stringify(data);
-            } catch (error) {
-                responseText = await response.text();
-            }
+            // Type safe response handling
+            const data = result.data as any;
+            const responseText = data.message || "I'm not sure how to answer that.";
 
             const botResponse: Message = {
                 id: Date.now().toString(),
@@ -108,7 +106,7 @@ export default function ChatbotModal() {
             console.error('Error sending message:', error);
             const errorResponse: Message = {
                 id: Date.now().toString(),
-                text: "Sorry, I'm having trouble connecting to the server. Please check your connection.",
+                text: "Sorry, I'm having trouble thinking right now (Network/AI Error). Please try again.",
                 sender: 'bot',
                 timestamp: new Date()
             };
