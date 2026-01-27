@@ -1,6 +1,6 @@
-import { useRoute, Link } from "wouter";
+import { useRoute } from "wouter";
 import { whitePapers } from "@/data/whitePapers";
-import { ResourceCards } from "../components/ResourceCards";
+import { Link } from "wouter";
 import NotFound from "./not-found";
 import { Button } from "@/components/ui/button";
 
@@ -78,7 +78,7 @@ export default function WhitePaperDetail() {
                             </Link>
                         </div>
                     </div>
-                    <aside className="lg:col-span-4 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+                    <aside className="lg:col-span-4 group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         <div className="grid grid-cols-2 gap-4 text-sm">
                             <div>
                                 <div className="text-xs uppercase text-gray-500 font-medium">Theme</div>
@@ -113,11 +113,6 @@ export default function WhitePaperDetail() {
 
             {/* CONTENT BODY */}
             {paper.content}
-
-            {/* RELATED RESOURCES */}
-            {paper.relatedResources && (
-                <ResourceCards resources={paper.relatedResources} />
-            )}
 
             {/* FOOTER CTA */}
             <section className="px-6 py-14 bg-black text-white text-center mt-12">

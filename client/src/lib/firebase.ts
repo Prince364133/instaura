@@ -1,7 +1,7 @@
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { getFunctions } from "firebase/functions";
+import { getFunctions, connectFunctionsEmulator } from "firebase/functions";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -17,6 +17,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const functions = getFunctions(app);
+
+// Connect to emulator if running locally
+// Connect to emulator if running locally
+// if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+//     console.log("Using Firebase Functions Emulator");
+//     connectFunctionsEmulator(functions, "127.0.0.1", 5001);
+// }
+
 export const analytics = getAnalytics(app);
 
 export const saveFormSubmission = async (collectionName: string, data: any) => {

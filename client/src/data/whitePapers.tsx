@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import { ReactNode } from "react";
-import { RelatedResource } from "../components/ResourceCards";
 
 export interface WhitePaper {
     id: number;
@@ -11,7 +10,6 @@ export interface WhitePaper {
     slug: string;
     category: string;
     content: ReactNode;
-    relatedResources?: RelatedResource[];
 }
 
 export const whitePapers: WhitePaper[] = [
@@ -141,28 +139,70 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
+                <section className="px-6 py-8">
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/funnel-not-broken-signal-is" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #17
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Your Funnel Is Not Broken, Your Signal Is
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/gtm-as-signal-not-execution" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #5
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        GTM as Signal, Not Execution
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20GTM%20Signal%20That%20Reframed%20Market%20Entry" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS GTM Signal That Reframed Market Entry
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
+                    </div>
+                </section>
+
 
             </>
-        ),
-        relatedResources: [
-            {
-                type: "Clarity Post",
-                label: "Clarity Series #17",
-                title: "Your Funnel Is Not Broken, Your Signal Is",
-                href: "/#/clarity-series/funnel-not-broken-signal-is"
-            },
-            {
-                type: "White Paper",
-                label: "White Paper #5",
-                title: "GTM as Signal, Not Execution",
-                href: "/#/white-papers/gtm-as-signal-not-execution"
-            },
-            {
-                type: "Case Study",
-                title: "SaaS GTM Signal That Reframed Market Entry",
-                href: "/#/contact?ask_ai=Tell%20me%20about%20SaaS%20GTM%20Signal%20That%20Reframed%20Market%20Entry"
-            }
-        ]
+        )
     },
     {
         id: 2,
@@ -285,28 +325,70 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
+                <section className="px-6 py-8">
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/first-slide-wins-investor-meetings" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #5
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        The First Slide That Wins Investor Meetings
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20Raise%20That%20Closed%20With%207%20Slides" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        DeepTech Raise That Closed With 7 Slides
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/proof-as-signal-in-fund-raising" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #14
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Proof as Signal in Fund Raising
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
+                    </div>
+                </section>
+
 
             </>
-        ),
-        relatedResources: [
-            {
-                type: "Clarity Post",
-                label: "Clarity Series #5",
-                title: "The First Slide That Wins Investor Meetings",
-                href: "/#/clarity-series/first-slide-wins-investor-meetings"
-            },
-            {
-                type: "Case Study",
-                title: "DeepTech Raise That Closed With 7 Slides",
-                href: "/#/contact?ask_ai=Tell%20me%20about%20DeepTech%20Raise%20That%20Closed%20With%207%20Slides"
-            },
-            {
-                type: "White Paper",
-                label: "White Paper #14",
-                title: "Proof as Signal in Fund Raising",
-                href: "/#/white-papers/proof-as-signal-in-fund-raising"
-            }
-        ]
+        )
     },
     {
         id: 3,
@@ -426,28 +508,70 @@ export const whitePapers: WhitePaper[] = [
                     </div>
                 </section>
 
+                <section className="px-6 py-8">
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Retention%20Is%20Belief%2C%20Not%20Contract" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #9
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Retention Is Belief, Not Contract
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #6
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal vs. Noise in Founder Decision-Making
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/clarity-series/reversing-churn-narrative" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Narrative That Cut Churn by 70%
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
+                    </div>
+                </section>
+
 
             </>
-        ),
-        relatedResources: [
-            {
-                type: "Clarity Post",
-                label: "Clarity Series #9",
-                title: "Retention Is Belief, Not Contract",
-                href: "/#/clarity-series/retention-is-belief-not-contract"
-            },
-            {
-                type: "White Paper",
-                label: "White Paper #6",
-                title: "Signal vs. Noise in Founder Decision-Making",
-                href: "/#/white-papers/signal-vs-noise-in-founder-decision-making"
-            },
-            {
-                type: "Case Study",
-                title: "SaaS Narrative That Cut Churn by 70%",
-                href: "/#/clarity-series/reversing-churn-narrative"
-            }
-        ]
+        )
     },
     {
         id: 4,
@@ -572,11 +696,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #16:</span> <Link href="/clarity-series/storytelling-becomes-noise" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">When Storytelling Becomes Noise</Link></p>
-                            <p><span className="font-semibold">White Paper #14:</span> <Link href="/white-papers/proof-as-signal-in-fund-raising" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Proof as Signal in Fund Raising</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Raise That Flipped With Retention Curve</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/storytelling-becomes-noise" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #16
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        When Storytelling Becomes Noise
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/proof-as-signal-in-fund-raising" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #14
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Proof as Signal in Fund Raising
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Raise%20That%20Flipped%20With%20Retention%20Curve" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Raise That Flipped With Retention Curve
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -704,11 +878,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #15:</span> <Link href="/clarity-series/gtm-sprint-market-reframe" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The GTM Sprint That Reframed an Entire Market</Link></p>
-                            <p><span className="font-semibold">White Paper #12:</span> <Link href="/white-papers/signal-first-gtm-design" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal-First GTM Design</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> SEA Market Entry Closed With Proof Signal</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/gtm-sprint-market-reframe" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #15
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        The GTM Sprint That Reframed an Entire Market
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-first-gtm-design" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #12
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal-First GTM Design
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SEA%20Market%20Entry%20Closed%20With%20Proof%20Signal" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SEA Market Entry Closed With Proof Signal
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -836,11 +1060,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #6:</span> <Link href="/white-papers/why-more-data-creates-more-confusion" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">When More Data Creates More Confusion</Link></p>
-                            <p><span className="font-semibold">White Paper #11:</span> <Link href="/white-papers/signal-velocity-and-market-movement" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal Velocity and Market Movement</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">AI Founder Who Filtered Noise and Closed $5M</Link></p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/why-more-data-creates-more-confusion" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #6
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        When More Data Creates More Confusion
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-velocity-and-market-movement" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #11
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal Velocity and Market Movement
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        AI Founder Who Filtered Noise and Closed $5M
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -965,11 +1239,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #7:</span> Why Cold Outreach Fails</p>
-                            <p><span className="font-semibold">White Paper #13:</span> <Link href="/white-papers/funnel-design-as-signal-architecture" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Funnel Design as Signal Architecture</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> Enterprise SaaS Outreach Rebuilt Around Proof</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Why%20Cold%20Outreach%20Fails" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #7
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why Cold Outreach Fails
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/funnel-design-as-signal-architecture" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #13
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Funnel Design as Signal Architecture
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Enterprise%20SaaS%20Outreach%20Rebuilt%20Around%20Proof" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Enterprise SaaS Outreach Rebuilt Around Proof
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1101,11 +1425,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #8:</span> <Link href="/white-papers/talent-as-signal-in-early-stage-growth" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why Talent Is the First Signal</Link></p>
-                            <p><span className="font-semibold">White Paper #16:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Story — Why Belief Beats Performance</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> DeepTech Team That Raised $7M Without Revenue</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/talent-as-signal-in-early-stage-growth" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #8
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why Talent Is the First Signal
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-story" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #16
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal vs. Story — Why Belief Beats Performance
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20Team%20That%20Raised%20%247M%20Without%20Revenue" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        DeepTech Team That Raised $7M Without Revenue
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1231,11 +1605,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #11:</span> What “Too Early” Really Means</p>
-                            <p><span className="font-semibold">White Paper #10:</span> <Link href="/white-papers/the-cost-of-wrong-capital" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The Cost of Wrong Capital</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> Investor Who Said “No” Then Wrote the First Check</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20What%20%E2%80%9CToo%20Early%E2%80%9D%20Really%20Means" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #11
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        What “Too Early” Really Means
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/the-cost-of-wrong-capital" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #10
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        The Cost of Wrong Capital
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Investor%20Who%20Said%20%E2%80%9CNo%E2%80%9D%20Then%20Wrote%20the%20First%20Check" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Investor Who Said “No” Then Wrote the First Check
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1364,11 +1788,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #10:</span> Why Founders Must Say No to Money</p>
-                            <p><span className="font-semibold">White Paper #14:</span> <Link href="/white-papers/proof-as-signal-in-fund-raising" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Proof as Signal in Fund Raising</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Founder Who Waited, Then Doubled Valuation</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Why%20Founders%20Must%20Say%20No%20to%20Money" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #10
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why Founders Must Say No to Money
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/proof-as-signal-in-fund-raising" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #14
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Proof as Signal in Fund Raising
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Founder%20Who%20Waited%2C%20Then%20Doubled%20Valuation" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Founder Who Waited, Then Doubled Valuation
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1495,11 +1969,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #12:</span> Why Proof Without Velocity Dies</p>
-                            <p><span className="font-semibold">White Paper #5:</span> <Link href="/white-papers/gtm-as-signal-not-execution" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">GTM as Signal, Not Execution</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> AI DeepTech That Closed After High-Velocity Demo</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Why%20Proof%20Without%20Velocity%20Dies" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #12
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why Proof Without Velocity Dies
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/gtm-as-signal-not-execution" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #5
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        GTM as Signal, Not Execution
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20AI%20DeepTech%20That%20Closed%20After%20High-Velocity%20Demo" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        AI DeepTech That Closed After High-Velocity Demo
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1624,11 +2148,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #15:</span> <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The GTM Sprint That Reframed a Market</Link></p>
-                            <p><span className="font-semibold">White Paper #5:</span> <Link href="/white-papers/gtm-as-signal-not-execution" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">GTM as Signal, Not Execution</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> Consumer Brand That Cut CAC by 50%</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #15
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        The GTM Sprint That Reframed a Market
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/gtm-as-signal-not-execution" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #5
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        GTM as Signal, Not Execution
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Consumer%20Brand%20That%20Cut%20CAC%20by%2050%25" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Consumer Brand That Cut CAC by 50%
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1759,11 +2333,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #13:</span> Funnels Leak Signal Before They Leak Leads</p>
-                            <p><span className="font-semibold">White Paper #7:</span> <Link href="/white-papers/outreach-as-signal-not-spam" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Outreach as Signal, Not Spam</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> <Link href="/clarity-series/investor-calls-that-convert" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Funnel That Tripled Founder Calls</Link></p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Funnels%20Leak%20Signal%20Before%20They%20Leak%20Leads" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #13
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Funnels Leak Signal Before They Leak Leads
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/outreach-as-signal-not-spam" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #7
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Outreach as Signal, Not Spam
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/clarity-series/investor-calls-that-convert" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Funnel That Tripled Founder Calls
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -1888,11 +2512,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #14:</span> Proof Before Vision</p>
-                            <p><span className="font-semibold">White Paper #9:</span> <Link href="/white-papers/decoding-investor-language-as-signal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Decoding Investor Language as Signal</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> <Link href="/clarity-series/proof-artifact-closed-deal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">SaaS Proof Artifact That Doubled Valuation</Link></p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Proof%20Before%20Vision" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #14
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Proof Before Vision
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/decoding-investor-language-as-signal" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #9
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Decoding Investor Language as Signal
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/clarity-series/proof-artifact-closed-deal" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Proof Artifact That Doubled Valuation
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -2019,11 +2693,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #15:</span> <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The GTM Sprint That Reframed a Market</Link></p>
-                            <p><span className="font-semibold">White Paper #12:</span> <Link href="/white-papers/signal-first-gtm-design" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal-First GTM Design</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Healthcare Tech Sprint That Closed $12M</Link></p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #15
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        The GTM Sprint That Reframed a Market
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-first-gtm-design" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #12
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal-First GTM Design
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Healthcare Tech Sprint That Closed $12M
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -2147,11 +2871,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #16:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why Belief Beats Performance</Link></p>
-                            <p><span className="font-semibold">White Paper #6:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Noise in Founder Decision-Making</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Raise That Moved Once Signal Was Clear</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/signal-vs-story" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #16
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why Belief Beats Performance
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #6
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal vs. Noise in Founder Decision-Making
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Raise%20That%20Moved%20Once%20Signal%20Was%20Clear" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Raise That Moved Once Signal Was Clear
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -2277,11 +3051,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #17:</span> <Link href="/white-papers/pricing-as-signal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Storytelling vs. Signal</Link></p>
-                            <p><span className="font-semibold">White Paper #16:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Story — Why Belief Beats Performance</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">SaaS Founder Who Cut Noise and Closed in Weeks</Link></p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/pricing-as-signal" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #17
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Storytelling vs. Signal
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-story" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #16
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal vs. Story — Why Belief Beats Performance
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Founder Who Cut Noise and Closed in Weeks
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -2410,11 +3234,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #18:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Data vs. Signal in Founder Decisions</Link></p>
-                            <p><span className="font-semibold">White Paper #6:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Noise in Decision-Making</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Valuation Doubled After Cutting 50 KPIs</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #18
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Data vs. Signal in Founder Decisions
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #6
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Signal vs. Noise in Decision-Making
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Valuation%20Doubled%20After%20Cutting%2050%20KPIs" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        SaaS Valuation Doubled After Cutting 50 KPIs
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -2540,11 +3414,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #19:</span> <Link href="/white-papers/why-vc-deal-flow-depends-on-signal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why VCs Struggle with Deal Flow</Link></p>
-                            <p><span className="font-semibold">White Paper #20:</span> <Link href="/white-papers/capital-as-signal-not-commodity" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Capital as Signal, Not Commodity</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> Frontier AI Fund That Became a Magnet for Founders</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/why-vc-deal-flow-depends-on-signal" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #19
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why VCs Struggle with Deal Flow
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/capital-as-signal-not-commodity" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #20
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Capital as Signal, Not Commodity
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Frontier%20AI%20Fund%20That%20Became%20a%20Magnet%20for%20Founders" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Frontier AI Fund That Became a Magnet for Founders
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
@@ -2671,11 +3595,61 @@ export const whitePapers: WhitePaper[] = [
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #20:</span> <Link href="/white-papers/capital-as-signal-not-commodity" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why Capital is the Loudest Signal</Link></p>
-                            <p><span className="font-semibold">White Paper #10:</span> <Link href="/white-papers/the-cost-of-wrong-capital" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The Cost of Wrong Capital</Link></p>
-                            <p><span className="font-semibold">Case Study:</span> DeepTech Raise Reframed by Strategic Capital</p>
-                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/capital-as-signal-not-commodity" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Clarity Series #20
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        Why Capital is the Loudest Signal
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/the-cost-of-wrong-capital" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            White Paper #10
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        The Cost of Wrong Capital
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20Raise%20Reframed%20by%20Strategic%20Capital" className="block h-full">
+                                <div className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /><path d="M22 12A10 10 0 0 0 12 2v10z" /></svg>
+                                        </div>
+                                        <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
+                                            Case Study
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors leading-snug">
+                                        DeepTech Raise Reframed by Strategic Capital
+                                    </h3>
+                                    <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                        View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 

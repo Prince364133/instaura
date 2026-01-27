@@ -243,7 +243,7 @@ export default function Footer() {
             <p className="text-gray-300 text-sm">
               © 2025 INSTAURA. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4 md:mt-0 md:gap-x-6">
               <button
                 onClick={() => window.location.href = "https://instaora.com"}
                 className="text-gray-300 hover:text-brand-red text-sm transition-colors duration-300 cursor-pointer text-left font-medium"

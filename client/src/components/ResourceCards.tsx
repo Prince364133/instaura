@@ -1,11 +1,13 @@
+
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { MoveRight } from "lucide-react";
+import { FileText, BookOpen, MessageSquare } from "lucide-react";
 
 export interface RelatedResource {
-    type: 'White Paper' | 'Clarity Post' | 'Case Study' | 'Ask AI' | string;
-    title: string;
     href: string;
-    label?: string;
+    type: string;
+    title: string;
+    label: string;
 }
 
 interface ResourceCardsProps {
@@ -16,57 +18,54 @@ export const ResourceCards = ({ resources }: ResourceCardsProps) => {
     if (!resources || resources.length === 0) return null;
 
     return (
-        <section className="px-6 py-12 bg-gray-50/50">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold font-raleway text-brand-red mb-8">Related Resources</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {resources.map((resource, index) => {
-                        const isAskAI = resource.type === 'Ask AI' || resource.href.includes('ask_ai=');
-
-                        return (
-                            <Link key={index} href={resource.href} className="block group h-full">
-                                <div className={`
-                                    p-8 rounded-3xl border-2 transition-all duration-500 h-full flex flex-col relative overflow-hidden
-                                    ${isAskAI
-                                        ? 'bg-gradient-to-br from-brand-red/[0.03] to-white border-brand-red/10 shadow-sm hover:shadow-2xl hover:shadow-brand-red/10 hover:border-brand-red/30'
-                                        : 'bg-gradient-to-br from-gray-50 to-white border-white shadow-xl hover:shadow-2xl hover:border-brand-red/10 hover:bg-white'}
-                                `}>
-                                    {/* Decorative background element for Ask AI */}
-                                    {isAskAI && (
-                                        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-brand-red/5 rounded-full blur-3xl group-hover:bg-brand-red/10 transition-colors duration-500" />
-                                    )}
-
-                                    <div className="flex items-center justify-between mb-6 relative z-10">
-                                        <span className={`
-                                            px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold border
-                                            ${isAskAI
-                                                ? 'text-brand-red border-brand-red/20 bg-brand-red/5'
-                                                : 'text-gray-500 border-gray-200 bg-gray-100/50'}
-                                        `}>
-                                            {isAskAI && (
-                                                <span className="inline-block w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse mr-2" />
-                                            )}
-                                            {resource.label || resource.type}
-                                        </span>
+        <section className="bg-white py-16 border-t border-gray-100">
+            <div className="max-w-7xl mx-auto px-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 font-raleway mb-10">
+                    Related Resources
+                </h2>
+                <div className="grid md:grid-cols-3 gap-6">
+                    {resources.map((resource, index) => (
+                        <Link key={index} href={resource.href}>
+                            <motion.div
+                                whileHover={{ y: -5 }}
+                                className="group relative bg-gray-50 rounded-2xl p-8 border border-gray-200 transition-all hover:bg-white hover:border-brand-red hover:shadow-xl cursor-pointer flex flex-col h-full"
+                            >
+                                <div className="flex items-center gap-3 mb-4">
+                                    <div className="p-2 rounded-lg bg-white border border-gray-100 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-colors">
+                                        {resource.type === "White Paper" ? (
+                                            <FileText className="w-5 h-5" />
+                                        ) : resource.type === "Clarity Series" ? (
+                                            <BookOpen className="w-5 h-5" />
+                                        ) : (
+                                            <MessageSquare className="w-5 h-5" />
+                                        )}
                                     </div>
-
-                                    <h3 className={`
-                                        font-raleway font-bold text-gray-900 text-2xl leading-tight mb-4 relative z-10
-                                        group-hover:text-brand-red transition-colors duration-300
-                                    `}>
-                                        {resource.title}
-                                    </h3>
-
-                                    <div className="mt-auto pt-6 flex items-center text-brand-red text-sm font-bold relative z-10">
-                                        <span className="group-hover:translate-x-1 transition-transform duration-300 flex items-center">
-                                            {isAskAI ? 'Engage YAS Intelligence' : 'Explore Resource'}
-                                            <MoveRight className="ml-2 w-5 h-5" />
-                                        </span>
-                                    </div>
+                                    <span className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                                        {resource.label}
+                                    </span>
                                 </div>
-                            </Link>
-                        );
-                    })}
+                                <h3 className="text-xl font-bold text-gray-900 group-hover:text-brand-red transition-colors mb-4 line-clamp-2">
+                                    {resource.title}
+                                </h3>
+                                <div className="mt-auto flex items-center text-brand-red font-semibold text-sm">
+                                    View Resource
+                                    <svg
+                                        className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        />
+                                    </svg>
+                                </div>
+                            </motion.div>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </section>

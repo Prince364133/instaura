@@ -3,94 +3,71 @@ dotenv.config();
 
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import * as cors from "cors";
-import { CORE_PROMPT } from "./corePrompt";
-import { retrieveContext } from "./retrieval";
+// import * as cors from "cors"; // Removed unused import
+import { WorkflowContext } from "./workflow/types";
+import { WorkflowEngine } from "./workflow/engine";
+import { IntentClassificationStep } from "./workflow/steps/intent";
+import { RetrievalStep } from "./workflow/steps/retrieval";
+import { GenerationStep } from "./workflow/steps/generation";
 
 admin.initializeApp();
 
 // Temporary seed function
 export { seedKnowledge } from "./uploadKnowledge";
 
-const corsHandler = cors({ origin: true });
+// export const chat = functions.https.onRequest((req: any, res: any) => {
+//     corsHandler(req, res, async () => {
+//         if (req.method !== "POST") {
+//             res.status(405).send("Method Not Allowed");
+//             return;
+//         }
 
-export const chat = functions.https.onRequest((req: any, res: any) => {
-    corsHandler(req, res, async () => {
-        if (req.method !== "POST") {
-            res.status(405).send("Method Not Allowed");
-            return;
-        }
+//         const { message, userId, history } = req.body;
 
-        const { message } = req.body;
-        // Hardcoded API key as fallback (Cloud Functions doesn't deploy .env files)
-        const apiKey = "AIzaSyDCUwKEV0oPGZxVEQCd0ztsQtaiu7EDq60";
+// change to onCall for client compatibility
+export const chat = functions.https.onCall(async (data, context) => {
+    const { message, userId, history } = data;
 
-        if (!apiKey) {
-            res.status(500).json({ error: "API Key not configured" });
-            return;
-        }
+    // Hardcoded API key as fallback (Cloud Functions doesn't deploy .env files)
+    const apiKey = "AIzaSyDCUwKEV0oPGZxVEQCd0ztsQtaiu7EDq60";
 
-        try {
-            // Step 1: Retrieve relevant context from Firestore
-            console.log('Retrieving context for message:', message);
-            const retrievedContext = await retrieveContext(message, 3);
+    if (!apiKey) {
+        throw new functions.https.HttpsError('internal', "API Key not configured");
+    }
 
-            // Step 2: Build dynamic prompt with retrieved context
-            const dynamicPrompt = CORE_PROMPT.replace('{retrieved_context}', retrievedContext);
+    try {
+        // Initialize Workflow Context
+        const initialContext: WorkflowContext = {
+            message,
+            userId,
+            history,
+            apiKey // Pass API key to context for steps to access
+        };
 
-            // Step 3: Initialize Gemini
-            const genAI = new GoogleGenerativeAI(apiKey);
-            const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+        // Initialize Workflow Engine
+        const workflow = new WorkflowEngine(initialContext);
 
-            const chatSession = model.startChat({
-                history: [
-                    {
-                        role: "user",
-                        parts: [{ text: "System Context: " + dynamicPrompt }],
-                    },
-                    {
-                        role: "model",
-                        parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant for Instaura. I will use the provided context to answer your questions about Signal Architecture, GTM strategy, and fundraising." }],
-                    }
-                ],
-            });
+        // Add Steps
+        workflow
+            .addStep(new IntentClassificationStep(apiKey))
+            .addStep(new RetrievalStep())
+            .addStep(new GenerationStep(apiKey));
 
-            let retries = 0;
-            const maxRetries = 3;
-            let result;
+        // Execute Workflow
+        const finalContext = await workflow.run();
 
-            while (retries <= maxRetries) {
-                try {
-                    result = await chatSession.sendMessage(message);
-                    break;
-                } catch (err: any) {
-                    if ((err.status === 429 || err.status === 503) && retries < maxRetries) {
-                        retries++;
-                        const delay = 3000 * retries;
-                        console.log(`Retrying... Attempt ${retries}`);
-                        await new Promise(resolve => setTimeout(resolve, delay));
-                    } else {
-                        throw err;
-                    }
-                }
+        // Return Response
+        return {
+            message: finalContext.response,
+            intent: finalContext.intent, // Optional: return intent for client-side logic
+            debug: {
+                steps_executed: true,
+                intent: finalContext.intent
             }
+        };
 
-            const response = await result?.response;
-            const text = response?.text();
-            res.json({ message: text });
-
-        } catch (error: any) {
-            console.error("Error:", error);
-            console.error("Error Detail:", {
-                message: error.message,
-                status: error.status,
-                stack: error.stack
-            });
-            res.status(500).json({
-                message: "I'm having trouble thinking right now. Please try again.",
-                debug: error.message
-            });
-        }
-    });
+    } catch (error: any) {
+        console.error("Workflow Error:", error);
+        throw new functions.https.HttpsError('internal', "I'm having trouble thinking right now. Please try again.", error.message);
+    }
 });

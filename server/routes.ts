@@ -115,7 +115,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           },
           {
             role: "model",
-            parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant. I will use the provided context to answer your questions accurately." }],
+            parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant. I will use the provided context to answer your questions." }],
           }
         ],
       });
@@ -129,11 +129,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
           result = await chat.sendMessage(message);
           break;
         } catch (err: any) {
-          console.warn(`Attempt ${retries + 1} failed:`, err.message);
           if ((err.status === 429 || err.status === 503) && retries < maxRetries) {
             retries++;
-            const delay = 2000 * Math.pow(2, retries); // Exponential backoff
-            console.log(`Gemini API Busy/Rate Limited. Retrying in ${delay}ms...`);
+            const delay = 3000 * retries; // Backoff: 3s, 6s, 9s
+            console.log(`Gemini API Busy (429/503). Retrying in ${delay}ms...`);
             await new Promise(resolve => setTimeout(resolve, delay));
           } else {
             throw err;
@@ -141,22 +140,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       }
 
-      if (!result) throw new Error("Failed to get response after retries");
+      if (!result) throw new Error("Failed to get response");
+
 
       const response = await result.response;
       const text = response.text();
 
       res.json({ message: text });
     } catch (error: any) {
-      console.error("Local Chat Error Details:", {
-        message: error.message,
-        status: error.status,
-        stack: error.stack
-      });
-      res.status(error.status || 500).json({
-        message: "I'm having trouble thinking right now. Please try again.",
-        details: error.message
-      });
+      console.error("Chat error:", error);
+      res.status(500).json({ message: "I'm having trouble thinking right now. Please try again." });
     }
   });
 

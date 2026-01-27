@@ -201,28 +201,28 @@ export default function CaseStudies() {
                                 {filteredStudies.map((study) => (
                                     <Link key={study.id} href={`/case-studies/${study.id}`}>
                                         <div
-                                            className="group bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col"
+                                            className="group bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 hover:bg-white hover:border-brand-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col"
                                             data-testid={`card-case-study-${study.id}`}
                                         >
-                                            <div className="flex items-center gap-2 mb-4">
-                                                <div className="w-8 h-8 bg-red-50 text-brand-red rounded-lg flex items-center justify-center font-bold text-sm group-hover:bg-brand-red group-hover:text-white transition-colors">
-                                                    {study.id}
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <div className="p-2 rounded-lg bg-white border border-gray-100 text-gray-400 group-hover:bg-brand-red group-hover:text-white group-hover:border-brand-red transition-colors shrink-0">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                                                        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                                                    </svg>
                                                 </div>
-                                                <div className="text-xs uppercase text-gray-500 font-medium truncate flex-1">
+                                                <span className="text-xs font-bold tracking-wider uppercase text-gray-400 group-hover:text-brand-red/60 transition-colors">
                                                     {study.sector}
-                                                </div>
+                                                </span>
                                             </div>
 
-                                            <h3 className="mt-2 text-lg font-semibold group-hover:text-brand-red transition-colors" data-testid={`text-title-${study.id}`}>
+                                            <h3 className="text-xl font-bold font-raleway text-gray-900 mb-2 group-hover:text-brand-red transition-colors" data-testid={`text-title-${study.id}`}>
                                                 {study.title}
                                             </h3>
-                                            <p className="mt-2 text-sm text-gray-700 flex-grow line-clamp-3">{study.description}</p>
+                                            <p className="text-sm text-gray-600 flex-grow line-clamp-3 mb-4 leading-relaxed">{study.description}</p>
 
-                                            <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                                                <span className="text-xs font-medium text-gray-500 truncate max-w-[70%]">{study.service}</span>
-                                                <span className="text-sm text-brand-red font-semibold whitespace-nowrap">
-                                                    Read →
-                                                </span>
+                                            <div className="mt-auto flex items-center text-sm font-bold text-brand-red">
+                                                View Resource <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
                                             </div>
                                         </div>
                                     </Link>
