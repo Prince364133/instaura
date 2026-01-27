@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.chat = void 0;
+const dotenv = require("dotenv");
+dotenv.config();
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const generative_ai_1 = require("@google/generative-ai");
@@ -10,16 +12,15 @@ admin.initializeApp();
 const corsHandler = cors({ origin: true });
 exports.chat = functions.https.onRequest((req, res) => {
     corsHandler(req, res, async () => {
-        var _a;
         if (req.method !== "POST") {
             res.status(405).send("Method Not Allowed");
             return;
         }
         const { message } = req.body;
-        // Get Key from Firebase Config
-        const apiKey = ((_a = functions.config().gemini) === null || _a === void 0 ? void 0 : _a.key) || process.env.GEMINI_API_KEY;
+        // Hardcoded API key as fallback (Cloud Functions doesn't deploy .env files)
+        const apiKey = "AIzaSyAY_TN3to4yAqk7IJNqVSKFS-fSuynXwOw";
         if (!apiKey) {
-            res.status(500).json({ error: "API Key not configured in Firebase Functions" });
+            res.status(500).json({ error: "API Key not configured" });
             return;
         }
         try {

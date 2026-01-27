@@ -1,3 +1,5 @@
+import * as dotenv from "dotenv";
+dotenv.config();
 
 import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
@@ -17,11 +19,11 @@ export const chat = functions.https.onRequest((req: any, res: any) => {
         }
 
         const { message } = req.body;
-        // Get Key from Firebase Config
-        const apiKey = functions.config().gemini?.key || process.env.GEMINI_API_KEY;
+        // Hardcoded API key as fallback (Cloud Functions doesn't deploy .env files)
+        const apiKey = "AIzaSyAY_TN3to4yAqk7IJNqVSKFS-fSuynXwOw";
 
         if (!apiKey) {
-            res.status(500).json({ error: "API Key not configured in Firebase Functions" });
+            res.status(500).json({ error: "API Key not configured" });
             return;
         }
 
