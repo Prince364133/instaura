@@ -264,9 +264,9 @@ export default function CaseStudy32() {
           <motion.div {...caseStudyAnimations.section}>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Related Resources</h2>
             <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers">
+              <Link href="/white-papers/signal-velocity-and-market-movement">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
@@ -274,9 +274,9 @@ export default function CaseStudy32() {
                   <p className="mt-3 text-gray-700 text-sm">How strong signals accelerate market adoption and investor confidence.</p>
                 </motion.div>
               </Link>
-              <Link href="/white-papers">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%2316%3A%20Signal%20vs.%20Noise">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
@@ -284,9 +284,9 @@ export default function CaseStudy32() {
                   <p className="mt-3 text-gray-700 text-sm">Understanding the difference between scattered execution and focused inevitability.</p>
                 </motion.div>
               </Link>
-              <Link href="/white-papers">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%2315%3A%20Strategic%20Focus%20as%20Competitive%20Advantage">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>

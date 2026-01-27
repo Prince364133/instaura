@@ -273,9 +273,9 @@ export default function CaseStudy29() {
           <motion.div {...caseStudyAnimations.section}>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Related Resources</h2>
             <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%2316%3A%20Signal%20vs.%20Noise">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
@@ -283,9 +283,9 @@ export default function CaseStudy29() {
                   <p className="mt-3 text-gray-700 text-sm">Understanding the difference between feature lists and framework inevitability.</p>
                 </motion.div>
               </Link>
-              <Link href="/white-papers">
+              <Link href="/white-papers/gtm-as-signal-not-execution">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
@@ -293,9 +293,9 @@ export default function CaseStudy29() {
                   <p className="mt-3 text-gray-700 text-sm">How go-to-market strategy communicates market inevitability.</p>
                 </motion.div>
               </Link>
-              <Link href="/clarity-series">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%236%3A%20When%20Feature%20Lists%20Become%20Noise">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">Clarity Series</p>

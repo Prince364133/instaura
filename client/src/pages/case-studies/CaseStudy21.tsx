@@ -260,8 +260,8 @@ export default function CaseStudy21() {
               Related Resources
             </h2>
             <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%237%3A%20Why%20Design%20Without%20Signal%20is%20Decoration" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-2 text-brand-red">
                     <FileText className="w-5 h-5" />
                     <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
@@ -274,8 +274,8 @@ export default function CaseStudy21() {
                   </p>
                 </div>
               </Link>
-              <Link href="/white-papers" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-2 text-brand-red">
                     <FileText className="w-5 h-5" />
                     <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
@@ -288,8 +288,8 @@ export default function CaseStudy21() {
                   </p>
                 </div>
               </Link>
-              <Link href="/clarity-series" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%2316%3A%20Why%20Real%20Estate%20is%20More%20About%20Perception%20Than%20Brick" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-2 text-brand-red">
                     <BookOpen className="w-5 h-5" />
                     <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>

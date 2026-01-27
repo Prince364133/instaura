@@ -293,9 +293,9 @@ export default function CaseStudy31() {
               Related Resources
             </h2>
             <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers">
+              <Link href="/white-papers/gtm-as-signal-not-execution">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
@@ -303,9 +303,9 @@ export default function CaseStudy31() {
                   <p className="mt-3 text-gray-700 text-sm">How go-to-market strategy communicates market inevitability.</p>
                 </motion.div>
               </Link>
-              <Link href="/white-papers">
+              <Link href="/white-papers/signal-first-gtm-design">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
@@ -313,9 +313,9 @@ export default function CaseStudy31() {
                   <p className="mt-3 text-gray-700 text-sm">How to build go-to-market around proof artifacts, not campaigns.</p>
                 </motion.div>
               </Link>
-              <Link href="/white-papers">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%236%3A%20When%20Feature%20Lists%20Become%20Noise">
                 <motion.div 
-                  className="group bg-white border border-gray-200 rounded-2xl p-6 cursor-pointer"
+                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
                   whileHover={caseStudyAnimations.card.whileHover}
                 >
                   <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>

@@ -96,8 +96,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=DeepTech%20%244M%20Seed%20(Redacted)" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20%244M%20Seed%20(Redacted)" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -110,8 +110,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                     </div>
                                 </div>
                             </Link>
-                            <Link href="/white-papers/pricing-as-signal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Negotiation%20as%20Signal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Negotiation as Signal
@@ -122,7 +122,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
                             <Link href="/clarity-series/investor-calls-that-convert" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Investor Calls That Convert
@@ -232,8 +232,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=SaaS%20Raise%20Reframed%20by%20Signal%20Call" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Raise%20Reframed%20by%20Signal%20Call" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -247,8 +247,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/white-papers/signal-mechanics-in-investor-narratives" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Signal%20Mechanics%20in%20Investor%20Negotiations" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal Mechanics in Investor Negotiations
@@ -260,7 +260,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/silence-closed-4m-deal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The Silence That Closed a $4M Deal
@@ -370,8 +370,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Signal%20vs.%20Noise%20in%20Product%20Strategy" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal vs. Noise in Product Strategy
@@ -382,8 +382,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/contact?ask_ai=Consumer%20App%20Reframed%20Without%20Iteration" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Consumer%20App%20Reframed%20Without%20Iteration" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -398,7 +398,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/price-that-built-belief" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The Price That Built Belief
@@ -506,7 +506,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Link href="/white-papers/pricing-as-signal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Pricing as Signal
@@ -517,8 +517,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/clarity-series/price-that-built-belief" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20D2C%20Brand%20That%20Built%20Belief%20with%20Pricing" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         D2C Brand That Built Belief with Pricing
@@ -529,8 +529,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/clarity-series/storytelling-becomes-noise" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/white-papers/when-storytelling-becomes-noise" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         When Storytelling Becomes Noise
@@ -639,7 +639,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Link href="/white-papers/signal-first-pitch-decks" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal-First Pitch Decks
@@ -650,8 +650,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/contact?ask_ai=SaaS%20Founder%20Who%20Won%202%20Term%20Sheets%20in%2014%20Days" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Founder%20Who%20Won%202%20Term%20Sheets%20in%2014%20Days" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -666,7 +666,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/investor-calls-that-convert" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Investor Calls That Convert
@@ -776,8 +776,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=SaaS%20Reframed%20to%20Reverse%20Churn" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Reframed%20to%20Reverse%20Churn" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -792,7 +792,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/narrative-as-a-retention-signal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Narrative as a Retention Signal
@@ -804,7 +804,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/why-traction-invisible" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Why Your Traction Is Invisible
@@ -914,8 +914,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=SaaS%20Founder%20Who%20Reframed%20Traction%20into%20a%20Term%20Sheet" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Founder%20Who%20Reframed%20Traction%20into%20a%20Term%20Sheet" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -930,7 +930,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/signal-mechanics-in-investor-narratives" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal Mechanics in Investor Narratives
@@ -942,7 +942,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/reversing-churn-narrative" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Reversing Churn with Narrative
@@ -1052,8 +1052,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=Enterprise%20SaaS%20Closing%20First%20Customers%20in%2030%20Days" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Enterprise%20SaaS%20Closing%20First%20Customers%20in%2030%20Days" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -1068,7 +1068,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/gtm-as-signal-not-execution" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         GTM as Signal, Not Execution
@@ -1080,7 +1080,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/price-that-built-belief" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The Price That Built Belief
@@ -1191,8 +1191,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Founder%20Who%20Stopped%20Iterating%20on%20Noise" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Founder Who Stopped Iterating on Noise
@@ -1204,7 +1204,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal vs. Noise in Founder Decision-Making
@@ -1216,7 +1216,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/when-to-stop-iterating" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         When to Stop Iterating and Start Signaling
@@ -1327,8 +1327,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/clarity-series/email-opened-market" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20GTM%20Signal%20That%20Opened%20SEA%20Market" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         GTM Signal That Opened SEA Market
@@ -1340,7 +1340,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/outreach-as-signal-not-spam" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Outreach as Signal, Not Spam
@@ -1352,7 +1352,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/signals-unlock-first-customers" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signals That Unlock First Customers
@@ -1461,8 +1461,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/clarity-series/hire-changed-everything" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20VP%20Hire%20That%20Flipped%20a%20Series%20A" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         VP Hire That Flipped a Series A
@@ -1474,7 +1474,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/talent-as-signal-in-early-stage-growth" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Talent as Signal in Early-Stage Growth
@@ -1486,7 +1486,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/why-traction-invisible" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Why Your Traction Is Invisible
@@ -1600,8 +1600,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=DeepTech%20Raise%20Labeled%20%E2%80%9CToo%20Early%E2%80%9D%20%E2%80%94%20Closed%20in%206%20Weeks" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20Raise%20Labeled%20%E2%80%9CToo%20Early%E2%80%9D%20%E2%80%94%20Closed%20in%206%20Weeks" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -1616,7 +1616,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/decoding-investor-language-as-signal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Decoding Investor Language as Signal
@@ -1628,7 +1628,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/why-traction-invisible" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Why Your Traction Is Invisible
@@ -1737,8 +1737,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=Declining%20a%20Term%20Sheet%20That%20Reset%20the%20Raise" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Declining%20a%20Term%20Sheet%20That%20Reset%20the%20Raise" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -1753,7 +1753,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/the-cost-of-wrong-capital" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The Cost of Wrong Capital
@@ -1765,7 +1765,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/silence-closed-4m-deal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The Silence That Closed a $4M Deal
@@ -1877,8 +1877,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=Raise%20Restarted%20in%202%20Weeks" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Raise%20Restarted%20in%202%20Weeks" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -1893,7 +1893,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal Velocity and Market Movement
@@ -1905,7 +1905,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/when-vcs-say-too-early" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         When VCs Say “Too Early”
@@ -2017,8 +2017,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20GTM%20Sprint%20That%20Closed%20SEA%20Market%20Entry" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         GTM Sprint That Closed SEA Market Entry
@@ -2030,7 +2030,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/signal-first-gtm-design" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal-First GTM Design
@@ -2042,7 +2042,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/signals-unlock-first-customers" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signals That Unlock First Customers
@@ -2153,8 +2153,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=SaaS%20Founder%20Who%20Cut%20Storytelling%2C%20Closed%20%243M" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20Founder%20Who%20Cut%20Storytelling%2C%20Closed%20%243M" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -2169,7 +2169,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/signal-vs-story" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal vs. Story — Why Belief Beats Performance
@@ -2181,7 +2181,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/first-slide-wins-investor-meetings" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The First Slide That Wins Investor Meetings
@@ -2292,8 +2292,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/white-papers/funnel-design-as-signal-architecture" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Funnel%20Rebuilt%20With%20Signal%20%E2%86%92%2010x%20Conversion" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Funnel Rebuilt With Signal → 10x Conversion
@@ -2305,7 +2305,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/funnel-design-as-signal-architecture" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Funnel Design as Signal Architecture
@@ -2317,7 +2317,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/gtm-sprint-market-reframe" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The GTM Sprint That Reframed an Entire Market
@@ -2427,8 +2427,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=DeepTech%20Pilot%20That%20Flipped%20a%20Raise" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20DeepTech%20Pilot%20That%20Flipped%20a%20Raise" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -2443,7 +2443,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/white-papers/proof-as-signal-in-fund-raising" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Proof as Signal in Fund Raising
@@ -2455,7 +2455,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/first-slide-wins-investor-meetings" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The First Slide That Wins Investor Meetings
@@ -2569,8 +2569,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/contact?ask_ai=Enterprise%20Deal%20Closed%20in%2030%20Days%20With%20Signal%20GTM" className="block group">
-                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Enterprise%20Deal%20Closed%20in%2030%20Days%20With%20Signal%20GTM" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
                                         <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
                                         Ask AI
@@ -2584,8 +2584,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Signal%20Velocity%20in%20B2B%20Sales" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal Velocity in B2B Sales
@@ -2597,7 +2597,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/gtm-sprint-market-reframe" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         The GTM Sprint That Reframed an Entire Market
@@ -2710,8 +2710,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Link href="/clarity-series/silence-closed-4m-deal" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Pre-Product%20Raise%20That%20Closed%20%244M" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Pre-Product Raise That Closed $4M
@@ -2722,8 +2722,8 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                                 </div>
                             </Link>
 
-                            <Link href="/white-papers/signal-vs-story" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20Signal%20as%20the%20Only%20Basis%20for%20Belief" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Signal as the Only Basis for Belief
@@ -2735,7 +2735,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             </Link>
 
                             <Link href="/clarity-series/when-vcs-say-too-early" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-300 shadow-md hover:shadow-xl bg-white shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         When VCs Say “Too Early”

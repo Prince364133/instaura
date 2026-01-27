@@ -144,7 +144,7 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <Link href="/clarity-series/funnel-not-broken-signal-is" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-100  hover:shadow-md transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Series #17</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         Your Funnel Is Not Broken, Your Signal Is
@@ -155,7 +155,7 @@ export const whitePapers: WhitePaper[] = [
                                 </div>
                             </Link>
                             <Link href="/white-papers/gtm-as-signal-not-execution" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                                <div className="bg-white p-5 rounded-xl border border-gray-100  hover:shadow-md transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper #5</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         GTM as Signal, Not Execution
@@ -165,8 +165,8 @@ export const whitePapers: WhitePaper[] = [
                                     </div>
                                 </div>
                             </Link>
-                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block group">
-                                <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                            <Link href="/contact?ask_ai=Tell%20me%20about%20SaaS%20GTM%20Signal%20That%20Reframed%20Market%20Entry" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-100  hover:shadow-md transition-all duration-300 h-full flex flex-col">
                                     <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
                                     <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
                                         SaaS GTM Signal That Reframed Market Entry

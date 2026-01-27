@@ -263,8 +263,8 @@ export default function CaseStudy46() {
               Related Resources
             </h2>
             <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Link href="/white-papers/why-vc-deal-flow-depends-on-signal" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-2 text-brand-red">
                     <FileText className="w-5 h-5" />
                     <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
@@ -277,8 +277,8 @@ export default function CaseStudy46() {
                   </p>
                 </div>
               </Link>
-              <Link href="/white-papers" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Link href="/white-papers/the-cost-of-wrong-capital" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-2 text-brand-red">
                     <FileText className="w-5 h-5" />
                     <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
@@ -291,8 +291,8 @@ export default function CaseStudy46() {
                   </p>
                 </div>
               </Link>
-              <Link href="/clarity-series" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+              <Link href="/contact?ask_ai=Tell%20me%20about%20%2315%3A%20Why%20Compliance%20Is%20a%20Signal%2C%20Not%20a%20Checkbox" className="block group">
+                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-2 text-brand-red">
                     <BookOpen className="w-5 h-5" />
                     <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
