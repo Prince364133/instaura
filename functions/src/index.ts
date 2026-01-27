@@ -5,9 +5,13 @@ import * as functions from "firebase-functions";
 import * as admin from "firebase-admin";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as cors from "cors";
-import { SYSTEM_PROMPT } from "./systemPrompt";
+import { CORE_PROMPT } from "./corePrompt";
+import { retrieveContext } from "./retrieval";
 
 admin.initializeApp();
+
+// Temporary seed function
+export { seedKnowledge } from "./uploadKnowledge";
 
 const corsHandler = cors({ origin: true });
 
@@ -20,7 +24,7 @@ export const chat = functions.https.onRequest((req: any, res: any) => {
 
         const { message } = req.body;
         // Hardcoded API key as fallback (Cloud Functions doesn't deploy .env files)
-        const apiKey = "AIzaSyAY_TN3to4yAqk7IJNqVSKFS-fSuynXwOw";
+        const apiKey = "AIzaSyDCUwKEV0oPGZxVEQCd0ztsQtaiu7EDq60";
 
         if (!apiKey) {
             res.status(500).json({ error: "API Key not configured" });
@@ -28,18 +32,26 @@ export const chat = functions.https.onRequest((req: any, res: any) => {
         }
 
         try {
+            // Step 1: Retrieve relevant context from Firestore
+            console.log('Retrieving context for message:', message);
+            const retrievedContext = await retrieveContext(message, 3);
+
+            // Step 2: Build dynamic prompt with retrieved context
+            const dynamicPrompt = CORE_PROMPT.replace('{retrieved_context}', retrievedContext);
+
+            // Step 3: Initialize Gemini
             const genAI = new GoogleGenerativeAI(apiKey);
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+            const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
             const chatSession = model.startChat({
                 history: [
                     {
                         role: "user",
-                        parts: [{ text: "System Context: " + SYSTEM_PROMPT }],
+                        parts: [{ text: "System Context: " + dynamicPrompt }],
                     },
                     {
                         role: "model",
-                        parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant. I will use the provided context to answer your questions." }],
+                        parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant for Instaura. I will use the provided context to answer your questions about Signal Architecture, GTM strategy, and fundraising." }],
                     }
                 ],
             });
@@ -70,7 +82,15 @@ export const chat = functions.https.onRequest((req: any, res: any) => {
 
         } catch (error: any) {
             console.error("Error:", error);
-            res.status(500).json({ message: "I'm having trouble thinking right now. Please try again." });
+            console.error("Error Detail:", {
+                message: error.message,
+                status: error.status,
+                stack: error.stack
+            });
+            res.status(500).json({
+                message: "I'm having trouble thinking right now. Please try again.",
+                debug: error.message
+            });
         }
     });
 });

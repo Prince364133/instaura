@@ -1,14 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.chat = void 0;
+exports.chat = exports.seedKnowledge = void 0;
 const dotenv = require("dotenv");
 dotenv.config();
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const generative_ai_1 = require("@google/generative-ai");
 const cors = require("cors");
-const systemPrompt_1 = require("./systemPrompt");
+const corePrompt_1 = require("./corePrompt");
+const retrieval_1 = require("./retrieval");
 admin.initializeApp();
+// Temporary seed function
+var uploadKnowledge_1 = require("./uploadKnowledge");
+Object.defineProperty(exports, "seedKnowledge", { enumerable: true, get: function () { return uploadKnowledge_1.seedKnowledge; } });
 const corsHandler = cors({ origin: true });
 exports.chat = functions.https.onRequest((req, res) => {
     corsHandler(req, res, async () => {
@@ -18,23 +22,29 @@ exports.chat = functions.https.onRequest((req, res) => {
         }
         const { message } = req.body;
         // Hardcoded API key as fallback (Cloud Functions doesn't deploy .env files)
-        const apiKey = "AIzaSyAY_TN3to4yAqk7IJNqVSKFS-fSuynXwOw";
+        const apiKey = "AIzaSyDCUwKEV0oPGZxVEQCd0ztsQtaiu7EDq60";
         if (!apiKey) {
             res.status(500).json({ error: "API Key not configured" });
             return;
         }
         try {
+            // Step 1: Retrieve relevant context from Firestore
+            console.log('Retrieving context for message:', message);
+            const retrievedContext = await (0, retrieval_1.retrieveContext)(message, 3);
+            // Step 2: Build dynamic prompt with retrieved context
+            const dynamicPrompt = corePrompt_1.CORE_PROMPT.replace('{retrieved_context}', retrievedContext);
+            // Step 3: Initialize Gemini
             const genAI = new generative_ai_1.GoogleGenerativeAI(apiKey);
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+            const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
             const chatSession = model.startChat({
                 history: [
                     {
                         role: "user",
-                        parts: [{ text: "System Context: " + systemPrompt_1.SYSTEM_PROMPT }],
+                        parts: [{ text: "System Context: " + dynamicPrompt }],
                     },
                     {
                         role: "model",
-                        parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant. I will use the provided context to answer your questions." }],
+                        parts: [{ text: "Understood. I am YAS, the strategic intelligence assistant for Instaura. I will use the provided context to answer your questions about Signal Architecture, GTM strategy, and fundraising." }],
                     }
                 ],
             });
@@ -64,7 +74,15 @@ exports.chat = functions.https.onRequest((req, res) => {
         }
         catch (error) {
             console.error("Error:", error);
-            res.status(500).json({ message: "I'm having trouble thinking right now. Please try again." });
+            console.error("Error Detail:", {
+                message: error.message,
+                status: error.status,
+                stack: error.stack
+            });
+            res.status(500).json({
+                message: "I'm having trouble thinking right now. Please try again.",
+                debug: error.message
+            });
         }
     });
 });
