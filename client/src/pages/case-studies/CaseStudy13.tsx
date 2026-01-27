@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft, FileText, BookOpen } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy13() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#16: Signal vs. Noise",
+        "label": "White Paper"
+    },
+    {
+        "href": "/white-papers/why-more-data-creates-more-confusion",
+        "type": "White Paper",
+        "title": "#18: Why More Data Creates More Confusion",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%2311%3A%20Translating%20DeepTech%20for%20Markets",
+        "type": "Clarity Series",
+        "title": "#11: Translating DeepTech for Markets",
+        "label": "Clarity Series"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -260,63 +283,8 @@ export default function CaseStudy13() {
         </motion.div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            {...caseStudyAnimations.section}
-  
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
-              Related Resources
-            </h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%2316%3A%20Signal%20vs.%20Noise" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #16: Signal vs. Noise
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    Understanding the difference between technical achievement and commercial signal.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/white-papers/why-more-data-creates-more-confusion" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #18: Why More Data Creates More Confusion
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    How technical depth can obscure commercial clarity.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%2311%3A%20Translating%20DeepTech%20for%20Markets" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <BookOpen className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #11: Translating DeepTech for Markets
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    How to bridge the credibility gap between lab and commercialization.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

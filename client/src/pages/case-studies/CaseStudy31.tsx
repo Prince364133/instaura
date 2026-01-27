@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft, FileText, BookOpen } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy31() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#5: GTM as Signal, Not Execution",
+        "label": "White Paper"
+    },
+    {
+        "href": "/white-papers/signal-first-gtm-design",
+        "type": "White Paper",
+        "title": "#12: Signal-First GTM Design",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%236%3A%20When%20Feature%20Lists%20Become%20Noise",
+        "type": "White Paper",
+        "title": "#6: When Feature Lists Become Noise",
+        "label": "White Paper"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -283,50 +306,8 @@ export default function CaseStudy31() {
         </motion.div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            {...caseStudyAnimations.section}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
-              Related Resources
-            </h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/gtm-as-signal-not-execution">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#5: GTM as Signal, Not Execution</p>
-                  <p className="mt-3 text-gray-700 text-sm">How go-to-market strategy communicates market inevitability.</p>
-                </motion.div>
-              </Link>
-              <Link href="/white-papers/signal-first-gtm-design">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#12: Signal-First GTM Design</p>
-                  <p className="mt-3 text-gray-700 text-sm">How to build go-to-market around proof artifacts, not campaigns.</p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%236%3A%20When%20Feature%20Lists%20Become%20Noise">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#6: When Feature Lists Become Noise</p>
-                  <p className="mt-3 text-gray-700 text-sm">Why more capabilities can dilute credibility instead of building it.</p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

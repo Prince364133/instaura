@@ -3,11 +3,33 @@ import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy1() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const relatedResources: RelatedResource[] = [
+    {
+      type: 'White Paper',
+      title: 'Pricing as Signal',
+      href: '/white-papers/pricing-as-signal',
+      label: 'White Paper'
+    },
+    {
+      type: 'White Paper',
+      title: 'Signal vs. Story — Why Belief Beats Performance',
+      href: '/white-papers/signal-vs-story',
+      label: 'White Paper'
+    },
+    {
+      type: 'Clarity Post',
+      title: "The Founder's Blindspot in GTM",
+      href: "/contact?ask_ai=Tell me about The Founder's Blindspot in GTM",
+      label: 'Clarity Series'
+    }
+  ];
 
   return (
     <div className="pt-16 bg-white">
@@ -31,7 +53,7 @@ export default function CaseStudy1() {
       </div>
 
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         {...caseStudyAnimations.hero.section}
         className="bg-black text-white"
       >
@@ -42,7 +64,7 @@ export default function CaseStudy1() {
               Back to Case Studies
             </button>
           </Link>
-          
+
           <motion.div {...caseStudyAnimations.hero.title}>
             <p className="text-xs uppercase tracking-wider text-gray-400 font-medium">Case Study #1</p>
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight font-raleway">
@@ -54,7 +76,7 @@ export default function CaseStudy1() {
           </motion.div>
 
           {/* Meta Badges */}
-          <motion.div 
+          <motion.div
             {...caseStudyAnimations.hero.badges}
             className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4"
           >
@@ -76,7 +98,7 @@ export default function CaseStudy1() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             {...caseStudyAnimations.hero.cta}
             className="mt-10 flex flex-wrap gap-4"
           >
@@ -116,7 +138,7 @@ export default function CaseStudy1() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Why It Mattered</h2>
             <p className="mt-6 text-lg text-gray-700">Without reframing from tool to standard, the company risked:</p>
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              <motion.div 
+              <motion.div
                 className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -126,7 +148,7 @@ export default function CaseStudy1() {
                 <h3 className="font-semibold text-xl text-gray-900">Mid-market stagnation</h3>
                 <p className="mt-3 text-gray-700">Stagnating as a mid-market vendor with no enterprise pathway.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -136,7 +158,7 @@ export default function CaseStudy1() {
                 <h3 className="font-semibold text-xl text-gray-900">Credibility loss</h3>
                 <p className="mt-3 text-gray-700">Losing credibility for enterprise adoption.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -159,7 +181,7 @@ export default function CaseStudy1() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Our Approach</h2>
             <p className="mt-6 text-lg text-gray-700">We rebuilt their Signal Architecture around inevitability:</p>
             <div className="mt-10 grid md:grid-cols-2 gap-6">
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -167,7 +189,7 @@ export default function CaseStudy1() {
                 <h3 className="mt-3 font-bold text-xl text-gray-900">Signal Diagnostic</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">Identified why the market saw them as a utility vs. a platform.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -175,7 +197,7 @@ export default function CaseStudy1() {
                 <h3 className="mt-3 font-bold text-xl text-gray-900">Narrative Core</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">Reframed positioning: from "tool for efficiency" → "infrastructure standard."</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -183,7 +205,7 @@ export default function CaseStudy1() {
                 <h3 className="mt-3 font-bold text-xl text-gray-900">Signal Design</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">Designed proof artifacts (enterprise pilots, customer logos, integrations) as inevitability anchors.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -202,7 +224,7 @@ export default function CaseStudy1() {
           <motion.div {...caseStudyAnimations.section}>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Metrics Dashboard</h2>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -210,7 +232,7 @@ export default function CaseStudy1() {
                 <p className="mt-4 text-5xl font-extrabold text-brand-red">+4</p>
                 <p className="mt-3 text-gray-700">Fortune 500s in 90 days</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -218,7 +240,7 @@ export default function CaseStudy1() {
                 <p className="mt-4 text-5xl font-extrabold text-brand-red">3</p>
                 <p className="mt-3 text-gray-700">Unsolicited inbound term sheet discussions</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -241,7 +263,7 @@ export default function CaseStudy1() {
                 Within 4 months, the company was no longer introduced as a <span className="font-semibold">"SaaS tool"</span> — it was referred to by customers and investors alike as an <span className="font-semibold">"emerging category standard."</span> That shift unlocked growth corridors that had been invisible before.
               </p>
             </div>
-            
+
             <figure className="mt-10 p-8 bg-gray-50 border-l-4 border-brand-red rounded-r-2xl">
               <blockquote className="text-xl italic text-gray-800 leading-relaxed">
                 "We didn't change the product. We changed the signal. Suddenly, enterprise customers treated us like the standard — not an option."
@@ -255,45 +277,7 @@ export default function CaseStudy1() {
       </section>
 
       {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div {...caseStudyAnimations.section}>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Related Resources</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/pricing-as-signal">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">Pricing as Signal</p>
-                  <p className="mt-3 text-gray-700 text-sm">How pricing communicates inevitability to markets.</p>
-                </motion.div>
-              </Link>
-              <Link href="/white-papers/signal-vs-story">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">Signal vs. Story — Why Belief Beats Performance</p>
-                  <p className="mt-3 text-gray-700 text-sm">Understanding the difference between storytelling and signal architecture.</p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20The%20Founder's%20Blindspot%20in%20GTM">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">Clarity Series</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">The Founder's Blindspot in GTM</p>
-                  <p className="mt-3 text-gray-700 text-sm">Why most founders leak signal in their go-to-market approach.</p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

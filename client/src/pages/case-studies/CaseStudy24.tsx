@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft, FileText, BookOpen } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy24() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#11: Signal Velocity and Market Movement",
+        "label": "White Paper"
+    },
+    {
+        "href": "/white-papers/when-storytelling-becomes-noise",
+        "type": "White Paper",
+        "title": "#17: When Storytelling Becomes Noise",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%2315%3A%20Strategic%20Resets%20That%20Scale",
+        "type": "Clarity Series",
+        "title": "#15: Strategic Resets That Scale",
+        "label": "Clarity Series"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -265,60 +288,8 @@ export default function CaseStudy24() {
         </motion.div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div {...caseStudyAnimations.section}>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
-              Related Resources
-            </h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #11: Signal Velocity and Market Movement
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    How signal gravity shapes market perception and velocity.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/white-papers/when-storytelling-becomes-noise" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #17: When Storytelling Becomes Noise
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    Why narrative without signal creates confusion, not movement.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%2315%3A%20Strategic%20Resets%20That%20Scale" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <BookOpen className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #15: Strategic Resets That Scale
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    How to architect clarity when expansion stalls and momentum fades.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft, FileText, BookOpen } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy16() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#11: Signal Velocity and Market Movement",
+        "label": "White Paper"
+    },
+    {
+        "href": "/white-papers/signal-vs-story",
+        "type": "White Paper",
+        "title": "#16: Signal vs. Story — Why Belief Beats Performance",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%2317%3A%20When%20Expansion%20Becomes%20Noise",
+        "type": "Clarity Series",
+        "title": "#17: When Expansion Becomes Noise",
+        "label": "Clarity Series"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -259,63 +282,8 @@ export default function CaseStudy16() {
         </motion.div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            {...caseStudyAnimations.section}
-  
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
-              Related Resources
-            </h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
-                <motion.div {...caseStudyAnimations.card} className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #11: Signal Velocity and Market Movement
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    Understanding how clarity creates market gravity.
-                  </p>
-                </motion.div>
-              </Link>
-              <Link href="/white-papers/signal-vs-story" className="block group">
-                <motion.div {...caseStudyAnimations.card} className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #16: Signal vs. Story — Why Belief Beats Performance
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    How positioning creates inevitability in frontier markets.
-                  </p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%2317%3A%20When%20Expansion%20Becomes%20Noise" className="block group">
-                <motion.div {...caseStudyAnimations.card} className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <BookOpen className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #17: When Expansion Becomes Noise
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    Why strategic focus trumps vertical proliferation.
-                  </p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

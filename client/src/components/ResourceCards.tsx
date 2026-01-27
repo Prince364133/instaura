@@ -26,33 +26,42 @@ export const ResourceCards = ({ resources }: ResourceCardsProps) => {
                         return (
                             <Link key={index} href={resource.href} className="block group h-full">
                                 <div className={`
-                                    p-6 rounded-2xl border transition-all duration-300 h-full flex flex-col
+                                    p-8 rounded-3xl border-2 transition-all duration-500 h-full flex flex-col relative overflow-hidden
                                     ${isAskAI
-                                        ? 'bg-white border-gray-200 shadow-sm hover:shadow-xl hover:border-brand-red/30 hover:bg-red-50/5'
-                                        : 'bg-white border-gray-100 shadow-sm hover:shadow-md hover:border-brand-red/10'}
+                                        ? 'bg-gradient-to-br from-brand-red/[0.03] to-white border-brand-red/10 shadow-sm hover:shadow-2xl hover:shadow-brand-red/10 hover:border-brand-red/30'
+                                        : 'bg-gradient-to-br from-gray-50 to-white border-white shadow-xl hover:shadow-2xl hover:border-brand-red/10 hover:bg-white'}
                                 `}>
-                                    <div className="flex items-center justify-between mb-3">
+                                    {/* Decorative background element for Ask AI */}
+                                    {isAskAI && (
+                                        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-brand-red/5 rounded-full blur-3xl group-hover:bg-brand-red/10 transition-colors duration-500" />
+                                    )}
+
+                                    <div className="flex items-center justify-between mb-6 relative z-10">
                                         <span className={`
-                                            text-xs uppercase tracking-widest font-bold
-                                            ${isAskAI ? 'text-brand-red/80' : 'text-gray-400'}
+                                            px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold border
+                                            ${isAskAI
+                                                ? 'text-brand-red border-brand-red/20 bg-brand-red/5'
+                                                : 'text-gray-500 border-gray-200 bg-gray-100/50'}
                                         `}>
                                             {isAskAI && (
-                                                <span className="inline-block w-2 h-2 rounded-full bg-brand-red animate-pulse mr-2" />
+                                                <span className="inline-block w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse mr-2" />
                                             )}
                                             {resource.label || resource.type}
                                         </span>
                                     </div>
 
                                     <h3 className={`
-                                        font-raleway font-bold text-gray-800 text-xl leading-tight mb-4
-                                        group-hover:text-brand-red transition-colors
+                                        font-raleway font-bold text-gray-900 text-2xl leading-tight mb-4 relative z-10
+                                        group-hover:text-brand-red transition-colors duration-300
                                     `}>
                                         {resource.title}
                                     </h3>
 
-                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
-                                        {isAskAI ? 'Ask YAS Intelligence' : 'Read Resource'}
-                                        <MoveRight className="ml-2 w-4 h-4" />
+                                    <div className="mt-auto pt-6 flex items-center text-brand-red text-sm font-bold relative z-10">
+                                        <span className="group-hover:translate-x-1 transition-transform duration-300 flex items-center">
+                                            {isAskAI ? 'Engage YAS Intelligence' : 'Explore Resource'}
+                                            <MoveRight className="ml-2 w-5 h-5" />
+                                        </span>
                                     </div>
                                 </div>
                             </Link>

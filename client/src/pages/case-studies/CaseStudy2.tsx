@@ -3,11 +3,33 @@ import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy2() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const relatedResources: RelatedResource[] = [
+    {
+      type: 'White Paper',
+      title: 'The Cost of Wrong Capital',
+      href: '/white-papers/the-cost-of-wrong-capital',
+      label: 'White Paper'
+    },
+    {
+      type: 'White Paper',
+      title: 'Capital as Signal, Not Commodity',
+      href: '/white-papers/capital-as-signal-not-commodity',
+      label: 'White Paper'
+    },
+    {
+      type: 'Clarity Post',
+      title: 'Proof Before Story',
+      href: '/contact?ask_ai=Tell me about Proof Before Story',
+      label: 'Clarity Series'
+    }
+  ];
 
   return (
     <div className="pt-16 bg-white">
@@ -31,7 +53,7 @@ export default function CaseStudy2() {
       </div>
 
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         {...caseStudyAnimations.hero.section}
         className="bg-black text-white"
       >
@@ -42,7 +64,7 @@ export default function CaseStudy2() {
               Back to Case Studies
             </button>
           </Link>
-          
+
           <motion.div {...caseStudyAnimations.hero.title}>
             <p className="text-xs uppercase tracking-wider text-gray-400 font-medium">Case Study #2</p>
             <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight font-raleway">
@@ -54,7 +76,7 @@ export default function CaseStudy2() {
           </motion.div>
 
           {/* Meta Badges */}
-          <motion.div 
+          <motion.div
             {...caseStudyAnimations.hero.badges}
             className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4"
           >
@@ -76,7 +98,7 @@ export default function CaseStudy2() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             {...caseStudyAnimations.hero.cta}
             className="mt-10 flex flex-wrap gap-4"
           >
@@ -116,7 +138,7 @@ export default function CaseStudy2() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Why It Mattered</h2>
             <p className="mt-6 text-lg text-gray-700">The raise was not just about capital. It was existential:</p>
             <div className="mt-8 grid md:grid-cols-3 gap-6">
-              <motion.div 
+              <motion.div
                 className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -126,7 +148,7 @@ export default function CaseStudy2() {
                 <h3 className="font-semibold text-xl text-gray-900">Capital runway</h3>
                 <p className="mt-3 text-gray-700">Without fresh capital, they would stall within 9 months.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -136,7 +158,7 @@ export default function CaseStudy2() {
                 <h3 className="font-semibold text-xl text-gray-900">Positioning risk</h3>
                 <p className="mt-3 text-gray-700">If positioned as "average," they risked losing investor interest permanently.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -158,7 +180,7 @@ export default function CaseStudy2() {
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Our Approach</h2>
             <p className="mt-6 text-lg text-gray-700">We reframed the fund raise around Signal Architecture for capital:</p>
             <div className="mt-10 grid md:grid-cols-2 gap-6">
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -166,7 +188,7 @@ export default function CaseStudy2() {
                 <h3 className="mt-3 font-bold text-xl text-gray-900">Capital Signal Diagnostic</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">Shifted attention from growth rates to retention metrics.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -174,7 +196,7 @@ export default function CaseStudy2() {
                 <h3 className="mt-3 font-bold text-xl text-gray-900">Narrative Core</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">Positioned Net Revenue Retention (NRR) as inevitability proof — "users never leave, they deepen."</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -182,7 +204,7 @@ export default function CaseStudy2() {
                 <h3 className="mt-3 font-bold text-xl text-gray-900">Investor Kit</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">Built decks, briefs, and proof data designed to highlight NRR first, not last.</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -201,7 +223,7 @@ export default function CaseStudy2() {
           <motion.div {...caseStudyAnimations.section}>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Metrics Dashboard</h2>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -209,7 +231,7 @@ export default function CaseStudy2() {
                 <p className="mt-4 text-5xl font-extrabold text-brand-red">128%</p>
                 <p className="mt-3 text-gray-700">Became the lead narrative artifact</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -217,7 +239,7 @@ export default function CaseStudy2() {
                 <p className="mt-4 text-5xl font-extrabold text-brand-red">6</p>
                 <p className="mt-3 text-gray-700">Term sheets from 2 within 45 days</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -225,7 +247,7 @@ export default function CaseStudy2() {
                 <p className="mt-4 text-5xl font-extrabold text-brand-red">+35%</p>
                 <p className="mt-3 text-gray-700">Higher than originally projected</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm"
                 whileHover={caseStudyAnimations.card.whileHover}
               >
@@ -248,7 +270,7 @@ export default function CaseStudy2() {
                 The company raised USD 1.3M seed on stronger-than-expected terms. More importantly, the investor community began referring to them as a <span className="font-semibold">"category-defining SaaS"</span> rather than a "nice tool." The capital amplified inevitability instead of just funding operations.
               </p>
             </div>
-            
+
             <figure className="mt-10 p-8 bg-gray-50 border-l-4 border-brand-red rounded-r-2xl">
               <blockquote className="text-xl italic text-gray-800 leading-relaxed">
                 "We stopped selling growth. We started signaling inevitability. Suddenly, investors leaned forward instead of pulling back."
@@ -262,45 +284,7 @@ export default function CaseStudy2() {
       </section>
 
       {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div {...caseStudyAnimations.section}>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Related Resources</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/the-cost-of-wrong-capital">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">The Cost of Wrong Capital</p>
-                  <p className="mt-3 text-gray-700 text-sm">Why choosing the wrong investors can destroy signal and momentum.</p>
-                </motion.div>
-              </Link>
-              <Link href="/white-papers/capital-as-signal-not-commodity">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">Capital as Signal, Not Commodity</p>
-                  <p className="mt-3 text-gray-700 text-sm">Understanding how fundraising communicates inevitability.</p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20Proof%20Before%20Story">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">Clarity Series</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">Proof Before Story</p>
-                  <p className="mt-3 text-gray-700 text-sm">Why investors need proof artifacts, not just narratives.</p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

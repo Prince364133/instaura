@@ -223,7 +223,14 @@ function RouterContent() {
           <Route path="/legal/cookie" component={CookiePolicy} />
           <Route path="/legal/refund" component={RefundPolicy} />
           <Route path="/legal/disclaimer" component={Disclaimer} />
-          <Route component={NotFound} />
+          <Route>
+            {(params) => {
+              const brokenPath = window.location.pathname;
+              const redirectUrl = `/contact?ask_ai=I was trying to visit ${brokenPath} but it seems to be missing. Can you help me find what I'm looking for?`;
+              window.location.href = redirectUrl;
+              return null;
+            }}
+          </Route>
         </Switch>
       </main>
       <Footer />

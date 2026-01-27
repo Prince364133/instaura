@@ -37,27 +37,31 @@ export default function ChatbotModal() {
 
     // Auto-open logic
     useEffect(() => {
-        const searchParams = new URLSearchParams(window.location.search);
+        // In hash routing, query params are likely after the hash: #/route?param=val
+        const hash = window.location.hash;
+        const queryIndex = hash.indexOf('?');
+        const searchParams = new URLSearchParams(queryIndex !== -1 ? hash.substring(queryIndex) : "");
         const askAi = searchParams.get('ask_ai');
 
         if (askAi) {
-            // If already open, just add message if extracting prompt?
-            // User requested: "open our ai model with auto prompting about that topic"
+            console.log("ChatbotModal: Auto-opening for query (from hash):", askAi);
 
             // Open it
             if (!isOpen) {
                 openChatbot();
             }
 
-            // Clean URL
-            const url = new URL(window.location.href);
-            url.searchParams.delete('ask_ai');
-            window.history.replaceState({}, '', url.toString());
+            // Small delay to ensure state and DOM are ready
+            setTimeout(() => {
+                handleSendMessage(undefined, `I'm interested in: ${askAi}`);
 
-            // Auto send message
-            handleSendMessage(undefined, `Tell me about: ${askAi}`);
+                // Clean URL after sending - keep the route, remove the query
+                const currentHash = window.location.hash;
+                const newHash = currentHash.split('?')[0];
+                window.history.replaceState({}, '', '#' + newHash);
+            }, 500);
         }
-    }, [location, isOpen]);
+    }, [location]); // Trigger on route change
     // Added location dependency so it triggers on route change if param exists
 
     useEffect(() => {

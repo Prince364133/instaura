@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy32() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#11: Signal Velocity and Market Movement",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%2316%3A%20Signal%20vs.%20Noise",
+        "type": "White Paper",
+        "title": "#16: Signal vs. Noise",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%2315%3A%20Strategic%20Focus%20as%20Competitive%20Advantage",
+        "type": "White Paper",
+        "title": "#15: Strategic Focus as Competitive Advantage",
+        "label": "White Paper"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -258,46 +281,8 @@ export default function CaseStudy32() {
         </div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div {...caseStudyAnimations.section}>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Related Resources</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/signal-velocity-and-market-movement">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#11: Signal Velocity and Market Movement</p>
-                  <p className="mt-3 text-gray-700 text-sm">How strong signals accelerate market adoption and investor confidence.</p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%2316%3A%20Signal%20vs.%20Noise">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#16: Signal vs. Noise</p>
-                  <p className="mt-3 text-gray-700 text-sm">Understanding the difference between scattered execution and focused inevitability.</p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%2315%3A%20Strategic%20Focus%20as%20Competitive%20Advantage">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#15: Strategic Focus as Competitive Advantage</p>
-                  <p className="mt-3 text-gray-700 text-sm">How to architect focus when everything feels like a priority.</p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

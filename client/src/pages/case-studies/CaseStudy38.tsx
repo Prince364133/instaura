@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft, FileText, BookOpen } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy38() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#8: Talent as Signal in Early-Stage Growth",
+        "label": "White Paper"
+    },
+    {
+        "href": "/white-papers/the-cost-of-wrong-capital",
+        "type": "White Paper",
+        "title": "#10: The Cost of Wrong Capital",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%239%3A%20Clinical%20Validation%20vs.%20Market%20Signal",
+        "type": "Clarity Series",
+        "title": "#9: Clinical Validation vs. Market Signal",
+        "label": "Clarity Series"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -261,46 +284,8 @@ export default function CaseStudy38() {
         </motion.div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div {...caseStudyAnimations.section}>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway">Related Resources</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/white-papers/talent-as-signal-in-early-stage-growth">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#8: Talent as Signal in Early-Stage Growth</p>
-                  <p className="mt-3 text-gray-700 text-sm">How strategic hiring decisions signal market inevitability to investors.</p>
-                </motion.div>
-              </Link>
-              <Link href="/white-papers/the-cost-of-wrong-capital">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">White Paper</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#10: The Cost of Wrong Capital</p>
-                  <p className="mt-3 text-gray-700 text-sm">Understanding how capital narrative shapes valuation and investor quality.</p>
-                </motion.div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%239%3A%20Clinical%20Validation%20vs.%20Market%20Signal">
-                <motion.div 
-                  className="group bg-white border border-gray-300 shadow-md hover:shadow-xl bg-white rounded-2xl p-6 cursor-pointer"
-                  whileHover={caseStudyAnimations.card.whileHover}
-                >
-                  <p className="text-xs uppercase tracking-wider text-gray-500 font-medium">Clarity Series</p>
-                  <p className="mt-3 font-semibold text-lg group-hover:text-brand-red transition">#9: Clinical Validation vs. Market Signal</p>
-                  <p className="mt-3 text-gray-700 text-sm">Why clinical proof needs commercial signal to unlock capital and adoption.</p>
-                </motion.div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">

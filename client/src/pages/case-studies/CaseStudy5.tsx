@@ -3,11 +3,34 @@ import { Link } from "wouter";
 import { ArrowLeft, FileText, BookOpen } from "lucide-react";
 import { useEffect } from "react";
 import { caseStudyAnimations } from "@/lib/animations";
+import { ResourceCards, RelatedResource } from "../../components/ResourceCards";
 
 export default function CaseStudy5() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
+  const relatedResources: RelatedResource[] = [
+    {
+        "href": "/",
+        "type": "White Paper",
+        "title": "#7: Why Design Without Signal is Decoration",
+        "label": "White Paper"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20%238%3A%20Why%20Products%20Don't%20Move%20Off%20Shelves",
+        "type": "Clarity Series",
+        "title": "#8: Why Products Don't Move Off Shelves",
+        "label": "Clarity Series"
+    },
+    {
+        "href": "/contact?ask_ai=Tell%20me%20about%20Consumer%20Health%20Signal%20Reframe",
+        "type": "Case Study",
+        "title": "Consumer Health Signal Reframe",
+        "label": "Case Study"
+    }
+];
 
   return (
     <div className="pt-16 bg-white">
@@ -240,60 +263,8 @@ export default function CaseStudy5() {
         </motion.div>
       </section>
 
-      {/* Related Resources */}
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.div {...caseStudyAnimations.section}>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-red font-raleway" data-testid="heading-related">
-              Related Resources
-            </h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%237%3A%20Why%20Design%20Without%20Signal%20is%20Decoration" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">White Paper</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #7: Why Design Without Signal is Decoration
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    Visual impact without strategic signal creates noise, not movement.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20%238%3A%20Why%20Products%20Don't%20Move%20Off%20Shelves" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <BookOpen className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">Clarity Series</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    #8: Why Products Don't Move Off Shelves
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    Distribution without shelf signal is just expensive placement.
-                  </p>
-                </div>
-              </Link>
-              <Link href="/contact?ask_ai=Tell%20me%20about%20Consumer%20Health%20Signal%20Reframe" className="block group">
-                <div className="bg-white p-8 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl bg-white  hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-brand-red">
-                    <FileText className="w-5 h-5" />
-                    <p className="text-xs uppercase tracking-wider font-semibold">Case Study</p>
-                  </div>
-                  <h3 className="mt-4 text-lg font-bold text-gray-900 group-hover:text-brand-red transition-colors">
-                    Consumer Health Signal Reframe
-                  </h3>
-                  <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-                    How another consumer brand transformed shelf presence into market inevitability.
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            {/* Related Resources */}
+      <ResourceCards resources={relatedResources} />
 
       {/* Final CTA */}
       <section className="bg-black text-white py-20 md:py-28">
