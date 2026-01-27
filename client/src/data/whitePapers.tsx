@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { ReactNode } from "react";
 
 export interface WhitePaper {
@@ -140,26 +141,45 @@ export const whitePapers: WhitePaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #17:</span> Your Funnel Is Not Broken, Your Signal Is</p>
-                            <p><span className="font-semibold">White Paper #5:</span> GTM as Signal, Not Execution</p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS GTM Signal That Reframed Market Entry</p>
-                        </div>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/funnel-not-broken-signal-is" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Series #17</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Your Funnel Is Not Broken, Your Signal Is
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/gtm-as-signal-not-execution" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper #5</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        GTM as Signal, Not Execution
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        SaaS GTM Signal That Reframed Market Entry
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Your price is not neutral. It is the first signal your market reads.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -288,24 +308,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #5:</span> The First Slide That Wins Investor Meetings</p>
+                            <p><span className="font-semibold">Clarity Series #5:</span> <Link href="/clarity-series/first-slide-wins-investor-meetings" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The First Slide That Wins Investor Meetings</Link></p>
                             <p><span className="font-semibold">Case Study:</span> DeepTech Raise That Closed With 7 Slides</p>
-                            <p><span className="font-semibold">White Paper #14:</span> Proof as Signal in Fund Raising</p>
+                            <p><span className="font-semibold">White Paper #14:</span> <Link href="/white-papers/proof-as-signal-in-fund-raising" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Proof as Signal in Fund Raising</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Decks don’t raise money. Signals do.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -432,23 +442,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #9:</span> Retention Is Belief, Not Contract</p>
-                            <p><span className="font-semibold">White Paper #6:</span> Signal vs. Noise in Founder Decision-Making</p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Narrative That Cut Churn by 70%</p>
+                            <p><span className="font-semibold">White Paper #6:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Noise in Founder Decision-Making</Link></p>
+                            <p><span className="font-semibold">Case Study:</span> <Link href="/clarity-series/reversing-churn-narrative" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">SaaS Narrative That Cut Churn by 70%</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Retention is narrative. Signal it right, and customers will not just stay — they will expand.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -576,24 +576,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #16:</span> When Storytelling Becomes Noise</p>
-                            <p><span className="font-semibold">White Paper #14:</span> Proof as Signal in Fund Raising</p>
+                            <p><span className="font-semibold">Clarity Series #16:</span> <Link href="/clarity-series/storytelling-becomes-noise" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">When Storytelling Becomes Noise</Link></p>
+                            <p><span className="font-semibold">White Paper #14:</span> <Link href="/white-papers/proof-as-signal-in-fund-raising" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Proof as Signal in Fund Raising</Link></p>
                             <p><span className="font-semibold">Case Study:</span> SaaS Raise That Flipped With Retention Curve</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Investor narratives don’t close because of stories. They close because of signals.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -676,7 +666,7 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Framework in Action (Checklist)</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Audit GTM spend:</span> how much encodes signal vs. noise?</p>
+                            <p><span className="font-semibold">Audit GTM spend:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">how much encodes signal vs. noise?</Link></p>
                             <p>Identify your strongest proof artifact. Make it the first move.</p>
                             <p>Design outreach with scarcity framing (time, slots, exclusivity).</p>
                             <p>Sequence markets — don’t boil the ocean. Signal one decisive win first.</p>
@@ -718,24 +708,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #15:</span> The GTM Sprint That Reframed an Entire Market</p>
-                            <p><span className="font-semibold">White Paper #12:</span> Signal-First GTM Design</p>
+                            <p><span className="font-semibold">Clarity Series #15:</span> <Link href="/clarity-series/gtm-sprint-market-reframe" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The GTM Sprint That Reframed an Entire Market</Link></p>
+                            <p><span className="font-semibold">White Paper #12:</span> <Link href="/white-papers/signal-first-gtm-design" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal-First GTM Design</Link></p>
                             <p><span className="font-semibold">Case Study:</span> SEA Market Entry Closed With Proof Signal</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Don’t waste millions on activity. Architect GTM as signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -860,24 +840,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #6:</span> When More Data Creates More Confusion</p>
-                            <p><span className="font-semibold">White Paper #11:</span> Signal Velocity and Market Movement</p>
-                            <p><span className="font-semibold">Case Study:</span> AI Founder Who Filtered Noise and Closed $5M</p>
+                            <p><span className="font-semibold">Clarity Series #6:</span> <Link href="/white-papers/why-more-data-creates-more-confusion" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">When More Data Creates More Confusion</Link></p>
+                            <p><span className="font-semibold">White Paper #11:</span> <Link href="/white-papers/signal-velocity-and-market-movement" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal Velocity and Market Movement</Link></p>
+                            <p><span className="font-semibold">Case Study:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">AI Founder Who Filtered Noise and Closed $5M</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Your decisions are only as strong as your signal filter. Build it, and the noise disappears.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -911,7 +881,7 @@ export const whitePapers: WhitePaper[] = [
                             <p><span className="font-semibold">Confused signal:</span> Too many asks in one message, no clear reason to engage.</p>
                             <p><span className="font-semibold">Strong signal:</span> Scarcity, proof artifacts, inevitability positioning.</p>
                             <p>When every outreach touchpoint is signal-first, volume becomes secondary. The first 10 messages land — because they transmit inevitability, not neediness.</p>
-                            <p><span className="font-semibold">The thesis:</span> outreach is not communication. Outreach is signal.</p>
+                            <p><span className="font-semibold">The thesis:</span> <Link href="/white-papers/outreach-as-signal-not-spam" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">outreach is not communication. Outreach is signal.</Link></p>
                         </div>
                     </div>
                 </section>
@@ -1000,23 +970,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #7:</span> Why Cold Outreach Fails</p>
-                            <p><span className="font-semibold">White Paper #13:</span> Funnel Design as Signal Architecture</p>
+                            <p><span className="font-semibold">White Paper #13:</span> <Link href="/white-papers/funnel-design-as-signal-architecture" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Funnel Design as Signal Architecture</Link></p>
                             <p><span className="font-semibold">Case Study:</span> Enterprise SaaS Outreach Rebuilt Around Proof</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Stop spamming. Start signaling. Outreach is the proof of your inevitability.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1057,7 +1017,7 @@ export const whitePapers: WhitePaper[] = [
                             <p>1. Belief Layer — early hires prove others believe in your inevitability.</p>
                             <p>2. Competence Layer — talent shows the company can execute at scale.</p>
                             <p>3. Trajectory Layer — your hires reveal where the company is going, not just where it is today.</p>
-                            <p><span className="font-semibold">The thesis:</span> talent isn’t a cost. It’s a broadcast signal.</p>
+                            <p><span className="font-semibold">The thesis:</span> <Link href="/white-papers/talent-as-signal-in-early-stage-growth" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">talent isn’t a cost. It’s a broadcast signal.</Link></p>
                         </div>
                     </div>
                 </section>
@@ -1145,24 +1105,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #8:</span> Why Talent Is the First Signal</p>
-                            <p><span className="font-semibold">White Paper #16:</span> Signal vs. Story — Why Belief Beats Performance</p>
+                            <p><span className="font-semibold">Clarity Series #8:</span> <Link href="/white-papers/talent-as-signal-in-early-stage-growth" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why Talent Is the First Signal</Link></p>
+                            <p><span className="font-semibold">White Paper #16:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Story — Why Belief Beats Performance</Link></p>
                             <p><span className="font-semibold">Case Study:</span> DeepTech Team That Raised $7M Without Revenue</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Your first hires are not employees. They are inevitability signals.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1286,23 +1236,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #11:</span> What “Too Early” Really Means</p>
-                            <p><span className="font-semibold">White Paper #10:</span> The Cost of Wrong Capital</p>
+                            <p><span className="font-semibold">White Paper #10:</span> <Link href="/white-papers/the-cost-of-wrong-capital" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The Cost of Wrong Capital</Link></p>
                             <p><span className="font-semibold">Case Study:</span> Investor Who Said “No” Then Wrote the First Check</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Stop hearing rejection. Start hearing signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1336,7 +1276,7 @@ export const whitePapers: WhitePaper[] = [
                             <p><span className="font-semibold">Wrong stage capital signals misalignment:</span> “They skipped steps and will burn.”</p>
                             <p><span className="font-semibold">Wrong capital structure signals desperation:</span> “They accepted terms they couldn’t afford.”</p>
                             <p>Markets decode who is backing you as much as what you’re building. A misaligned investor corrodes inevitability faster than no investor at all.</p>
-                            <p><span className="font-semibold">The thesis:</span> raising from the wrong capital is a downgrade in signal.</p>
+                            <p><span className="font-semibold">The thesis:</span> <Link href="/white-papers/the-cost-of-wrong-capital" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">raising from the wrong capital is a downgrade in signal.</Link></p>
                         </div>
                     </div>
                 </section>
@@ -1429,23 +1369,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #10:</span> Why Founders Must Say No to Money</p>
-                            <p><span className="font-semibold">White Paper #14:</span> Proof as Signal in Fund Raising</p>
+                            <p><span className="font-semibold">White Paper #14:</span> <Link href="/white-papers/proof-as-signal-in-fund-raising" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Proof as Signal in Fund Raising</Link></p>
                             <p><span className="font-semibold">Case Study:</span> SaaS Founder Who Waited, Then Doubled Valuation</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Capital is not just fuel. It’s signal. Choose wrong, and belief collapses.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1570,23 +1500,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #12:</span> Why Proof Without Velocity Dies</p>
-                            <p><span className="font-semibold">White Paper #5:</span> GTM as Signal, Not Execution</p>
+                            <p><span className="font-semibold">White Paper #5:</span> <Link href="/white-papers/gtm-as-signal-not-execution" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">GTM as Signal, Not Execution</Link></p>
                             <p><span className="font-semibold">Case Study:</span> AI DeepTech That Closed After High-Velocity Demo</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Signal without velocity is wasted. Architect both — and the market will move.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1619,7 +1539,7 @@ export const whitePapers: WhitePaper[] = [
                             <p>Noise-led GTM is campaign-heavy, vanity-metric driven, and indistinguishable from competitors.</p>
                             <p>Signal-first GTM is proof-led, scarcity-driven, and sequenced for compounding belief.</p>
                             <p>A founder with $50K can outplay a competitor with $5M if their GTM is signal-first. Because the market doesn’t move on volume — it moves on signal.</p>
-                            <p><span className="font-semibold">The thesis:</span> don’t design GTM as execution. Design GTM as signal.</p>
+                            <p><span className="font-semibold">The thesis:</span> <Link href="/white-papers/gtm-as-signal-not-execution" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">don’t design GTM as execution. Design GTM as signal.</Link></p>
                         </div>
                     </div>
                 </section>
@@ -1708,24 +1628,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #15:</span> The GTM Sprint That Reframed a Market</p>
-                            <p><span className="font-semibold">White Paper #5:</span> GTM as Signal, Not Execution</p>
+                            <p><span className="font-semibold">Clarity Series #15:</span> <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The GTM Sprint That Reframed a Market</Link></p>
+                            <p><span className="font-semibold">White Paper #5:</span> <Link href="/white-papers/gtm-as-signal-not-execution" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">GTM as Signal, Not Execution</Link></p>
                             <p><span className="font-semibold">Case Study:</span> Consumer Brand That Cut CAC by 50%</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Stop designing campaigns. Start designing signals.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1854,23 +1764,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #13:</span> Funnels Leak Signal Before They Leak Leads</p>
-                            <p><span className="font-semibold">White Paper #7:</span> Outreach as Signal, Not Spam</p>
-                            <p><span className="font-semibold">Case Study:</span> Funnel That Tripled Founder Calls</p>
+                            <p><span className="font-semibold">White Paper #7:</span> <Link href="/white-papers/outreach-as-signal-not-spam" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Outreach as Signal, Not Spam</Link></p>
+                            <p><span className="font-semibold">Case Study:</span> <Link href="/clarity-series/investor-calls-that-convert" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Funnel That Tripled Founder Calls</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Your funnel is either leaking signal or transmitting inevitability. Choose wisely.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -1993,23 +1893,13 @@ export const whitePapers: WhitePaper[] = [
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
                             <p><span className="font-semibold">Clarity Series #14:</span> Proof Before Vision</p>
-                            <p><span className="font-semibold">White Paper #9:</span> Decoding Investor Language as Signal</p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Proof Artifact That Doubled Valuation</p>
+                            <p><span className="font-semibold">White Paper #9:</span> <Link href="/white-papers/decoding-investor-language-as-signal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Decoding Investor Language as Signal</Link></p>
+                            <p><span className="font-semibold">Case Study:</span> <Link href="/clarity-series/proof-artifact-closed-deal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">SaaS Proof Artifact That Doubled Valuation</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Don’t bury your proof. Architect it as signal — and let the market move.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -2133,24 +2023,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #15:</span> The GTM Sprint That Reframed a Market</p>
-                            <p><span className="font-semibold">White Paper #12:</span> Signal-First GTM Design</p>
-                            <p><span className="font-semibold">Case Study:</span> Healthcare Tech Sprint That Closed $12M</p>
+                            <p><span className="font-semibold">Clarity Series #15:</span> <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The GTM Sprint That Reframed a Market</Link></p>
+                            <p><span className="font-semibold">White Paper #12:</span> <Link href="/white-papers/signal-first-gtm-design" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal-First GTM Design</Link></p>
+                            <p><span className="font-semibold">Case Study:</span> <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Healthcare Tech Sprint That Closed $12M</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Don’t run marathons of noise. Design one sprint of signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -2183,7 +2063,7 @@ export const whitePapers: WhitePaper[] = [
                             <p>Performance without signal is invisible. Great numbers still leak belief if not framed as inevitability.</p>
                             <p>Signal transcends both. It encodes inevitability so the market believes before it fully sees.</p>
                             <p>Investors, customers, and hires don’t bet on who tells the best story or hits last quarter’s numbers. They bet on inevitability.</p>
-                            <p><span className="font-semibold">The thesis:</span> signal beats story, signal beats performance, signal wins belief.</p>
+                            <p><span className="font-semibold">The thesis:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">signal beats story, signal beats performance, signal wins belief.</Link></p>
                         </div>
                     </div>
                 </section>
@@ -2271,24 +2151,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #16:</span> Why Belief Beats Performance</p>
-                            <p><span className="font-semibold">White Paper #6:</span> Signal vs. Noise in Founder Decision-Making</p>
+                            <p><span className="font-semibold">Clarity Series #16:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why Belief Beats Performance</Link></p>
+                            <p><span className="font-semibold">White Paper #6:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Noise in Founder Decision-Making</Link></p>
                             <p><span className="font-semibold">Case Study:</span> SaaS Raise That Moved Once Signal Was Clear</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Stop chasing story. Stop relying on performance. Architect signal — and win belief.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -2344,7 +2214,7 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
 
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Signal Framework:</span> Story vs. Signal</p>
+                            <p><span className="font-semibold">Signal Framework:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Story vs. Signal</Link></p>
                             <p>1. Lead With Proof</p>
                             <p>Start with the one artifact that cannot be ignored.</p>
                             <p>2. Frame With Story</p>
@@ -2411,24 +2281,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #17:</span> Storytelling vs. Signal</p>
-                            <p><span className="font-semibold">White Paper #16:</span> Signal vs. Story — Why Belief Beats Performance</p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Founder Who Cut Noise and Closed in Weeks</p>
+                            <p><span className="font-semibold">Clarity Series #17:</span> <Link href="/white-papers/pricing-as-signal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Storytelling vs. Signal</Link></p>
+                            <p><span className="font-semibold">White Paper #16:</span> <Link href="/white-papers/signal-vs-story" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Story — Why Belief Beats Performance</Link></p>
+                            <p><span className="font-semibold">Case Study:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">SaaS Founder Who Cut Noise and Closed in Weeks</Link></p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Don’t storytell your way into noise. Architect your narrative as signal — and watch markets shift.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -2554,24 +2414,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #18:</span> Data vs. Signal in Founder Decisions</p>
-                            <p><span className="font-semibold">White Paper #6:</span> Signal vs. Noise in Decision-Making</p>
+                            <p><span className="font-semibold">Clarity Series #18:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Data vs. Signal in Founder Decisions</Link></p>
+                            <p><span className="font-semibold">White Paper #6:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Signal vs. Noise in Decision-Making</Link></p>
                             <p><span className="font-semibold">Case Study:</span> SaaS Valuation Doubled After Cutting 50 KPIs</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Stop drowning in dashboards. Architect signal filters — and move the market.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -2694,24 +2544,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #19:</span> Why VCs Struggle with Deal Flow</p>
-                            <p><span className="font-semibold">White Paper #20:</span> Capital as Signal, Not Commodity</p>
+                            <p><span className="font-semibold">Clarity Series #19:</span> <Link href="/white-papers/why-vc-deal-flow-depends-on-signal" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why VCs Struggle with Deal Flow</Link></p>
+                            <p><span className="font-semibold">White Paper #20:</span> <Link href="/white-papers/capital-as-signal-not-commodity" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Capital as Signal, Not Commodity</Link></p>
                             <p><span className="font-semibold">Case Study:</span> Frontier AI Fund That Became a Magnet for Founders</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Deal flow isn’t given. It’s earned with signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },
@@ -2835,24 +2675,14 @@ export const whitePapers: WhitePaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Clarity Series #20:</span> Why Capital is the Loudest Signal</p>
-                            <p><span className="font-semibold">White Paper #10:</span> The Cost of Wrong Capital</p>
+                            <p><span className="font-semibold">Clarity Series #20:</span> <Link href="/white-papers/capital-as-signal-not-commodity" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">Why Capital is the Loudest Signal</Link></p>
+                            <p><span className="font-semibold">White Paper #10:</span> <Link href="/white-papers/the-cost-of-wrong-capital" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">The Cost of Wrong Capital</Link></p>
                             <p><span className="font-semibold">Case Study:</span> DeepTech Raise Reframed by Strategic Capital</p>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA Block</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Capital isn’t fuel. It’s signal. Architect it wisely.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+                
             </>
         )
     },

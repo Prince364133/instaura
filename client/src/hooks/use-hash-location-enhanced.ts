@@ -19,7 +19,8 @@ export const useHashLocationEnhanced: BaseLocationHook = ({
             return ssrPath || "/";
         }
         const fullHash = window.location.hash.replace(/^#/, "") || "/";
-        const [routePath] = fullHash.split("#");
+        // Split by ? to separate path from query string
+        const [routePath] = fullHash.split("?");
         const finalPath = routePath || "/";
         // console.log("[HashHook] Full:", fullHash, "Route:", finalPath);
         return finalPath;

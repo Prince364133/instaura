@@ -1,10 +1,11 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Send, Bot, MessageCircle } from 'lucide-react';
+import { X, Send, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useChatbot } from '@/context/ChatbotContext';
 import { Input } from '@/components/ui/input';
+import { useLocation } from "wouter";
 
 interface Message {
     id: string;
@@ -14,11 +15,11 @@ interface Message {
 }
 
 export default function ChatbotModal() {
-    const { isOpen, closeChatbot } = useChatbot();
+    const { isOpen, closeChatbot, openChatbot } = useChatbot();
     const [messages, setMessages] = useState<Message[]>([
         {
             id: '1',
-            text: "Hello! I'm Yash, your strategic intelligence assistant. How can I help you today?",
+            text: "Hello! I'm YAS, your strategic intelligence assistant. How can I help you today?",
             sender: 'bot',
             timestamp: new Date()
         }
@@ -26,10 +27,36 @@ export default function ChatbotModal() {
     const [inputValue, setInputValue] = useState('');
     const [isTyping, setIsTyping] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
+    const [location] = useLocation();
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
+
+    // Auto-open logic
+    useEffect(() => {
+        const searchParams = new URLSearchParams(window.location.search);
+        const askAi = searchParams.get('ask_ai');
+
+        if (askAi) {
+            // If already open, just add message if extracting prompt?
+            // User requested: "open our ai model with auto prompting about that topic"
+
+            // Open it
+            if (!isOpen) {
+                openChatbot();
+            }
+
+            // Clean URL
+            const url = new URL(window.location.href);
+            url.searchParams.delete('ask_ai');
+            window.history.replaceState({}, '', url.toString());
+
+            // Auto send message
+            handleSendMessage(undefined, `Tell me about: ${askAi}`);
+        }
+    }, [location, isOpen]);
+    // Added location dependency so it triggers on route change if param exists
 
     useEffect(() => {
         if (isOpen) {
@@ -37,35 +64,35 @@ export default function ChatbotModal() {
         }
     }, [messages, isOpen]);
 
-    const handleSendMessage = async (e?: React.FormEvent) => {
+    const handleSendMessage = async (e?: React.FormEvent, overrideDetail?: string) => {
         e?.preventDefault();
-        if (!inputValue.trim()) return;
+        const textToSend = overrideDetail || inputValue;
+        if (!textToSend.trim()) return;
 
         const userMessage: Message = {
             id: Date.now().toString(),
-            text: inputValue,
+            text: textToSend,
             sender: 'user',
             timestamp: new Date()
         };
 
         setMessages(prev => [...prev, userMessage]);
-        setInputValue('');
+        if (!overrideDetail) setInputValue('');
         setIsTyping(true);
 
         try {
-            const response = await fetch('http://localhost:5678/webhook/f37d4b7b-1824-4aad-91f0-c24563e2af34', {
+            const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: inputValue })
+                body: JSON.stringify({ message: textToSend })
             });
 
             let responseText = "I'm sorry, I couldn't process that.";
 
             try {
                 const data = await response.json();
-                responseText = data.output || data.message || data.text || JSON.stringify(data);
-            } catch (e) {
-                // If response is not JSON, use text
+                responseText = data.message || JSON.stringify(data);
+            } catch (error) {
                 responseText = await response.text();
             }
 
@@ -77,21 +104,18 @@ export default function ChatbotModal() {
             };
 
             setMessages(prev => [...prev, botResponse]);
-            setIsTyping(false);
-
         } catch (error) {
             console.error('Error sending message:', error);
             const errorResponse: Message = {
                 id: Date.now().toString(),
-                text: "Sorry, I'm having trouble connecting to the server. Please try again later.",
+                text: "Sorry, I'm having trouble connecting to the server. Please check your connection.",
                 sender: 'bot',
                 timestamp: new Date()
             };
             setMessages(prev => [...prev, errorResponse]);
+        } finally {
             setIsTyping(false);
         }
-
-
     };
 
     return (
@@ -133,7 +157,7 @@ export default function ChatbotModal() {
                                 className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
                             >
                                 <div
-                                    className={`max-w-[80%] p-3 rounded-2xl px-4 text-sm leading-relaxed ${msg.sender === 'user'
+                                    className={`max-w-[85%] p-3 rounded-2xl px-4 text-sm leading-relaxed ${msg.sender === 'user'
                                         ? 'bg-brand-red text-white rounded-tr-none'
                                         : 'bg-white text-gray-800 border border-gray-100 shadow-sm rounded-tl-none'
                                         }`}

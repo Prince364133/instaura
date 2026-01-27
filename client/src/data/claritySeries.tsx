@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { ReactNode } from "react";
 
 export interface ClaritySeriesPaper {
@@ -93,26 +94,48 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> DeepTech $4M Seed (Redacted)</p>
-                            <p><span className="font-semibold">White Paper:</span> Negotiation as Signal</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Investor Calls That Convert</p>
-                        </div>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=DeepTech%20%244M%20Seed%20(Redacted)" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        DeepTech $4M Seed (Redacted)
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/white-papers/pricing-as-signal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Negotiation as Signal
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href="/clarity-series/investor-calls-that-convert" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Investor Calls That Convert
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link></div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Negotiation isn’t about words. It’s about signals.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -207,26 +230,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> SaaS Raise Reframed by Signal Call</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal Mechanics in Investor Negotiations</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The Silence That Closed a $4M Deal</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=SaaS%20Raise%20Reframed%20by%20Signal%20Call" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        SaaS Raise Reframed by Signal Call
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-mechanics-in-investor-narratives" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal Mechanics in Investor Negotiations
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/silence-closed-4m-deal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The Silence That Closed a $4M Deal
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Investor calls don’t fail because of traction gaps. They fail because of signal leaks.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -320,26 +368,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">White Paper:</span> Signal vs. Noise in Product Strategy</p>
-                            <p><span className="font-semibold">Case Study:</span> Consumer App Reframed Without Iteration</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The Price That Built Belief</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal vs. Noise in Product Strategy
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/contact?ask_ai=Consumer%20App%20Reframed%20Without%20Iteration" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        Consumer App Reframed Without Iteration
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/price-that-built-belief" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The Price That Built Belief
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Iteration doesn’t create inevitability. Signal does.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -430,26 +503,48 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">White Paper:</span> Pricing as Signal</p>
-                            <p><span className="font-semibold">Case Study:</span> D2C Brand That Built Belief with Pricing</p>
-                            <p><span className="font-semibold">Clarity Post:</span> When Storytelling Becomes Noise</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/pricing-as-signal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Pricing as Signal
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/price-that-built-belief" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        D2C Brand That Built Belief with Pricing
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/storytelling-becomes-noise" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        When Storytelling Becomes Noise
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Price is never just a number. It’s the market’s first signal about you.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -541,26 +636,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">White Paper:</span> Signal-First Pitch Decks</p>
-                            <p><span className="font-semibold">Case Study:</span> SaaS Founder Who Won 2 Term Sheets in 14 Days</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Investor Calls That Convert</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/signal-first-pitch-decks" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal-First Pitch Decks
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/contact?ask_ai=SaaS%20Founder%20Who%20Won%202%20Term%20Sheets%20in%2014%20Days" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        SaaS Founder Who Won 2 Term Sheets in 14 Days
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/investor-calls-that-convert" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Investor Calls That Convert
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>The first slide doesn’t introduce. It decides.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -654,26 +774,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> SaaS Reframed to Reverse Churn</p>
-                            <p><span className="font-semibold">White Paper:</span> Narrative as a Retention Signal</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Why Your Traction Is Invisible</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=SaaS%20Reframed%20to%20Reverse%20Churn" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        SaaS Reframed to Reverse Churn
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/narrative-as-a-retention-signal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Narrative as a Retention Signal
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/why-traction-invisible" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Why Your Traction Is Invisible
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Churn isn’t just about product gaps. It’s about narrative leaks.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -767,26 +912,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> SaaS Founder Who Reframed Traction into a Term Sheet</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal Mechanics in Investor Narratives</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Reversing Churn with Narrative</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=SaaS%20Founder%20Who%20Reframed%20Traction%20into%20a%20Term%20Sheet" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        SaaS Founder Who Reframed Traction into a Term Sheet
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-mechanics-in-investor-narratives" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal Mechanics in Investor Narratives
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/reversing-churn-narrative" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Reversing Churn with Narrative
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Numbers alone don’t create belief. Signals do.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -880,26 +1050,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Enterprise SaaS Closing First Customers in 30 Days</p>
-                            <p><span className="font-semibold">White Paper:</span> GTM as Signal, Not Execution</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The Price That Built Belief</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Enterprise%20SaaS%20Closing%20First%20Customers%20in%2030%20Days" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        Enterprise SaaS Closing First Customers in 30 Days
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/gtm-as-signal-not-execution" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        GTM as Signal, Not Execution
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/price-that-built-belief" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The Price That Built Belief
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Your first customers don’t buy features. They buy signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -987,33 +1182,55 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             <p>Dismiss any anecdote until you hear it 3+ times.</p>
                             <p>Track movement metrics (conversion velocity, inbound pull, renewal strength).</p>
                             <p>Kill A/B tests that optimize vanity over inevitability.</p>
-                            <p><span className="font-semibold">Revisit every week:</span> what’s noise vs. what’s signal?</p>
+                            <p><span className="font-semibold">Revisit every week:</span> <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">what’s noise vs. what’s signal?</Link></p>
                         </div>
                     </div>
                 </section>
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Founder Who Stopped Iterating on Noise</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal vs. Noise in Founder Decision-Making</p>
-                            <p><span className="font-semibold">Clarity Post:</span> When to Stop Iterating and Start Signaling</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Founder Who Stopped Iterating on Noise
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-vs-noise-in-founder-decision-making" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal vs. Noise in Founder Decision-Making
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/when-to-stop-iterating" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        When to Stop Iterating and Start Signaling
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>The founder’s first job isn’t building. It’s filtering.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1108,26 +1325,48 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> GTM Signal That Opened SEA Market</p>
-                            <p><span className="font-semibold">White Paper:</span> Outreach as Signal, Not Spam</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Signals That Unlock First Customers</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/email-opened-market" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        GTM Signal That Opened SEA Market
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/outreach-as-signal-not-spam" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Outreach as Signal, Not Spam
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/signals-unlock-first-customers" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signals That Unlock First Customers
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>The right email isn’t communication. It’s a signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1220,26 +1459,48 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> VP Hire That Flipped a Series A</p>
-                            <p><span className="font-semibold">White Paper:</span> Talent as Signal in Early-Stage Growth</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Why Your Traction Is Invisible</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/hire-changed-everything" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        VP Hire That Flipped a Series A
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/talent-as-signal-in-early-stage-growth" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Talent as Signal in Early-Stage Growth
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/why-traction-invisible" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Why Your Traction Is Invisible
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Hiring isn’t HR. It’s signal. One right hire can reset your trajectory.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1295,7 +1556,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             <p>2. Anchor Belief in Scarcity</p>
                             <p>Make clear the round is moving — terms won’t wait forever.</p>
                             <p>3. Decode Their Language</p>
-                            <p><span className="font-semibold">Treat “too early” not as rejection, but as feedback:</span> your signal isn’t strong enough yet.</p>
+                            <p><span className="font-semibold">Treat “too early” not as rejection, but as feedback:</span> <Link href="/clarity-series/funnel-not-broken-signal-is" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">your signal isn’t strong enough yet.</Link></p>
                         </div>
                     </div>
                 </section>
@@ -1337,26 +1598,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> DeepTech Raise Labeled “Too Early” — Closed in 6 Weeks</p>
-                            <p><span className="font-semibold">White Paper:</span> Decoding Investor Language as Signal</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Why Your Traction Is Invisible</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=DeepTech%20Raise%20Labeled%20%E2%80%9CToo%20Early%E2%80%9D%20%E2%80%94%20Closed%20in%206%20Weeks" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        DeepTech Raise Labeled “Too Early” — Closed in 6 Weeks
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/decoding-investor-language-as-signal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Decoding Investor Language as Signal
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/why-traction-invisible" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Why Your Traction Is Invisible
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>“Too early” doesn’t mean stage. It means signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1449,26 +1735,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Declining a Term Sheet That Reset the Raise</p>
-                            <p><span className="font-semibold">White Paper:</span> The Cost of Wrong Capital</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The Silence That Closed a $4M Deal</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Declining%20a%20Term%20Sheet%20That%20Reset%20the%20Raise" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        Declining a Term Sheet That Reset the Raise
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/the-cost-of-wrong-capital" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The Cost of Wrong Capital
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/silence-closed-4m-deal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The Silence That Closed a $4M Deal
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Sometimes the most powerful yes is a clear no.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1564,26 +1875,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Raise Restarted in 2 Weeks</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal Velocity and Market Movement</p>
-                            <p><span className="font-semibold">Clarity Post:</span> When VCs Say “Too Early”</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Raise%20Restarted%20in%202%20Weeks" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        Raise Restarted in 2 Weeks
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal Velocity and Market Movement
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/when-vcs-say-too-early" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        When VCs Say “Too Early”
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Money doesn’t follow time. It follows signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1679,26 +2015,48 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> GTM Sprint That Closed SEA Market Entry</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal-First GTM Design</p>
-                            <p><span className="font-semibold">Clarity Post:</span> Signals That Unlock First Customers</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/the-gtm-sprint-that-reframed-a-market" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        GTM Sprint That Closed SEA Market Entry
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-first-gtm-design" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal-First GTM Design
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/signals-unlock-first-customers" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signals That Unlock First Customers
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Markets don’t move on activity. They move on signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1782,7 +2140,7 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Play It Yourself (Checklist)</h2>
                         <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Audit your pitch:</span> cut anything that doesn’t build belief.</p>
+                            <p><span className="font-semibold">Audit your pitch:</span> <Link href="/clarity-series/price-that-built-belief" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">cut anything that doesn’t build belief.</Link></p>
                             <p>Replace 3 slides of “journey” with 1 proof artifact.</p>
                             <p>End with scarcity, not vision.</p>
                             <p>Treat storytelling as delivery — not the message.</p>
@@ -1793,26 +2151,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> SaaS Founder Who Cut Storytelling, Closed $3M</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal vs. Story — Why Belief Beats Performance</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The First Slide That Wins Investor Meetings</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=SaaS%20Founder%20Who%20Cut%20Storytelling%2C%20Closed%20%243M" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        SaaS Founder Who Cut Storytelling, Closed $3M
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-vs-story" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal vs. Story — Why Belief Beats Performance
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/first-slide-wins-investor-meetings" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The First Slide That Wins Investor Meetings
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Stories entertain. Signals close. Don’t confuse the two.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -1907,26 +2290,48 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Funnel Rebuilt With Signal → 10x Conversion</p>
-                            <p><span className="font-semibold">White Paper:</span> Funnel Design as Signal Architecture</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The GTM Sprint That Reframed an Entire Market</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/white-papers/funnel-design-as-signal-architecture" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Funnel Rebuilt With Signal → 10x Conversion
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/funnel-design-as-signal-architecture" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Funnel Design as Signal Architecture
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/gtm-sprint-market-reframe" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The GTM Sprint That Reframed an Entire Market
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Your funnel isn’t broken. Your signal is. Fix that — and everything flows.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -2020,26 +2425,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> DeepTech Pilot That Flipped a Raise</p>
-                            <p><span className="font-semibold">White Paper:</span> Proof as Signal in Fund Raising</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The First Slide That Wins Investor Meetings</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=DeepTech%20Pilot%20That%20Flipped%20a%20Raise" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        DeepTech Pilot That Flipped a Raise
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/proof-as-signal-in-fund-raising" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Proof as Signal in Fund Raising
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/first-slide-wins-investor-meetings" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The First Slide That Wins Investor Meetings
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Proof artifacts are not supporting material. They are the signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -2137,26 +2567,51 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Enterprise Deal Closed in 30 Days With Signal GTM</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal Velocity in B2B Sales</p>
-                            <p><span className="font-semibold">Clarity Post:</span> The GTM Sprint That Reframed an Entire Market</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/contact?ask_ai=Enterprise%20Deal%20Closed%20in%2030%20Days%20With%20Signal%20GTM" className="block group">
+                                <div className="bg-gradient-to-br from-gray-50 to-white p-5 rounded-xl border border-gray-200 border-dashed shadow-sm hover:shadow-md hover:border-brand-red/30 hover:bg-red-50/10 transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-brand-red/70 font-semibold mb-2 flex items-center gap-1">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse"></span>
+                                        Ask AI
+                                    </span>
+                                    <h3 className="font-raleway font-semibold text-gray-600 group-hover:text-brand-red/80 transition-colors text-lg leading-snug">
+                                        Enterprise Deal Closed in 30 Days With Signal GTM
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-gray-400 text-sm group-hover:text-brand-red transition-colors">
+                                        Ask YAS Intelligence <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-velocity-and-market-movement" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal Velocity in B2B Sales
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/gtm-sprint-market-reframe" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        The GTM Sprint That Reframed an Entire Market
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>Sales cycles aren’t fixed. They’re signals. Rewire them — and collapse them.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
@@ -2246,33 +2701,55 @@ export const claritySeriesData: ClaritySeriesPaper[] = [
                             <p>Build a deck around outcome inevitability, not features.</p>
                             <p><span className="font-semibold">List every proof artifact you can borrow:</span> advisors, patents, commitments.</p>
                             <p>Encode scarcity in your raise process.</p>
-                            <p><span className="font-semibold">Remember:</span> product is proof of execution. Signal is proof of inevitability.</p>
+                            <p><span className="font-semibold">Remember:</span> <Link href="/white-papers/gtm-as-signal-not-execution" className="hover:text-brand-red underline decoration-brand-red/30 transition-colors">product is proof of execution. Signal is proof of inevitability.</Link></p>
                         </div>
                     </div>
                 </section>
 
                 <section className="px-6 py-8">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Related Resources</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p><span className="font-semibold">Case Study:</span> Pre-Product Raise That Closed $4M</p>
-                            <p><span className="font-semibold">White Paper:</span> Signal as the Only Basis for Belief</p>
-                            <p><span className="font-semibold">Clarity Post:</span> When VCs Say “Too Early”</p>
+                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-6">Related Resources</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <Link href="/clarity-series/silence-closed-4m-deal" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Case Study</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Pre-Product Raise That Closed $4M
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/white-papers/signal-vs-story" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">White Paper</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        Signal as the Only Basis for Belief
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            <Link href="/clarity-series/when-vcs-say-too-early" className="block group">
+                                <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                                    <span className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Clarity Post</span>
+                                    <h3 className="font-raleway font-bold text-gray-800 group-hover:text-brand-red transition-colors text-lg leading-snug">
+                                        When VCs Say “Too Early”
+                                    </h3>
+                                    <div className="mt-auto pt-4 flex items-center text-brand-red text-sm font-medium transition-colors">
+                                        Read Resource <span>→</span>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
 
-                <section className="px-6 py-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-2xl font-bold font-raleway text-brand-red mb-4">Final CTA</h2>
-                        <div className="prose text-gray-700 space-y-4">
-                            <p>Clarity → Movement.</p>
-                            <p>You don’t need a product to close. You need signal.</p>
-                            <p>[Talk to Yas]</p>
-                            <p>[Book a Signal Call]</p>
-                        </div>
-                    </div>
-                </section>
+
             </>
         )
     },
