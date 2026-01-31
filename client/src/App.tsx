@@ -72,6 +72,36 @@ import CaseStudy45 from "@/pages/case-studies/CaseStudy45";
 import CaseStudy46 from "@/pages/case-studies/CaseStudy46";
 import CaseStudy47 from "@/pages/case-studies/CaseStudy47";
 import CaseStudy48 from "@/pages/case-studies/CaseStudy48";
+import CaseStudy49 from "@/pages/case-studies/CaseStudy49";
+import CaseStudy50 from "@/pages/case-studies/CaseStudy50";
+import CaseStudy51 from "@/pages/case-studies/CaseStudy51";
+import CaseStudy52 from "@/pages/case-studies/CaseStudy52";
+import CaseStudy53 from "@/pages/case-studies/CaseStudy53";
+import CaseStudy54 from "@/pages/case-studies/CaseStudy54";
+import CaseStudy55 from "@/pages/case-studies/CaseStudy55";
+import CaseStudy56 from "@/pages/case-studies/CaseStudy56";
+import CaseStudy57 from "@/pages/case-studies/CaseStudy57";
+import CaseStudy58 from "@/pages/case-studies/CaseStudy58";
+import CaseStudy59 from "@/pages/case-studies/CaseStudy59";
+import CaseStudy60 from "@/pages/case-studies/CaseStudy60";
+import CaseStudy61 from "@/pages/case-studies/CaseStudy61";
+import CaseStudy62 from "@/pages/case-studies/CaseStudy62";
+import CaseStudy63 from "@/pages/case-studies/CaseStudy63";
+import CaseStudy64 from "@/pages/case-studies/CaseStudy64";
+import CaseStudy65 from "@/pages/case-studies/CaseStudy65";
+import CaseStudy66 from "@/pages/case-studies/CaseStudy66";
+import CaseStudy67 from "@/pages/case-studies/CaseStudy67";
+import CaseStudy68 from "@/pages/case-studies/CaseStudy68";
+import CaseStudy69 from "@/pages/case-studies/CaseStudy69";
+import CaseStudy70 from "@/pages/case-studies/CaseStudy70";
+import CaseStudy71 from "@/pages/case-studies/CaseStudy71";
+import CaseStudy72 from "@/pages/case-studies/CaseStudy72";
+import CaseStudy73 from "@/pages/case-studies/CaseStudy73";
+import CaseStudy74 from "@/pages/case-studies/CaseStudy74";
+import CaseStudy75 from "@/pages/case-studies/CaseStudy75";
+import CaseStudy76 from "@/pages/case-studies/CaseStudy76";
+import CaseStudy77 from "@/pages/case-studies/CaseStudy77";
+import CaseStudy78 from "@/pages/case-studies/CaseStudy78";
 import WhitePapers from "@/pages/WhitePapers";
 import WhitePaperDetail from "@/pages/WhitePaperDetail";
 import ClaritySeries from "@/pages/ClaritySeries";
@@ -200,6 +230,36 @@ function RouterContent() {
           <Route path="/case-studies/46" component={CaseStudy46} />
           <Route path="/case-studies/47" component={CaseStudy47} />
           <Route path="/case-studies/48" component={CaseStudy48} />
+          <Route path="/case-studies/49" component={CaseStudy49} />
+          <Route path="/case-studies/50" component={CaseStudy50} />
+          <Route path="/case-studies/51" component={CaseStudy51} />
+          <Route path="/case-studies/52" component={CaseStudy52} />
+          <Route path="/case-studies/53" component={CaseStudy53} />
+          <Route path="/case-studies/54" component={CaseStudy54} />
+          <Route path="/case-studies/55" component={CaseStudy55} />
+          <Route path="/case-studies/56" component={CaseStudy56} />
+          <Route path="/case-studies/57" component={CaseStudy57} />
+          <Route path="/case-studies/58" component={CaseStudy58} />
+          <Route path="/case-studies/59" component={CaseStudy59} />
+          <Route path="/case-studies/60" component={CaseStudy60} />
+          <Route path="/case-studies/61" component={CaseStudy61} />
+          <Route path="/case-studies/62" component={CaseStudy62} />
+          <Route path="/case-studies/63" component={CaseStudy63} />
+          <Route path="/case-studies/64" component={CaseStudy64} />
+          <Route path="/case-studies/65" component={CaseStudy65} />
+          <Route path="/case-studies/66" component={CaseStudy66} />
+          <Route path="/case-studies/67" component={CaseStudy67} />
+          <Route path="/case-studies/68" component={CaseStudy68} />
+          <Route path="/case-studies/69" component={CaseStudy69} />
+          <Route path="/case-studies/70" component={CaseStudy70} />
+          <Route path="/case-studies/71" component={CaseStudy71} />
+          <Route path="/case-studies/72" component={CaseStudy72} />
+          <Route path="/case-studies/73" component={CaseStudy73} />
+          <Route path="/case-studies/74" component={CaseStudy74} />
+          <Route path="/case-studies/75" component={CaseStudy75} />
+          <Route path="/case-studies/76" component={CaseStudy76} />
+          <Route path="/case-studies/77" component={CaseStudy77} />
+          <Route path="/case-studies/78" component={CaseStudy78} />
           <Route path="/white-papers" component={WhitePapers} />
           <Route path="/white-papers/:slug" component={WhitePaperDetail} />
           <Route path="/clarity-series" component={ClaritySeries} />
